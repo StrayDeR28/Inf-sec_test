@@ -9,10 +9,16 @@ public class StoryScene : ScriptableObject
     public Sprite background;
     public StoryScene nextScene;
 
+
     [System.Serializable]
     public struct Sentence
     {
         public string text;
         public Speaker speaker;
+        public Sentence(string _text, Speaker _speaker) : this()
+        {
+            text = _text;
+            speaker = _speaker;
+        }
     }
 }

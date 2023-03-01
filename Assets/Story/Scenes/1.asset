@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   sentences:
-  - text: Hello there
-    speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-  - text: Zdarova
+  - text: "First  \u0418\u0432\u0430\u043D"
+    speaker: {fileID: 11400000, guid: ebc71d3278d75674eb9efee6efb7d6fe, type: 2}
+  - text: Second  &name
+    speaker: {fileID: 11400000, guid: ebc71d3278d75674eb9efee6efb7d6fe, type: 2}
+  - text: Third  &name
     speaker: {fileID: 11400000, guid: ebc71d3278d75674eb9efee6efb7d6fe, type: 2}
   background: {fileID: 21300000, guid: 6cfc3faa0f8be8b4fbdb4e7586df364b, type: 3}
   nextScene: {fileID: 11400000, guid: 837c74ffcc503fa4cada69faf7ace9e3, type: 2}

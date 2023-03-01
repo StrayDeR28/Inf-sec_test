@@ -12,6 +12,8 @@ public class BottomBarController : MonoBehaviour
     private StoryScene currentScene;
     private State state = State.COMPLETED;
 
+    private string playerName = "Иван";//Добавить метод получения с Бекенда имени. Убрать значение по умолчанию
+
     private enum State
     {
         PLAYING, COMPLETED
@@ -26,8 +28,18 @@ public class BottomBarController : MonoBehaviour
     }
 
     public void PlayNextSentence()
-    {
-        StartCoroutine(TypeText(currentScene.sentences[++sentenceIndex].text));
+    {  
+        if (currentScene.sentences[++sentenceIndex].text.EndsWith("&name"))//++ Проверка для ввода имени пользователя/пройденых проввинций
+        {
+
+            string tmpText = currentScene.sentences[sentenceIndex].text;
+            tmpText = tmpText.Substring(0, tmpText.Length-5);
+            tmpText = tmpText + " " + playerName;
+
+            currentScene.sentences.Insert(sentenceIndex, new StoryScene.Sentence(tmpText, currentScene.sentences[sentenceIndex].speaker));
+            currentScene.sentences.RemoveAt(sentenceIndex+1);
+        }
+        StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));//++
         personNameText.text = currentScene.sentences[sentenceIndex].speaker.speakerName;
         personNameText.color = currentScene.sentences[sentenceIndex].speaker.textColor;
     }
