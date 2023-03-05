@@ -6,21 +6,31 @@ using UnityEngine.UI;
 
 public class LoadSceneAndSendInfo : MonoBehaviour
 {
-    [SerializeField] private int inputInt;
-    public enum Scenes { Registration = 0, Novell1 = 1, Map = 2 };
+    [SerializeField] private ScenesEnum LoadNextScene = ScenesEnum.Registration;
+
+    [SerializeField] private enum ScenesEnum {None=0, Registration=1, Novell1=2, Map=3};
     public void LoadScene()
     {
-        if (inputInt == ((int)Scenes.Registration))
+        if (gameObject.GetComponent<RegistrationInfo>().GetInfoCheck() == true)
         {
-            SceneManager.LoadScene("RegistrationScene");
+            switch (LoadNextScene)
+            {
+                case ScenesEnum.Registration:
+                    SceneManager.LoadScene("RegistrationScene");
+                    break;
+                case ScenesEnum.Novell1:
+                    SceneManager.LoadScene("NovellScene");
+                    break;
+                /*case ScenesEnum.Map:
+                    //SceneManager.LoadScene("MapScene");
+                    break;*/
+            }
         }
-        else if (inputInt == ((int)Scenes.Novell1))
+        else
         {
-            SceneManager.LoadScene("NovellScene");
+            gameObject.GetComponent<RegistrationInfo>().ErrorInputInfo();
         }
-        else if (inputInt == ((int)Scenes.Map))
-        {
-            //SceneManager.LoadScene("MapScene");
-        }
+        
     }
+   
 }
