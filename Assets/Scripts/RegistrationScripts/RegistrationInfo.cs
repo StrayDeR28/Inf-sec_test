@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class RegistrationInfo : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField login;
+    [SerializeField] private TMP_InputField email;
     [SerializeField] private TMP_InputField password;
     [SerializeField] private TMP_InputField nickname;
     [SerializeField] private TMP_InputField userName;
@@ -26,10 +26,10 @@ public class RegistrationInfo : MonoBehaviour
         switch (CheckInput)
         {
             case CheckInfoEnum.LoginInfo:
-                if (login.text.Length != 0 && password.text.Length != 0) { infoCheck = true; } 
+                if (email.text.Length != 0 && password.text.Length != 0) { infoCheck = true; } 
                 break;
             case CheckInfoEnum.RegistrationInfo:
-                if (login.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && surname.text.Length != 0 && patronymic.text.Length != 0) { infoCheck = true; }
+                if (email.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && surname.text.Length != 0 && patronymic.text.Length != 0) { infoCheck = true; }
                 break;
         }
     }
@@ -37,7 +37,7 @@ public class RegistrationInfo : MonoBehaviour
     public void SendLogin()
     {
         //код Германа
-        print("login: " + login.text);
+        print("email: " + email.text);
     }
     public void SendPassword()
     {

@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1719a368e2abf99449548a4c66861f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  login: {fileID: 6639029790708914644}
+  email: {fileID: 0}
   password: {fileID: 6639029789693404745}
   nickname: {fileID: 6639029789583340258}
   userName: {fileID: 6639029789459865075}
@@ -3288,7 +3288,7 @@ GameObject:
   - component: {fileID: 6639029790708914645}
   - component: {fileID: 6639029790708914644}
   m_Layer: 5
-  m_Name: Login_IF
+  m_Name: Email_IF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

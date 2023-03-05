@@ -258,6 +258,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115839724}
   m_CullTransparentMesh: 1
+--- !u!114 &437665278 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9157753075267534439, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+  m_PrefabInstance: {fileID: 9157753073570052737}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &466610557 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6639029789691240085, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
@@ -601,10 +612,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -653,6 +664,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1782060907 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6639029790708914644, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+  m_PrefabInstance: {fileID: 6639029789762500584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1988075188
@@ -843,6 +865,10 @@ PrefabInstance:
       propertyPath: LoadNextScene
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6639029789642254418, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+      propertyPath: email
+      value: 
+      objectReference: {fileID: 1782060907}
     - target: {fileID: 6639029789642254418, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
       propertyPath: debugText
       value: 
@@ -1116,6 +1142,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 9157753074546603614, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+      propertyPath: email
+      value: 
+      objectReference: {fileID: 437665278}
     - target: {fileID: 9157753074546603614, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: debugText
       value: 

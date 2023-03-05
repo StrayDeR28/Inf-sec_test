@@ -124,7 +124,7 @@ public class BottomBarController : MonoBehaviour
 
             string tmpText = currentScene.sentences[sentenceIndex].text;
             tmpText = tmpText.Substring(0, tmpText.Length - 5);
-            tmpText = tmpText + " " + playerName;
+            tmpText = tmpText + " " + playerName + " Джун-сан";
 
             currentScene.sentences.Insert(sentenceIndex, new StoryScene.Sentence(tmpText, currentScene.sentences[sentenceIndex].speaker, currentScene.sentences[sentenceIndex].actions,
                                           currentScene.sentences[sentenceIndex].music, currentScene.sentences[sentenceIndex].sound));
