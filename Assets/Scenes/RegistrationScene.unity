@@ -666,6 +666,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1651380887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6639029789642254418, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+  m_PrefabInstance: {fileID: 6639029789762500584}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1719a368e2abf99449548a4c66861f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1782060907 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6639029790708914644, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
@@ -873,9 +884,25 @@ PrefabInstance:
       propertyPath: debugText
       value: 
       objectReference: {fileID: 115839726}
+    - target: {fileID: 6639029789642254418, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+      propertyPath: CheckInput
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6639029789642254419, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1651380887}
+    - target: {fileID: 6639029789642254419, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheckInfo
+      objectReference: {fileID: 0}
     - target: {fileID: 6639029789691240084, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
       propertyPath: m_Name
       value: Registration_box
+      objectReference: {fileID: 0}
+    - target: {fileID: 6639029789691240084, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6639029789691240085, guid: f7b9ea6ba3a818d42a825208b1e333dd, type: 3}
       propertyPath: m_Pivot.x
@@ -1048,15 +1075,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074103777666, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074103777666, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074103777666, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074103777666, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1082,6 +1109,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Login_box
       objectReference: {fileID: 0}
+    - target: {fileID: 9157753074103777667, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157753074103777668, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -1095,13 +1130,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1341459679}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1341459680}
+    - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1341459679}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 1341459680}
+      objectReference: {fileID: 1341459679}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
       value: 2
@@ -1112,19 +1151,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SendLogin
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: SendPassword
+      value: SendLogin
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: LoadScene
+      value: SendPassword
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: RegistrationInfo, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: LoadSceneAndSendInfo, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1132,7 +1175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: LoadSceneAndSendInfo, Assembly-CSharp
+      value: RegistrationInfo, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 9157753074546603613, guid: 166429a397af39349b2fbdcdf315f2aa, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

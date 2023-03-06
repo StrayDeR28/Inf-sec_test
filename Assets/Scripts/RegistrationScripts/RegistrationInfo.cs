@@ -16,14 +16,16 @@ public class RegistrationInfo : MonoBehaviour
     [SerializeField] private TMP_Text debugText;
 
     private bool infoCheck = false;
+    private bool authorizationCheck = false;//Флаг для проверки на авторизованного пользователя (совпадение почты и пароля)
 
-    [SerializeField] private CheckInfoEnum CheckInput = CheckInfoEnum.None;
+    [SerializeField] private CheckInfoEnum checkInput = CheckInfoEnum.None;
 
     [SerializeField] private enum CheckInfoEnum { None = 0, LoginInfo = 1, RegistrationInfo = 2 };
+    public enum DebugErrorEnum { None = 0, EmptyInputFields = 1, AnuthorizedUser = 2 };
 
     public void CheckInfo()
     {
-        switch (CheckInput)
+        switch (checkInput)
         {
             case CheckInfoEnum.LoginInfo:
                 if (email.text.Length != 0 && password.text.Length != 0) { infoCheck = true; } 
@@ -36,41 +38,93 @@ public class RegistrationInfo : MonoBehaviour
 
     public void SendLogin()
     {
-        //код Германа
-        print("email: " + email.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("email: " + email.text);
+            authorizationCheck=true;//ЭТО временный вариант, очевидно менять флаг только после получения ответа от сервера. Тут же вызвать LoadScene из LSAS класса
+                                    //Если пользователь не авторизован - поставить infoCheck = false
+        }
+        
     }
     public void SendPassword()
     {
-        //код Германа
-        print("password: " + password.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("password: " + password.text);
+        }
     }
     public void SendNickname()
     {
-        //код Германа
-        print("nickname: " + nickname.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("nickname: " + nickname.text);
+        }
     }
     public void SendName()
     {
-        //код Германа
-        print("Name: " + userName.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("Name: " + userName.text);
+        }
     }
     public void SendSurname()
     {
-        //код Германа
-        print("Surname: " + surname.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("Surname: " + surname.text);
+        }
     }
     public void SendPatronymic()
     {
-        //код Германа
-        print("Patronymic: " + patronymic.text);
+        if (infoCheck == false)
+        {
+            ErrorInputInfo(DebugErrorEnum.EmptyInputFields);
+        }
+        else
+        {
+            //код Германа
+            print("Patronymic: " + patronymic.text);
+        }
     }
-    public void ErrorInputInfo()
+    public void ErrorInputInfo( DebugErrorEnum errorCode)
     {
-        // метод для вывода информации о регистрации (успешно, не успешно...)
-        debugText.text = "Заполните поля ввода";
+        switch (errorCode)
+        {
+            case DebugErrorEnum.EmptyInputFields:
+                debugText.text = "Заполните поля ввода";
+                break;
+            case DebugErrorEnum.AnuthorizedUser:
+                debugText.text = "Неправильный почтовый адресс или пароль";
+                break;
+        }
     }
-    public bool GetInfoCheck()
+    public bool GetAuthCheck()
     {
-        return(infoCheck);
+        return(authorizationCheck);
     }
 }

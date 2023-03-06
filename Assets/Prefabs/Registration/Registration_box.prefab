@@ -1782,14 +1782,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1719a368e2abf99449548a4c66861f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  email: {fileID: 0}
+  email: {fileID: 6639029790708914644}
   password: {fileID: 6639029789693404745}
   nickname: {fileID: 6639029789583340258}
   userName: {fileID: 6639029789459865075}
   surname: {fileID: 6639029789506534804}
   patronymic: {fileID: 6639029789924166663}
   debugText: {fileID: 0}
-  CheckInput: 2
+  checkInput: 2
 --- !u!114 &6639029789642254417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,7 +1894,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6639029789691240086
 MonoBehaviour:
   m_ObjectHideFlags: 0

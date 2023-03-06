@@ -362,7 +362,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &9157753074103777669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,14 +896,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1719a368e2abf99449548a4c66861f57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  email: {fileID: 0}
+  email: {fileID: 9157753075267534439}
   password: {fileID: 9157753074165933616}
   nickname: {fileID: 0}
   userName: {fileID: 0}
   surname: {fileID: 0}
   patronymic: {fileID: 0}
   debugText: {fileID: 0}
-  CheckInput: 1
+  checkInput: 1
 --- !u!114 &9157753074546603617
 MonoBehaviour:
   m_ObjectHideFlags: 0
