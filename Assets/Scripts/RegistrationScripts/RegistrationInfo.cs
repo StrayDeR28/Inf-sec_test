@@ -13,6 +13,8 @@ public class RegistrationInfo : MonoBehaviour
     [SerializeField] private TMP_InputField userName;
     [SerializeField] private TMP_InputField surname;
     [SerializeField] private TMP_InputField patronymic;
+    [SerializeField] private Toggle togglePatronymic;
+    [SerializeField] private Toggle togglePrivacyPolicy;
     [SerializeField] private TMP_Text debugText;
 
     private bool infoCheck = false;
@@ -31,7 +33,8 @@ public class RegistrationInfo : MonoBehaviour
                 if (email.text.Length != 0 && password.text.Length != 0) { infoCheck = true; } 
                 break;
             case CheckInfoEnum.RegistrationInfo:
-                if (email.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && surname.text.Length != 0 && patronymic.text.Length != 0) { infoCheck = true; }
+                if (email.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && 
+                   (surname.text.Length != 0 || togglePatronymic.isOn == true) && patronymic.text.Length != 0 && togglePrivacyPolicy.isOn == true) { infoCheck = true; }
                 break;
         }
     }
@@ -108,7 +111,14 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
-            print("Patronymic: " + patronymic.text);
+            if (togglePatronymic.isOn == true)
+            {
+                print("Patronymic: no patronymic");//имитация отправки на сервер при осутсвии отчества
+            }
+            else
+            {
+                print("Patronymic: " + patronymic.text);
+            }
         }
     }
     public void ErrorInputInfo( DebugErrorEnum errorCode)
