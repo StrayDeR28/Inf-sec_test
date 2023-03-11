@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0245567bfdb8f734cac3d6a6e6c28e6f, type: 3}
-  m_Name: 1
+  m_Name: FirstScene
   m_EditorClassIdentifier: 
   sentences:
   - text: "\u041A\u043E\u043D\u0438\u0447\u0438\u0432\u0430, \u043C\u043E\u0439 \u0432\u0435\u0440\u043D\u044B\u0439
@@ -53,7 +53,8 @@ MonoBehaviour:
       moveSpeed: 0
     music: {fileID: 8300000, guid: ac5aaaa8047e27144a0491e6e97d3823, type: 3}
     sound: {fileID: 0}
-  - text: "\u041D\u043E \u044F \u0441\u043E\u0431\u0440\u0430\u043B \u044E\u043D\u044B\u0445
+  - text: "!!!\u0412\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0438\u043C\u044F!!!
+      \u041D\u043E \u044F \u0441\u043E\u0431\u0440\u0430\u043B \u044E\u043D\u044B\u0445
       \u0414\u0436\u0443\u043D-\u0441\u0430\u043D\u043E\u0432, \u043E \u043A\u043E\u0442\u043E\u0440\u044B\u0445
       \u043F\u0440\u043E\u0440\u043E\u0447\u0438\u043B\u0438 \u0411\u043E\u0433\u0438.
       \u041E\u0434\u0438\u043D \u0438\u0437 \u043D\u0438\u0445 \u0442\u044B  \u0418\u0432\u0430\u043D
