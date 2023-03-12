@@ -12,9 +12,9 @@ public class NewRank : MonoBehaviour
     
     void Update()
     {
-        if (ProgressBar.value / 8 == 0 && ProgressBar.value != 0)
+        if (Input.GetKeyDown(KeyCode.Return) && activeNewRankMenu)
         {
-            Pause();
+            Resume();
         }
     }
     public void Resume()
