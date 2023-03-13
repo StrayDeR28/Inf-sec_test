@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -16,13 +14,13 @@ public class ShowPassword : MonoBehaviour
         {
             password.contentType = TMP_InputField.ContentType.Standard;
             password.ForceLabelUpdate();
-            gameObject.GetComponent<Image>().sprite = showPasswordSprite; 
+            GetComponent<Image>().sprite = showPasswordSprite; 
         }
         else if (password.contentType == TMP_InputField.ContentType.Standard)
         {
             password.contentType = TMP_InputField.ContentType.Password;
             password.ForceLabelUpdate();
-            gameObject.GetComponent<Image>().sprite = hidePasswordSprite;
+            GetComponent<Image>().sprite = hidePasswordSprite;
         }
     }
 }
