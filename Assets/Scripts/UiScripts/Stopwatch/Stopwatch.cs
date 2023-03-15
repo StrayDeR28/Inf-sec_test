@@ -6,8 +6,10 @@ using System;
 
 public class Stopwatch : MonoBehaviour
 {   
+    bool useOnceflag = true;
     float currentTime = 0;
     [SerializeField] private TMP_Text currentTimeText;
+    [SerializeField] GameObject pepasanObject;
 
     public IEnumerator RunStopwatch()
     {   
@@ -17,7 +19,12 @@ public class Stopwatch : MonoBehaviour
             currentTime += Time.deltaTime;
             TimeSpan time = TimeSpan.FromSeconds(currentTime);
             currentTimeText.text = time.ToString(@"mm\:ss");
-        }//если понадобиться - добавить проверку на время и отправить об этм инфу морской свинке
+            if (useOnceflag == true && currentTime >= 10.0 )//время, через которое свинка начинает подгонять игрока
+            {
+                pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("stopwatch");
+                useOnceflag = false;
+            }
+        }
     }
     public void StartStopwatch()
     {
@@ -27,7 +34,7 @@ public class Stopwatch : MonoBehaviour
     {
         StopAllCoroutines();
     }
-    public float GetCurrentTime()//обращаемся к этому при запросе времени
+    public float GetCurrentTime()//обращаемся к этому при запросе времени для бека
     {
         return currentTime;
     }
