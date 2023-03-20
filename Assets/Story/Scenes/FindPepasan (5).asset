@@ -82,7 +82,7 @@ MonoBehaviour:
     music: {fileID: 8300000, guid: 3ecb5dd29d300404588cac8e0e021d27, type: 3}
     sound: {fileID: 0}
   - text: "<\u041F\u043E\u0440\u0430 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C\u0441\u044F>"
-    speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
+    speaker: {fileID: 11400000, guid: 2030cd533581d4d48befdbbd7cc6d7e8, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
       spriteIndex: 1
