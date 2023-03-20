@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 using UnityEngine.UI;
 
 public class NewRank : MonoBehaviour
 {
     bool activeNewRankMenu = false;
 
+    public GameObject NewRankScreen;
     public GameObject NewRankMenu;
-    public Slider ProgressBar;
-    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && activeNewRankMenu)
@@ -19,14 +19,21 @@ public class NewRank : MonoBehaviour
     }
     public void Resume()
     {
-        NewRankMenu.SetActive(false);
-        Time.timeScale = 1f;
-        activeNewRankMenu = false;
+        DOTween.Sequence()
+        .Append(NewRankMenu.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 2))
+        .Append(NewRankScreen.GetComponent<Image>().DOColor(new Color(0,0,0,0), 1))
+        .AppendCallback(Animation);
     }
     public void Pause() 
     {
-        NewRankMenu.SetActive(true);
-        Time.timeScale = 0f;
-        activeNewRankMenu = true;
+        DOTween.Sequence()
+        .AppendCallback(Animation)
+        .Append(NewRankScreen.GetComponent<Image>().DOColor(new Color(0,0,0,0.5f), 1))
+        .Append(NewRankMenu.GetComponent<RectTransform>().DOScale(new Vector3(1,1,1), 2));
+    }
+    private void Animation()
+    {
+        activeNewRankMenu = !activeNewRankMenu;
+        NewRankScreen.SetActive(activeNewRankMenu);
     }
 }
