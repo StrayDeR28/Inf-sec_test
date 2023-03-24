@@ -1,13 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PeposanAnimation : MonoBehaviour
 {
-    [SerializeField] GameObject pepasanTalk;
+    [SerializeField] private List<Image> sprites;
+    [SerializeField] private GameObject pepasanDown;
+    [SerializeField] private GameObject pepasanTalk;
 
     private string state = "hidden";//состояния, для передачи между скриптами
 
@@ -15,10 +16,26 @@ public class PeposanAnimation : MonoBehaviour
     private Animator animator;
     bool flagAppear = true;
 
+    public void ChangeImageIdle()
+    {
+        int randomNumber = GetRandomListElement();
+        pepasanDown.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+        pepasanTalk.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+    }
+    public void ChangeImageHint()
+    {
+        pepasanDown.GetComponent<Image>().sprite = sprites[sprites.Count - 1].sprite;
+        pepasanTalk.GetComponent<Image>().sprite = sprites[sprites.Count - 1].sprite;
+    }
+
     public void ShowPepasan(string textContent)
     {
         if (flagAppear == true)
         {
+            if ((pepasanDown.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite) && (pepasanTalk.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite))//проверка на спрайт "подсказки"
+            {
+                ChangeImageIdle();
+            }
             animator = GetComponent<Animator>();
             animator.SetTrigger("Appear");
             flagAppear = false;
@@ -34,7 +51,7 @@ public class PeposanAnimation : MonoBehaviour
         {
             yield return new WaitForSeconds(0);
             currentTime += Time.deltaTime;
-            if (currentTime >= 10.0)//Время, через которое анимация смениться
+            if (currentTime >= 10.0)//Время, через которое анимация сменится
             {
                 currentTime = 0;
                 animator.SetTrigger("Disappear");
@@ -53,5 +70,10 @@ public class PeposanAnimation : MonoBehaviour
     public string GetState()
     {
         return state;
+    }
+    public int GetRandomListElement()
+    {
+        int randomNum = UnityEngine.Random.Range(0, sprites.Count-1);
+        return randomNum;
     }
 }
