@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/RegistrationScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/NovellScene.unity
+    path: Assets/Scenes/NovellScene1.unity
     guid: 9be236a6a7b4cc649b51b6d507b2b799
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
