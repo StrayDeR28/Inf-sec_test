@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -42,7 +43,14 @@ public class GameController : MonoBehaviour
                     bottomBar.StopTyping();
                     if (bottomBar.IsLastSentence())
                     {
-                        PlayScene((currentScene as StoryScene).nextScene);
+                        if ((currentScene as StoryScene).nextScene == null)
+                        {
+                            SceneManager.LoadScene("MapScene");
+                        }
+                        else
+                        {
+                            PlayScene((currentScene as StoryScene).nextScene);
+                        }
                     }
                     else
                     {
