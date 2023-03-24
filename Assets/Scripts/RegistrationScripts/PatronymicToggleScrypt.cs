@@ -16,6 +16,8 @@ public class PatronymicToggleScrypt : MonoBehaviour
         {
             patronymic.interactable=true;
         }*/
+        
         patronymic.interactable = !GetComponent<Toggle>().isOn;
+        patronymic.text = string.Empty;
     }
 }
