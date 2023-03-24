@@ -9,7 +9,7 @@ public class WebManager : MonoBehaviour
 
     public static PlayerData player = new PlayerData();
 
-    public void Login(Menu.MenuLogin window)
+    public void Login(MenuManager.MenuLogin window)
     {
         WWWForm form = new WWWForm();
 
@@ -19,7 +19,7 @@ public class WebManager : MonoBehaviour
 
         StartCoroutine(SendData(form));
     }
-    public void Signup(Menu.MenuSignup window)
+    public void Signup(MenuManager.MenuSignup window)
     {
         WWWForm form = new WWWForm();
 

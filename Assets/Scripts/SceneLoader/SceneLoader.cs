@@ -31,9 +31,11 @@ public class SceneLoader : MonoBehaviour
         {
             case "RegistrationScene":
             LoadNextScene = ScenesEnum.Registration;
+            LoadScene();
             break;
             case "NovellScene1":
             LoadNextScene = ScenesEnum.Novell1;
+            LoadScene();
             break;
         }
     }
