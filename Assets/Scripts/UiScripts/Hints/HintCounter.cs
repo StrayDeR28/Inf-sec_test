@@ -19,6 +19,7 @@ public class HintCounter : MonoBehaviour
         if (hintsCount > 0 && pepasanObject.GetComponent<PeposanAnimation>().GetState() == "hidden")
         {
             pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("hint");
+            pepasanObject.GetComponent<PeposanAnimation>().ChangeImageHint();
             hintsCount--;
             gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
         }

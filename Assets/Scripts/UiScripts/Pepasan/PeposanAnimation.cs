@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class PeposanAnimation : MonoBehaviour
 {
@@ -15,23 +16,39 @@ public class PeposanAnimation : MonoBehaviour
     float currentTime = 0;
     private Animator animator;
     bool flagAppear = true;
+    Sprite oldSprite;
+    Sprite newSprite;
+
 
     public void ChangeImageIdle()
     {
         int randomNumber = GetRandomListElement();
-        pepasanDown.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
-        pepasanTalk.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+        oldSprite = pepasanTalk.GetComponent<Image>().sprite;
+        newSprite = sprites[randomNumber].sprite;
+        if (newSprite != oldSprite)
+        {
+            pepasanDown.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+            DOTween.Sequence()
+            .Append(pepasanTalk.GetComponent<Image>().DOFade(0.4f,0.25f))
+            .AppendCallback(ChangeImage)
+            .Append(pepasanTalk.GetComponent<Image>().DOFade(1,0.25f));
+        }
     }
     public void ChangeImageHint()
     {
         pepasanDown.GetComponent<Image>().sprite = sprites[sprites.Count - 1].sprite;
-        pepasanTalk.GetComponent<Image>().sprite = sprites[sprites.Count - 1].sprite;
+        pepasanTalk.GetComponent<Image>().sprite = sprites[sprites.Count - 1].sprite; 
+    }
+    private void ChangeImage()
+    {
+        pepasanTalk.GetComponent<Image>().sprite = newSprite;
     }
 
     public void ShowPepasan(string textContent)
     {
         if (flagAppear == true)
         {
+            oldSprite = pepasanTalk.GetComponent<Image>().sprite;
             if ((pepasanDown.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite) && (pepasanTalk.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite))//проверка на спрайт "подсказки"
             {
                 ChangeImageIdle();
