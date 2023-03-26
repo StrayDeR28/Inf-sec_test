@@ -10,6 +10,8 @@ public class PeposanTalk : MonoBehaviour
     [SerializeField] PepasansTextObject supportPhrasesText;
     [SerializeField] PepasansTextObject winCaseText;
     [SerializeField] PepasansTextObject newTitleText;
+
+    private int elementNumber;
     public void Talk(string textContent)//переделать
     {
         switch(textContent)
@@ -18,7 +20,7 @@ public class PeposanTalk : MonoBehaviour
                 gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(timesUpText);
                 break;
             case "hint":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(hintsText);
+                gameObject.GetComponentInChildren<TMP_Text>().text = hintsText.sentences[elementNumber];
                 break;
             case "supportPhrase":
                 gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(supportPhrasesText);
@@ -35,5 +37,11 @@ public class PeposanTalk : MonoBehaviour
     {
         int randomNum = Random.Range(0, textObject.sentences.Count);
         return textObject.sentences[randomNum];
+    }
+    public void HintsStringToInt(string str)
+    {
+        int episode = int.Parse(str.Substring(1, 1));
+        int mission = int.Parse(str.Substring(3, 1));
+        elementNumber = (episode*mission)-1;
     }
 }

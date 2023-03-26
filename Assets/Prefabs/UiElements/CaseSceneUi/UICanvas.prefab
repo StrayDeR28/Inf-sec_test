@@ -282,7 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hintsCount: 0
+  currentLevel: 
   pepasanObject: {fileID: 1797277116770920418}
+  pepasanTextObject: {fileID: 1797277115869151230}
 --- !u!1 &3091495504290587479
 GameObject:
   m_ObjectHideFlags: 0
@@ -2396,6 +2398,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
+--- !u!1 &1797277115869151230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4516573443935067661, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
+  m_PrefabInstance: {fileID: 2764965657541337587}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1797277116770920418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4516573445113660945, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}

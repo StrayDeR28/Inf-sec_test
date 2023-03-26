@@ -49,7 +49,7 @@ public class PeposanAnimation : MonoBehaviour
         if (flagAppear == true)
         {
             oldSprite = pepasanTalk.GetComponent<Image>().sprite;
-            if ((pepasanDown.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite) && (pepasanTalk.GetComponent<Image>().sprite == sprites[sprites.Count - 1].sprite))//проверка на спрайт "подсказки"
+            if (textContent!="hint")// меняем только при "подсказке"
             {
                 ChangeImageIdle();
             }
