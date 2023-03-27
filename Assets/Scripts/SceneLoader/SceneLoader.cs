@@ -8,7 +8,7 @@ public class SceneLoader : MonoBehaviour
 {
     [SerializeField] private ScenesEnum LoadNextScene = ScenesEnum.Registration;
 
-    [SerializeField] private enum ScenesEnum {None=0, Registration=1, Novell1=2, Map=3};
+    [SerializeField] private enum ScenesEnum {None=0, Registration=1, Novell1=2, Map=3, Case=4, Novell2=5};
     public void LoadScene()
     {
         Time.timeScale = 1f;
@@ -23,6 +23,12 @@ public class SceneLoader : MonoBehaviour
             case ScenesEnum.Map:
                 SceneManager.LoadScene("MapScene");
                 break;
+            case ScenesEnum.Case:
+                SceneManager.LoadScene("CaseSceneMain");
+                break;
+            case ScenesEnum.Novell2:
+                SceneManager.LoadScene("NovellScene2");
+                break;
         }
     }
     public void StringToEnum( string str)
@@ -30,13 +36,16 @@ public class SceneLoader : MonoBehaviour
         switch (str)
         {
             case "RegistrationScene":
-            LoadNextScene = ScenesEnum.Registration;
-            LoadScene();
-            break;
+                LoadNextScene = ScenesEnum.Registration;
+                LoadScene();
+                break;
             case "NovellScene1":
-            LoadNextScene = ScenesEnum.Novell1;
-            LoadScene();
-            break;
+                LoadNextScene = ScenesEnum.Novell1;
+                LoadScene();
+                break;
+            case "NovellScene2":
+                LoadNextScene = ScenesEnum.Novell2;
+                break;
         }
     }
 }
