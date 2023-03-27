@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class PeposanTalk : MonoBehaviour
 {
-    [SerializeField] PepasansTextObject timesUpText;
-    [SerializeField] PepasansTextObject hintsText;
-    [SerializeField] PepasansTextObject supportPhrasesText;
-    [SerializeField] PepasansTextObject winCaseText;
-    [SerializeField] PepasansTextObject newTitleText;
+    [SerializeField] private PepasansTextObject timesUpText;
+    [SerializeField] private PepasansTextObject hintsText;
+    [SerializeField] private PepasansTextObject supportPhrasesText;
+    [SerializeField] private PepasansTextObject winCaseText;
+    [SerializeField] private PepasansTextObject newTitleText;
 
     private int elementNumber;
     public void Talk(string textContent)//переделать

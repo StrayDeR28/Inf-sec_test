@@ -2308,6 +2308,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7750536000330188676}
     m_Modifications:
+    - target: {fileID: 4516573444045286614, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
+      propertyPath: m_spriteAsset
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4516573445113660944, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
