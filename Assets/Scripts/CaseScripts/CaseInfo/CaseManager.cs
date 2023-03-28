@@ -8,13 +8,17 @@ public class CaseManager : MonoBehaviour
     [SerializeField] private CaseListSO prefabList;
     [SerializeField] private Canvas canvas;
     [SerializeField] private GameObject winScrene;
+    [SerializeField] private GameObject stopwatch;
+    [SerializeField] private GameObject hints;
+
+    private int caseNumber;
 
     private void Awake()
     {
-        int caseNumber = int.Parse(PlayerPrefs.GetString("levelIndex"));
+        caseNumber = int.Parse(PlayerPrefs.GetString("levelIndex"));
         Instantiate(prefabList.cases[caseNumber], canvas.transform);
         StartCoroutine(WaitForCaseComplete());
-
+        SendlevelIndextoHints();
     }
     public IEnumerator WaitForCaseComplete()
     {
@@ -23,9 +27,15 @@ public class CaseManager : MonoBehaviour
             yield return new WaitForSeconds(0);
             if(PlayerPrefs.GetString("levelIndex") == "done")
             {
+                stopwatch.GetComponent<Stopwatch>().StopStopwatch();
+                winScrene.GetComponent<CountRatingPoints>().TakeDifficultyLevel(caseNumber);
                 winScrene.SetActive(true);
                 StopCoroutine(WaitForCaseComplete());
             }
         }
+    }
+    public void SendlevelIndextoHints()
+    {
+        hints.GetComponent<HintCounter>().TakeCurrentLevel(caseNumber);
     }
 }

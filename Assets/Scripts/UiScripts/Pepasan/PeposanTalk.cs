@@ -38,10 +38,8 @@ public class PeposanTalk : MonoBehaviour
         int randomNum = Random.Range(0, textObject.sentences.Count);
         return textObject.sentences[randomNum];
     }
-    public void HintsStringToInt(string str)
+    public void TakeElementNumber(int elNumber)
     {
-        int episode = int.Parse(str.Substring(1, 1));
-        int mission = int.Parse(str.Substring(3, 1));
-        elementNumber = (episode*mission)-1;
+        elementNumber = elNumber;
     }
 }

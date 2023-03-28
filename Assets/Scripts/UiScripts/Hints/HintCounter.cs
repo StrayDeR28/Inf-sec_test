@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class HintCounter : MonoBehaviour
 {
     [SerializeField] private int hintsCount;
-    [SerializeField] private string currentLevel;
+    [SerializeField] private int currentLevel;
     [SerializeField] private GameObject pepasanObject;
     [SerializeField] private GameObject pepasanTextObject;
 
@@ -15,16 +15,14 @@ public class HintCounter : MonoBehaviour
     private void Awake()
     {
         //getCurrentHints - обратиться к беку за кол-вом подсказок
-        //getCurrentLevel - обратиться к беку за информацией о текущем кейсе (вид "e1m1")
         hintsCount = 3;
-        currentLevel = "e2m4";
         gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
     }
     public void UseHint()
     {
         if (hintsCount > 0 && pepasanObject.GetComponent<PeposanAnimation>().GetState() == "hidden")
         {
-            pepasanTextObject.GetComponent<PeposanTalk>().HintsStringToInt(currentLevel);
+            pepasanTextObject.GetComponent<PeposanTalk>().TakeElementNumber(currentLevel);
             pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("hint");
             pepasanObject.GetComponent<PeposanAnimation>().ChangeImageHint();
             if (pickedOnce)
@@ -39,5 +37,9 @@ public class HintCounter : MonoBehaviour
             gameObject.GetComponent<Button>().interactable = false;
         }
         //postCurrentHints - передаём на бек кол-во подсказок
+    }
+    public void TakeCurrentLevel(int curLevel)
+    {
+        currentLevel = curLevel;
     }
 }

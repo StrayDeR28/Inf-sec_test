@@ -11,6 +11,10 @@ public class Stopwatch : MonoBehaviour
     [SerializeField] private TMP_Text currentTimeText;
     [SerializeField] GameObject pepasanObject;
 
+    private void Awake()
+    {
+        StartStopwatch();
+    }
     public IEnumerator RunStopwatch()
     {   
         while (true)

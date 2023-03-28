@@ -324,7 +324,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Case 2
+  m_text: Case 3
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
   m_sharedMaterial: {fileID: -3333667536865059299, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
@@ -678,6 +678,8 @@ MonoBehaviour:
   prefabList: {fileID: 11400000, guid: 616ff8445658dc649b7cfb124bdf7c81, type: 2}
   canvas: {fileID: 1433959048}
   winScrene: {fileID: 3091495505059956719}
+  stopwatch: {fileID: 3091495505059956720}
+  hints: {fileID: 3091495505059956721}
 --- !u!1 &1943470765
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,7 +692,7 @@ GameObject:
   - component: {fileID: 1943470768}
   - component: {fileID: 1943470767}
   m_Layer: 5
-  m_Name: image2
+  m_Name: image3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.08611512, g: 1, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -912,6 +914,16 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3091495505854905515, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
   m_PrefabInstance: {fileID: 3091495505059956718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3091495505059956720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091495504676116176, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+  m_PrefabInstance: {fileID: 3091495505059956718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3091495505059956721 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3091495504190783705, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+  m_PrefabInstance: {fileID: 3091495505059956718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &7351720036180037923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -944,7 +956,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7351720036180037923}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: DoCasePrefabFromThat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
