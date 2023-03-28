@@ -30,11 +30,20 @@ public class RegistrationInfo : MonoBehaviour
         switch (checkInput)
         {
             case CheckInfoEnum.LoginInfo:
-                if (email.text.Length != 0 && password.text.Length != 0) { infoCheck = true; } 
+                //if (email.text.Length != 0 && password.text.Length != 0) { infoCheck = true; }
+                infoCheck = email.text.Length != 0 && password.text.Length != 0;
                 break;
             case CheckInfoEnum.RegistrationInfo:
-                if (email.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && 
-                   (surname.text.Length != 0 || togglePatronymic.isOn == true) && patronymic.text.Length != 0 && togglePrivacyPolicy.isOn == true) { infoCheck = true; }
+                //if (email.text.Length != 0 && password.text.Length != 0 && nickname.text.Length != 0 && userName.text.Length != 0 && 
+                //   (surname.text.Length != 0 || togglePatronymic.isOn == true) && patronymic.text.Length != 0 && togglePrivacyPolicy.isOn == true) { infoCheck = true; }
+                infoCheck = email.text.Length != 0 &&
+                            password.text.Length != 0 &&
+                            nickname.text.Length != 0 &&
+                            userName.text.Length != 0 &&
+                            surname.text.Length != 0 &&
+                            togglePrivacyPolicy.isOn &&
+                            (togglePatronymic.isOn ||
+                            patronymic.text.Length != 0);
                 break;
         }
     }
@@ -48,9 +57,13 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
+            ErrorInputInfo(DebugErrorEnum.None);
             print("email: " + email.text);
-            authorizationCheck=true;//ЭТО временный вариант, очевидно менять флаг только после получения ответа от сервера. Тут же вызвать LoadScene из LSAS класса
-                                    //Если пользователь не авторизован - поставить infoCheck = false
+            authorizationCheck=true;    
+            /*
+             * ЭТО временный вариант, очевидно менять флаг только после получения ответа от сервера. Тут же вызвать LoadScene из LSAS класса
+             * Если пользователь не авторизован - поставить infoCheck = false
+             */
         }
         
     }
@@ -63,6 +76,7 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
+            ErrorInputInfo(DebugErrorEnum.None);
             print("password: " + password.text);
         }
     }
@@ -75,6 +89,7 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
+            ErrorInputInfo(DebugErrorEnum.None);
             print("nickname: " + nickname.text);
         }
     }
@@ -87,6 +102,7 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
+            ErrorInputInfo(DebugErrorEnum.None);
             print("Name: " + userName.text);
         }
     }
@@ -99,6 +115,7 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
+            ErrorInputInfo(DebugErrorEnum.None);
             print("Surname: " + surname.text);
         }
     }
@@ -111,7 +128,8 @@ public class RegistrationInfo : MonoBehaviour
         else
         {
             //код Германа
-            if (togglePatronymic.isOn == true)
+            ErrorInputInfo(DebugErrorEnum.None);
+            if (togglePatronymic.isOn)
             {
                 print("Patronymic: no patronymic");//имитация отправки на сервер при осутсвии отчества
             }
@@ -125,6 +143,9 @@ public class RegistrationInfo : MonoBehaviour
     {
         switch (errorCode)
         {
+            case DebugErrorEnum.None:
+                debugText.text = "----";
+                break;
             case DebugErrorEnum.EmptyInputFields:
                 debugText.text = "Заполните поля ввода";
                 break;

@@ -268,7 +268,7 @@ MonoBehaviour:
   - text: "<\u0417\u0430\u043F\u043E\u043C\u043D\u0438\u0432 \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E
       \u043E \u0442\u0438\u0442\u0443\u043B\u0430\u0445, \u0432\u044B \u043F\u0440\u043E\u0434\u043B\u0436\u0430\u0435\u0442\u0435
       \u0440\u0430\u0437\u0433\u043E\u0432\u043E\u0440>"
-    speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
+    speaker: {fileID: 11400000, guid: 2030cd533581d4d48befdbbd7cc6d7e8, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
       spriteIndex: 1
