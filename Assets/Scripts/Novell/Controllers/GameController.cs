@@ -45,7 +45,7 @@ public class GameController : MonoBehaviour
                     {
                         if ((currentScene as StoryScene).nextScene == null)
                         {
-                            SceneManager.LoadScene("MapScene");
+                            gameObject.GetComponent<SceneLoader>().LoadScene();
                         }
                         else
                         {

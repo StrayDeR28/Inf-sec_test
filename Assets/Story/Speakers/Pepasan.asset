@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2433b5eded75443af10540cf7e0340, type: 3}
   m_Name: Pepasan
   m_EditorClassIdentifier: 
-  speakerName: Pepasan
-  textColor: {r: 1, g: 0.433389, b: 0, a: 1}
+  speakerName: 
+  textColor: {r: 0, g: 0, b: 0, a: 0}
+  sprites:
+  - {fileID: 21300000, guid: 5efd23edbb038184fa7580ccf878f353, type: 3}
+  - {fileID: 21300000, guid: dcd01fe9c54fc6d42989ce489574700a, type: 3}
+  prefab: {fileID: 472565078015113906, guid: b1da16ef2febafe449799d1cf55306e5, type: 3}

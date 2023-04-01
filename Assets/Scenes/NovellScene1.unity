@@ -798,6 +798,7 @@ GameObject:
   - component: {fileID: 1159638925}
   - component: {fileID: 1159638924}
   - component: {fileID: 1159638928}
+  - component: {fileID: 1159638929}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -907,6 +908,20 @@ MonoBehaviour:
   backgroundController: {fileID: 995301178}
   chooseController: {fileID: 1703933902}
   audioController: {fileID: 41893040}
+--- !u!114 &1159638929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159638923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 3
 --- !u!1 &1387861154
 GameObject:
   m_ObjectHideFlags: 0

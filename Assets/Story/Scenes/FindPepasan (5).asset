@@ -52,7 +52,7 @@ MonoBehaviour:
       actionType: 0
       coords: {x: 0, y: 0}
       moveSpeed: 0
-    - speaker: {fileID: 11400000, guid: 9693c8a035e5fbc4a8aa902706e1adc1, type: 2}
+    - speaker: {fileID: 11400000, guid: ebc71d3278d75674eb9efee6efb7d6fe, type: 2}
       spriteIndex: 0
       actionType: 1
       coords: {x: -400, y: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
       actionType: 0
       coords: {x: 0, y: 0}
       moveSpeed: 0
-    - speaker: {fileID: 11400000, guid: 9693c8a035e5fbc4a8aa902706e1adc1, type: 2}
+    - speaker: {fileID: 11400000, guid: ebc71d3278d75674eb9efee6efb7d6fe, type: 2}
       spriteIndex: 0
       actionType: 3
       coords: {x: 0, y: 0}
