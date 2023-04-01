@@ -10,13 +10,14 @@ public class PlayerData
     public string lastName;
 
     public string email;
-    public string nickname;
+    public string nickName;
 
     //титул
     //биты
     //прогресс по кейсам
     //пройденные сцены
     //подсказки
+    ErrorCode error;
     /*
         код ошибки
             0 - нет ошибки
@@ -26,3 +27,5 @@ public class PlayerData
             4 - ник занят
     */
 }
+
+enum ErrorCode {none, loginError, signupError}

@@ -24,11 +24,11 @@ public class WebManager : MonoBehaviour
         WWWForm form = new WWWForm();
 
         form.AddField("submit", "signup");
-        form.AddField("firstname", window.firstname.text);
-        form.AddField("middlename", window.middlename.text);
-        form.AddField("lastname", window.lastname.text);
+        form.AddField("firstname", window.firstName.text);
+        form.AddField("middlename", window.middleName.text);
+        form.AddField("lastname", window.lastName.text);
         form.AddField("email", window.email.text);
-        form.AddField("nickname", window.nickname.text);
+        form.AddField("nickname", window.nickName.text);
         form.AddField("password", window.password.text);
 
         StartCoroutine(SendData(form));
