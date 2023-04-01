@@ -2617,6 +2617,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 646596244}
+        m_TargetAssemblyTypeName: PeposanAnimation, Assembly-CSharp
+        m_MethodName: ShowPepasan
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: newTitle
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &529962576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,6 +2882,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4516573445113660944, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
   m_PrefabInstance: {fileID: 1041289806}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &646596244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4516573445113660941, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
+  m_PrefabInstance: {fileID: 1041289806}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639456912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89ea056aa708c3148ae4d1a48a0b1cc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &648841199
 GameObject:
   m_ObjectHideFlags: 0
@@ -3870,6 +3893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
   LoadNextScene: 4
 --- !u!114 &820840903
 MonoBehaviour:
@@ -7360,6 +7384,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 646596244}
+        m_TargetAssemblyTypeName: PeposanAnimation, Assembly-CSharp
+        m_MethodName: ShowPepasan
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: newTitle
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1587148126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7696,6 +7732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
   LoadNextScene: 4
 --- !u!114 &1663864427
 MonoBehaviour:
@@ -8634,6 +8671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
   LoadNextScene: 4
 --- !u!114 &1838130750
 MonoBehaviour:
@@ -10407,6 +10445,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 646596244}
+        m_TargetAssemblyTypeName: PeposanAnimation, Assembly-CSharp
+        m_MethodName: ShowPepasan
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: newTitle
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2133697996
