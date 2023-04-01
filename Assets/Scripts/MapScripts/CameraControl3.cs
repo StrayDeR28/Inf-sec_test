@@ -61,7 +61,7 @@ public class CameraControl3 : MonoBehaviour
         Target = GameObject.Find(obj);        
         Target.GetComponent<Button>().interactable = false;
         Target.GetComponent<Province>().ActiveTasks();
-        CamSize = 200;
+        CamSize = 150;
         Targetposition.y = Target.transform.position.y;
         Targetposition.x = Target.transform.position.x;
     }
