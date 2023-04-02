@@ -10,9 +10,15 @@ public class PeposanTalk : MonoBehaviour
     [SerializeField] private PepasansTextObject supportPhrasesText;
     [SerializeField] private PepasansTextObject winCaseText;
     [SerializeField] private PepasansTextObject newTitleText;
+    [SerializeField] private PepasansTextObject tutorialText;
 
     private int elementNumber;
-    public void Talk(string textContent)//переделать
+
+    private void Awake()
+    {
+        elementNumber = 0;
+    }
+    public void Talk(string textContent)
     {
         switch(textContent)
         { 
@@ -30,6 +36,9 @@ public class PeposanTalk : MonoBehaviour
                 break;
             case "newTitle":
                 gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(newTitleText);
+                break;
+            case "tutorial":
+                gameObject.GetComponentInChildren<TMP_Text>().text = tutorialText.sentences[elementNumber];
                 break;
         }
     }

@@ -5,12 +5,54 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
     [SerializeField] private GameObject pepasanObject;
+    [SerializeField] private GameObject pepasanObjectTutorial;
+    private bool tutorialFlag;
     private void Awake()
     {
+        tutorialFlag = TempStaticClass.tutorialDoneFlag;//Замениться на код Германа
+        if (tutorialFlag == false)
+        {
+            StartTutorial();
+        }
+        if (tutorialFlag == true)
+        {
+            TutorialDestroyAll();
+        }
         if (PlayerPrefs.GetString("levelIndex") == "done")
         {
             pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("winCase");
             PlayerPrefs.SetString("levelIndex", "");
         }
     }
+    public void StartTutorial()
+    {
+        pepasanObject.SetActive(false);//ставить активным после выполнения
+        pepasanObjectTutorial.SetActive(true);
+        pepasanObjectTutorial.GetComponent<PeposanAnimation>().ShowPepasan("tutorial");
+    }
+    public void SetTutorialFlag(bool flag)
+    {
+        //обращение к коду Германа с бека
+        tutorialFlag = flag;
+    }
+    public bool GetTutorialFlag()
+    {
+        return tutorialFlag;
+    }
+    public void TutorialProvinceClick()
+    {
+        if (tutorialFlag == false)
+        {
+            pepasanObjectTutorial.GetComponent<PepasanTutorial>().TutorialNextStep();
+        }
+    }
+    public void TutorialDestroyAll()
+    {
+        if (pepasanObjectTutorial)
+        {
+            pepasanObject.SetActive(true);
+            pepasanObjectTutorial.GetComponent<PepasanTutorial>().DestroyAll();
+        }
+    }
 }
+

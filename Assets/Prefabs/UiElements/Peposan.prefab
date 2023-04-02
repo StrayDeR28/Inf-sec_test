@@ -417,6 +417,7 @@ MonoBehaviour:
   supportPhrasesText: {fileID: 11400000, guid: 33ffd629e5f240f438e604c84ab4f35f, type: 2}
   winCaseText: {fileID: 11400000, guid: b5cc2ced07a592e4fb4a8297a7f89abf, type: 2}
   newTitleText: {fileID: 11400000, guid: 9fc9ccabad56b1b4cbcdb5fb0d1cdb9f, type: 2}
+  tutorialText: {fileID: 11400000, guid: 4ace7dfb2f2930547bf9b63bd2ef1a06, type: 2}
 --- !u!1 &4516573444045286616
 GameObject:
   m_ObjectHideFlags: 0

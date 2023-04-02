@@ -58,10 +58,19 @@ public class PeposanAnimation : MonoBehaviour
             flagAppear = false;
             pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
             state = "appeared";
-            StartCoroutine("HidePepasanEnum");
+            if (textContent != "tutorial")
+            {
+                StartCoroutine(HidePepasanEnum());
+            }
         }
     }
-    
+    public void PlayPepasanSequence(string textContent)
+    {
+        ChangeImageIdle();
+        pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
+    }
+
+
     public IEnumerator HidePepasanEnum()
     {
         while (true)
@@ -82,7 +91,7 @@ public class PeposanAnimation : MonoBehaviour
     {
         StopAllCoroutines();
         currentTime = 0;
-        StartCoroutine("HidePepasanEnum");
+        StartCoroutine(HidePepasanEnum());
     }
     public string GetState()
     {
