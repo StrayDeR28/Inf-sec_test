@@ -1,9 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CameraControl3 : MonoBehaviour
 {
     public Camera MainCamera;
+    public GameObject Names;
+    public GameObject Name;
     public float CamMoveSpeed = 2;
     public float CamSize = 540;
     float size;
@@ -58,10 +61,39 @@ public class CameraControl3 : MonoBehaviour
         }
         onStartPos = false;
         canMove = true;
+        Names.SetActive(false);
+        Name.SetActive(true);
+        switch(obj)
+        {
+            case "Province 1":
+                Name.GetComponent<TMP_Text>().text = "Зерокотто\n"+"<sprite=3><sprite=5>";
+                break;
+            case "Province 2":
+                Name.GetComponent<TMP_Text>().text = "Питамба\n"+"<sprite=8><sprite=5>";
+                break;
+            case "Province 3":
+                Name.GetComponent<TMP_Text>().text = "Андройдзидзю\n"+"<sprite=1><sprite=5>";
+                break;
+            case "Province 4":
+                Name.GetComponent<TMP_Text>().text = "Реляохоки\n";
+                break;
+            case "Province 5":
+                Name.GetComponent<TMP_Text>().text = "Чатаботто\n"+"<sprite=6><sprite=5>";
+                break;
+            case "Province 6":
+                Name.GetComponent<TMP_Text>().text = "Играхаги\n"+"<sprite=2><sprite=5>";
+                break;
+            case "Province 7":
+                Name.GetComponent<TMP_Text>().text = "Джаваскрипту\n"+"<sprite=0><sprite=5>";
+                break;
+            case "Province 8":
+                Name.GetComponent<TMP_Text>().text = "Напитонэ\n"+"<sprite=7><sprite=5>";
+                break;
+        }
         Target = GameObject.Find(obj);        
         Target.GetComponent<Button>().interactable = false;
         Target.GetComponent<Province>().ActiveTasks();
-        CamSize = 150;
+        CamSize = 170;
         Targetposition.y = Target.transform.position.y;
         Targetposition.x = Target.transform.position.x;
     }
@@ -72,6 +104,8 @@ public class CameraControl3 : MonoBehaviour
             Target.GetComponent<Province>().UnActiveTasks();
             Target.GetComponent<Button>().interactable = true;
         }
+        Names.SetActive(true);
+        Name.SetActive(false);
         onStartPos = true;
         canMove = true;
         CamSize = 540;
