@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a2433b5eded75443af10540cf7e0340, type: 3}
   m_Name: Emperor
   m_EditorClassIdentifier: 
-  speakerName: Emperor
+  speakerName: "\u0418\u043C\u043F\u0435\u0440\u0430\u0442\u043E\u0440"
   textColor: {r: 1, g: 0.48653832, b: 0, a: 1}
   sprites:
   - {fileID: 21300000, guid: a85a7d6835ac34649a5e0e591bbd9887, type: 3}

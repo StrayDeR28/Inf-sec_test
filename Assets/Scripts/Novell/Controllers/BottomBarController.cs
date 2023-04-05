@@ -29,6 +29,10 @@ public class BottomBarController : MonoBehaviour
 
     private void Start()
     {
+        if (sprites == null)
+        {
+            sprites = new Dictionary<Speaker, SpriteController>();
+        }
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
     }
@@ -165,6 +169,10 @@ public class BottomBarController : MonoBehaviour
 
     private void ActSpeaker(StoryScene.Sentence.Action action, bool isAnimated = true)
     {
+        if (sprites == null)
+        {
+            sprites = new Dictionary<Speaker, SpriteController>();
+        }
         SpriteController controller;
         if (!sprites.ContainsKey(action.speaker))
         {
