@@ -57,7 +57,7 @@ public class CameraControl3 : MonoBehaviour
         if (Target != null)
         {
             Target.GetComponent<Province>().UnActiveTasks();
-            Target.GetComponent<Button>().interactable = true;
+            Target.GetComponent<Image>().enabled = true;
         }
         onStartPos = false;
         canMove = true;
@@ -91,7 +91,7 @@ public class CameraControl3 : MonoBehaviour
                 break;
         }
         Target = GameObject.Find(obj);        
-        Target.GetComponent<Button>().interactable = false;
+        Target.GetComponent<Image>().enabled = false;
         Target.GetComponent<Province>().ActiveTasks();
         CamSize = 170;
         Targetposition.y = Target.transform.position.y;
@@ -102,7 +102,7 @@ public class CameraControl3 : MonoBehaviour
         if (Target != null)
         {
             Target.GetComponent<Province>().UnActiveTasks();
-            Target.GetComponent<Button>().interactable = true;
+            Target.GetComponent<Image>().enabled = true;
         }
         Names.SetActive(true);
         Name.SetActive(false);
