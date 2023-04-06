@@ -12,12 +12,10 @@ public class CameraControl3 : MonoBehaviour
     float size;
     public float CamSizeSpeed = 2;
     bool canMove;
-    bool onStartPos;
     public Vector3 Targetposition;
     GameObject Target;
     void Start()
     {
-        onStartPos = true;
         canMove = false;
         Targetposition.y = 540;
         Targetposition.x = 960;
@@ -33,10 +31,6 @@ public class CameraControl3 : MonoBehaviour
             canMove = false;
             MainCamera.transform.position = Targetposition;
             MainCamera.orthographicSize = CamSize;
-            if (!onStartPos) 
-            {
-                Target.GetComponent<Province>().ActiveTasks();
-            }
         }
         if (canMove)
         {
@@ -59,7 +53,6 @@ public class CameraControl3 : MonoBehaviour
             Target.GetComponent<Province>().UnActiveTasks();
             Target.GetComponent<Image>().enabled = true;
         }
-        onStartPos = false;
         canMove = true;
         Names.SetActive(false);
         Name.SetActive(true);
@@ -106,7 +99,6 @@ public class CameraControl3 : MonoBehaviour
         }
         Names.SetActive(true);
         Name.SetActive(false);
-        onStartPos = true;
         canMove = true;
         CamSize = 540;
         Targetposition.y = 540;
