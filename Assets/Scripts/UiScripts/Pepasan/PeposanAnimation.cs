@@ -16,18 +16,20 @@ public class PeposanAnimation : MonoBehaviour
     float currentTime = 0;
     private Animator animator;
     bool flagAppear = true;
+
+    int currentListIndex;
     Sprite oldSprite;
     Sprite newSprite;
 
 
     public void ChangeImageIdle()
     {
-        int randomNumber = GetRandomListElement();
+        GetRandomListElement();
         oldSprite = pepasanTalk.GetComponent<Image>().sprite;
-        newSprite = sprites[randomNumber].sprite;
+        newSprite = sprites[currentListIndex].sprite;
         if (newSprite != oldSprite)
         {
-            pepasanDown.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+            pepasanDown.GetComponent<Image>().sprite = sprites[currentListIndex].sprite;
             DOTween.Sequence()
             .Append(pepasanTalk.GetComponent<Image>().DOFade(0.4f,0.25f))
             .AppendCallback(ChangeImage)
@@ -97,9 +99,13 @@ public class PeposanAnimation : MonoBehaviour
     {
         return state;
     }
-    public int GetRandomListElement()
+    public void GetRandomListElement()
     {
-        int randomNum = UnityEngine.Random.Range(0, sprites.Count-1);
-        return randomNum;
+        int randomNumber = -1;
+        while (randomNumber == -1 || currentListIndex == randomNumber)
+        {
+            randomNumber = UnityEngine.Random.Range(0, sprites.Count-1);
+        }
+        currentListIndex = randomNumber;
     }
 }

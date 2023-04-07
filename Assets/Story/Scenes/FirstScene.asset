@@ -115,7 +115,7 @@ MonoBehaviour:
       moveSpeed: 0
     music: {fileID: 8300000, guid: ac5aaaa8047e27144a0491e6e97d3823, type: 3}
     sound: {fileID: 0}
-  - text: ...
+  - text: "<\u0442\u0435\u043A\u0441\u0442 \u0434\u043B\u0438\u043D\u0435\u0435>"
     speaker: {fileID: 11400000, guid: 2030cd533581d4d48befdbbd7cc6d7e8, type: 2}
     actions:
     - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
@@ -130,5 +130,5 @@ MonoBehaviour:
       moveSpeed: 0
     music: {fileID: 8300000, guid: ac5aaaa8047e27144a0491e6e97d3823, type: 3}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 6cfc3faa0f8be8b4fbdb4e7586df364b, type: 3}
+  background: {fileID: 21300000, guid: 76d0b0b292e712c4dbd26b1a673a4981, type: 3}
   nextScene: {fileID: 11400000, guid: 341af80a5195f764da7d4c91de41db16, type: 2}

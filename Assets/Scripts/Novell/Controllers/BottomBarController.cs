@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using static Unity.Burst.Intrinsics.X86.Avx;
+using System.Data;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -27,12 +29,8 @@ public class BottomBarController : MonoBehaviour
         PLAYING, SPEEDED_UP, COMPLETED
     }
 
-    private void Start()
+    private void Awake()
     {
-        if (sprites == null)
-        {
-            sprites = new Dictionary<Speaker, SpriteController>();
-        }
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
     }
@@ -169,10 +167,6 @@ public class BottomBarController : MonoBehaviour
 
     private void ActSpeaker(StoryScene.Sentence.Action action, bool isAnimated = true)
     {
-        if (sprites == null)
-        {
-            sprites = new Dictionary<Speaker, SpriteController>();
-        }
         SpriteController controller;
         if (!sprites.ContainsKey(action.speaker))
         {

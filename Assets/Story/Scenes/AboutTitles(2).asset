@@ -282,5 +282,5 @@ MonoBehaviour:
       moveSpeed: 0
     music: {fileID: 8300000, guid: ac5aaaa8047e27144a0491e6e97d3823, type: 3}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: d81cfead4e3127148b6f3ba3d966bdb4, type: 3}
+  background: {fileID: 21300000, guid: 31602b2fcab27284f972e52cc7082c99, type: 3}
   nextScene: {fileID: 11400000, guid: aad154f82563c9e4b860ed57c3cecc2b, type: 2}

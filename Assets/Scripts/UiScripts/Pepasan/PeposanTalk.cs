@@ -13,7 +13,7 @@ public class PeposanTalk : MonoBehaviour
     [SerializeField] private PepasansTextObject tutorialText;
 
     private int elementNumber;
-
+    private int currentListIndex;
     private void Awake()
     {
         elementNumber = 0;
@@ -43,9 +43,14 @@ public class PeposanTalk : MonoBehaviour
         }
     }
     public string GetRandomListElement(PepasansTextObject textObject)
-    {
-        int randomNum = Random.Range(0, textObject.sentences.Count);
-        return textObject.sentences[randomNum];
+    {   
+        int randomNumber = -1;
+        while (randomNumber == -1 || currentListIndex == randomNumber)
+        {
+            randomNumber = Random.Range(0, textObject.sentences.Count);
+        }
+        currentListIndex = randomNumber;
+        return textObject.sentences[currentListIndex];    
     }
     public void TakeElementNumber(int elNumber)
     {
