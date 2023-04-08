@@ -5,27 +5,25 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerData
 {
-    public string firstName;
-    public string middleName;
-    public string lastName;
+    public int id;
 
+    public string firstname;
+    public string middlename;
+    public string lastname;
     public string email;
-    public string nickName;
+    public string nickname;
+    
+    public int bits;
+    public int[] progress;
+    public int hints;
+    
+    public bool novel1;
+    public bool novel2;
+    public bool tutorial;
 
-    //титул
-    //биты
-    //прогресс по кейсам
-    //пройденные сцены
-    //подсказки
-    ErrorCode error;
-    /*
-        код ошибки
-            0 - нет ошибки
-            1 - нет пользователя
-            2 - неверный пароль
-            3 - пользователь занят           
-            4 - ник занят
-    */
+    public ErrorCode error;
+    public RankCode rank;
 }
 
-enum ErrorCode {none, loginError, signupError}
+public enum ErrorCode {none, loginEmailError, loginPassError, signupEmailError, signupNickError}
+public enum RankCode {junior, middle, senior, samurai}
