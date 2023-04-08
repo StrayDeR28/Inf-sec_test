@@ -53,6 +53,10 @@ public class SceneLoader : MonoBehaviour
             case "NovellScene2":
                 LoadNextScene = ScenesEnum.Novell2;
                 break;
+            case "Map":
+                LoadNextScene = ScenesEnum.Map;
+                LoadScene();
+                break;
         }
     }
     public IEnumerator LoadSceneAsync()

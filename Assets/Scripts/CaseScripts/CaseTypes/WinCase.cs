@@ -7,6 +7,7 @@ public class WinCase : MonoBehaviour
     public void WinCasePlayerPrefs()
     {
         //здесь условия победы
-        PlayerPrefs.SetString("levelIndex", "done");
+        
+        PlayerPrefs.SetString("caseDone", "done");
     }
 }

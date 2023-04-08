@@ -13,6 +13,8 @@ public class PepasanTutorial : MonoBehaviour
     [SerializeField] private GameObject caseBackground;
     [SerializeField] private GameObject mainBackground;
 
+    [SerializeField] private WebManager webManager;
+
     private int step = 0;
     public void TutorialNextStep()
     {
@@ -40,7 +42,11 @@ public class PepasanTutorial : MonoBehaviour
                     progressbarBackground.SetActive(false);
                     provinceBackground.SetActive(true);
                     caseBackground.SetActive(true);
-                    TempStaticClass.tutorialDoneFlag = true;//временны класс. В финале замениться кодом Германа
+                    
+                    webManager.DataUpdate("tutorial", 1);
+                    WebManager.player.tutorial = true;
+
+                    //TempStaticClass.tutorialDoneFlag = true;//временны класс. В финале замениться кодом Германа
                     break;
             }
             pepasanTalkTutorial.GetComponent<PeposanTalk>().TakeElementNumber(step);

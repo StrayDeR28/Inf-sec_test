@@ -590,6 +590,7 @@ GameObject:
   - component: {fileID: 1494702455}
   - component: {fileID: 1494702454}
   - component: {fileID: 1494702457}
+  - component: {fileID: 1494702458}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -680,6 +681,20 @@ MonoBehaviour:
   winScrene: {fileID: 3091495505059956719}
   stopwatch: {fileID: 3091495505059956720}
   hints: {fileID: 3091495505059956721}
+--- !u!114 &1494702458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1494702453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e493ce1d10e3474789dfc326b835fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  www: http://localhost/pudge/signup.php
+  menu: {fileID: 0}
 --- !u!1 &1943470765
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,6 +810,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 76
       objectReference: {fileID: 0}
+    - target: {fileID: 3091495504190783698, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: webManager
+      value: 
+      objectReference: {fileID: 1494702458}
     - target: {fileID: 3091495504190783703, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -831,6 +850,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -0.099998474
       objectReference: {fileID: 0}
+    - target: {fileID: 3091495505854905508, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: webManager
+      value: 
+      objectReference: {fileID: 1494702458}
     - target: {fileID: 3091495505854905512, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

@@ -14,7 +14,7 @@ public class PlayerData
     public string nickname;
     
     public int bits;
-    public int[] progress;
+    public int[] progress; // = new int[28];
     public int hints;
     
     public bool novel1;

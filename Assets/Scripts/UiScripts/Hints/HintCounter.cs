@@ -11,11 +11,13 @@ public class HintCounter : MonoBehaviour
     [SerializeField] private GameObject pepasanObject;
     [SerializeField] private GameObject pepasanTextObject;
 
+    [SerializeField] private WebManager webManager;
+
     private bool pickedOnce=true; 
     private void Awake()
     {
         //getCurrentHints - обратиться к беку за кол-вом подсказок
-        hintsCount = 3;
+        hintsCount = WebManager.player.hints;
         gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
     }
     public void UseHint()
@@ -28,6 +30,8 @@ public class HintCounter : MonoBehaviour
             if (pickedOnce)
             {
                 hintsCount--;
+                webManager.DataUpdate("hints", hintsCount);
+                WebManager.player.hints = hintsCount;
                 gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
                 pickedOnce=false;
             }

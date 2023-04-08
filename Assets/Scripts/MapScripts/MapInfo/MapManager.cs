@@ -9,7 +9,8 @@ public class MapManager : MonoBehaviour
     private bool tutorialFlag;
     private void Awake()
     {
-        tutorialFlag = TempStaticClass.tutorialDoneFlag;//Замениться на код Германа
+        //tutorialFlag = TempStaticClass.tutorialDoneFlag;//Замениться на код Германа
+        tutorialFlag = WebManager.player.tutorial;
         if (tutorialFlag == false)
         {
             StartTutorial();
@@ -18,10 +19,11 @@ public class MapManager : MonoBehaviour
         {
             TutorialDestroyAll();
         }
-        if (PlayerPrefs.GetString("levelIndex") == "done")
+        if (PlayerPrefs.GetString("caseDone") == "done")
         {
             pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("winCase");
             PlayerPrefs.SetString("levelIndex", "");
+            PlayerPrefs.SetString("caseDone", "");
         }
     }
     public void StartTutorial()
