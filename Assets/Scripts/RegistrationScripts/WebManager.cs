@@ -7,6 +7,10 @@ public class WebManager : MonoBehaviour
 {
     public string www;
 
+    public MenuManager menu;
+
+    enum ActionType {Login, Signup, Update}
+
     public static PlayerData player = new PlayerData();
 
     public void Login(MenuManager.MenuLogin window)
@@ -17,7 +21,7 @@ public class WebManager : MonoBehaviour
         form.AddField("email", window.email.text);
         form.AddField("password", window.password.text);
 
-        StartCoroutine(SendData(form));
+        StartCoroutine(SendData(form, ActionType.Login));
     }
     public void Signup(MenuManager.MenuSignup window)
     {
@@ -31,14 +35,21 @@ public class WebManager : MonoBehaviour
         form.AddField("nickname", window.nickName.text);
         form.AddField("password", window.password.text);
 
-        StartCoroutine(SendData(form));
+        StartCoroutine(SendData(form, ActionType.Signup));
     }
 
-    IEnumerator SendData(WWWForm form)
+    public void Update()
+    {
+
+    }
+
+    IEnumerator SendData(WWWForm form, ActionType type)
     {
         using (UnityWebRequest request = UnityWebRequest.Post(www, form))
         {
             yield return request.SendWebRequest();
+
+            //while(!request.isDone) yield return null;
 
             if(request.result != UnityWebRequest.Result.Success)
             {
@@ -48,6 +59,40 @@ public class WebManager : MonoBehaviour
             {
                 Debug.Log(request.downloadHandler.text);
                 player = JsonUtility.FromJson<PlayerData>(request.downloadHandler.text);
+                
+                switch(type)
+                {
+                    case ActionType.Login:
+                        switch(player.error)
+                        {
+                            case ErrorCode.loginEmailError:
+                                menu.loginWindow.emailError.gameObject.SetActive(true);
+                                menu.loginWindow.email.image.sprite = menu.errorLongField;
+                                break;
+                            case ErrorCode.loginPassError:
+                                menu.loginWindow.passwordError.gameObject.SetActive(true);
+                                menu.loginWindow.password.image.sprite = menu.errorLongField;
+                                break;
+                            default:
+                                // сцена
+                                print("красава");
+                                break;
+                        }
+                        break;
+                    case ActionType.Signup:
+                        switch(player.error)
+                        {
+                            case ErrorCode.signupEmailError:
+                                menu.signupWindow.emailError.gameObject.SetActive(true);
+                                menu.signupWindow.email.image.sprite = menu.errorLongField;
+                                break;
+                            case ErrorCode.signupNickError:
+                                menu.signupWindow.nicknameError.gameObject.SetActive(true);
+                                menu.signupWindow.nickName.image.sprite = menu.errorLongField;
+                                break;
+                        }
+                        break;
+                }
             }
         }
     }

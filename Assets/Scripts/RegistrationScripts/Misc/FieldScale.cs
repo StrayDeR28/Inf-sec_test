@@ -15,4 +15,12 @@ public class FieldScale : MonoBehaviour
     {
         GetComponent<RectTransform>().sizeDelta = new Vector2(465f, 55f);
     }
+    public void SizeUpShort()
+    {
+        GetComponent<RectTransform>().sizeDelta = new Vector2(233f, 67f);
+    }
+    public void SizeDownShort()
+    {
+        GetComponent<RectTransform>().sizeDelta = new Vector2(221f, 55f);
+    }
 }
