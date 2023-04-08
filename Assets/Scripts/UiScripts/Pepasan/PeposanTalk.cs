@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PeposanTalk : MonoBehaviour
 {
+    [SerializeField] private TMP_Text peposanTextField;
     [SerializeField] private PepasansTextObject timesUpText;
     [SerializeField] private PepasansTextObject hintsText;
     [SerializeField] private PepasansTextObject supportPhrasesText;
@@ -23,22 +24,22 @@ public class PeposanTalk : MonoBehaviour
         switch(textContent)
         { 
             case "stopwatch":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(timesUpText);
+                peposanTextField.text = GetRandomListElement(timesUpText);
                 break;
             case "hint":
-                gameObject.GetComponentInChildren<TMP_Text>().text = hintsText.sentences[elementNumber];
+                peposanTextField.text = hintsText.sentences[elementNumber];
                 break;
             case "supportPhrase":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(supportPhrasesText);
+                peposanTextField.text = GetRandomListElement(supportPhrasesText);
                 break;
             case "winCase":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(winCaseText);
+                peposanTextField.text = GetRandomListElement(winCaseText);
                 break;
             case "newTitle":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(newTitleText);
+                peposanTextField.text = GetRandomListElement(newTitleText);
                 break;
             case "tutorial":
-                gameObject.GetComponentInChildren<TMP_Text>().text = tutorialText.sentences[elementNumber];
+                peposanTextField.text = tutorialText.sentences[elementNumber];
                 break;
         }
     }

@@ -32,11 +32,13 @@ public class PepasanTutorial : MonoBehaviour
                     break;
                 case 3:
                     provinceBackground.SetActive(false);
+                    provinceBackground.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                     progressbarBackground.SetActive(true);
                     pepasanTalkTutorial.GetComponent<Button>().interactable = true;
                     break;
                 case 5:
                     progressbarBackground.SetActive(false);
+                    provinceBackground.SetActive(true);
                     caseBackground.SetActive(true);
                     TempStaticClass.tutorialDoneFlag = true;//временны класс. В финале замениться кодом Германа
                     break;
