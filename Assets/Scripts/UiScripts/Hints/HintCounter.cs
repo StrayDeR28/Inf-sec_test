@@ -22,7 +22,7 @@ public class HintCounter : MonoBehaviour
     }
     public void UseHint()
     {
-        if (hintsCount > 0 && pepasanObject.GetComponent<PeposanAnimation>().GetState() == "hidden")
+        if ((hintsCount > 0 || pickedOnce == false) && pepasanObject.GetComponent<PeposanAnimation>().GetState() == "hidden")
         {
             pepasanTextObject.GetComponent<PeposanTalk>().TakeElementNumber(currentLevel);
             pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("hint");

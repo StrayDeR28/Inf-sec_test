@@ -81,13 +81,17 @@ public class PeposanAnimation : MonoBehaviour
             currentTime += Time.deltaTime;
             if (currentTime >= 10.0)//Время, через которое анимация сменится
             {
-                currentTime = 0;
-                animator.SetTrigger("Disappear");
-                flagAppear = true;
-                state = "hidden";
-                StopAllCoroutines();
+                ForceHide();
             }
         }
+    }
+    public void ForceHide()
+    {
+        currentTime = 0;
+        animator.SetTrigger("Disappear");
+        flagAppear = true;
+        state = "hidden";
+        StopAllCoroutines();
     }
     public void ResetTime()//вызывается нажатием на кнопку
     {

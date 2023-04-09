@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PepasanTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject pepasanTalkTutorial;
-    [SerializeField] private GameObject pepasanObject;
+    [SerializeField] private Button nextTextButton;
 
     [SerializeField] private GameObject progressbarBackground;
     [SerializeField] private GameObject provinceBackground;
@@ -30,13 +30,13 @@ public class PepasanTutorial : MonoBehaviour
                 case 2:
                     progressbarBackground.SetActive(false);
                     provinceBackground.SetActive(true);
-                    pepasanTalkTutorial.GetComponent<Button>().interactable=false;
+                    nextTextButton.interactable = false;
                     break;
                 case 3:
                     provinceBackground.SetActive(false);
                     provinceBackground.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                     progressbarBackground.SetActive(true);
-                    pepasanTalkTutorial.GetComponent<Button>().interactable = true;
+                    nextTextButton.interactable = true;
                     break;
                 case 5:
                     progressbarBackground.SetActive(false);
