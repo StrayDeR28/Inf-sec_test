@@ -814,6 +814,22 @@ PrefabInstance:
       propertyPath: webManager
       value: 
       objectReference: {fileID: 1494702458}
+    - target: {fileID: 3091495504190783700, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5f98dd926922d64b87c72411e18e457, type: 3}
+    - target: {fileID: 3091495504190783700, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091495504190783703, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091495504190783703, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 52267a1e9e41cac4fa86a519abbed50e, type: 3}
     - target: {fileID: 3091495504190783703, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -961,6 +977,50 @@ PrefabInstance:
     - target: {fileID: 7750536000330188696, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
       propertyPath: m_Name
       value: UICanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269584, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cc8224a9fd125ae4f94bfd5020b682df, type: 3}
+    - target: {fileID: 7750536001421269585, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269585, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9e670b4f8b0e16641b6151af4d44d58a, type: 3}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 98
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750536001421269586, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -89
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 481bdd57947ff6143972e5fd83afcb11, type: 3}
