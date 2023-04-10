@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.Events;
 
 public class MenuManager : MonoBehaviour
 {
@@ -43,6 +42,29 @@ public class MenuManager : MonoBehaviour
     public MenuSignup signupWindow;
     
     public WebManager webManager;
+
+    public void WebError()
+    {
+        switch(WebManager.player.error)
+        {
+            case ErrorCode.loginEmailError:
+                loginWindow.emailError.gameObject.SetActive(true);
+                loginWindow.email.image.sprite = errorLongField;
+                break;
+            case ErrorCode.loginPassError:
+                loginWindow.passwordError.gameObject.SetActive(true);
+                loginWindow.password.image.sprite = errorLongField;
+                break;
+            case ErrorCode.signupEmailError:
+                signupWindow.emailError.gameObject.SetActive(true);
+                signupWindow.email.image.sprite = errorLongField;
+                break;
+            case ErrorCode.signupNickError:
+                signupWindow.nicknameError.gameObject.SetActive(true);
+                signupWindow.nickName.image.sprite = errorLongField;
+                break;
+        }
+    }
 
     public void Login()
     {
