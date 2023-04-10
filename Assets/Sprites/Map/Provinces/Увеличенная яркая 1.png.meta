@@ -20,7 +20,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u044F\u0440\u043A\u0430\u044F
+        1_2"
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 168
+        width: 6505
+        height: 6229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a847420cb203074eaa7b6d173ce3196
+      internalID: -1001197715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +148,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u044F\u0440\u043A\u0430\u044F 1_0": 2049373625
+      "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u044F\u0440\u043A\u0430\u044F 1_1": 25843369
+      "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u044F\u0440\u043A\u0430\u044F 1_2": -1001197715
+      "\u0423\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F \u044F\u0440\u043A\u0430\u044F 1_3": -2097998690
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

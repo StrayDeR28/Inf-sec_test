@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,7 +115,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F
+        3_9"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 333
+        width: 7686
+        height: 5499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4297626e84f8948ac6a27a898a4370
+      internalID: -575941292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +148,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_0": 197021287
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_1": 1749275410
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_10": -618332073
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_11": -1337345564
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_12": -707334075
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_13": 2049463645
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_14": 1302007701
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_15": 1832176707
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_16": -2037899673
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_2": 759539591
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_3": -1992891344
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_4": 1087198429
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_5": -143856329
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_6": 716392822
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_7": -530631867
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_8": 1843152394
+      "\u0421\u0432\u0435\u0442\u043B\u0430\u044F \u0443\u0432\u0435\u043B\u0438\u0447\u0435\u043D\u043D\u0430\u044F 3_9": -575941292
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

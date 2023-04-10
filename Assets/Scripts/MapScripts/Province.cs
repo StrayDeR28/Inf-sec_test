@@ -1,8 +1,11 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Province : MonoBehaviour
 {
     public GameObject Task1, Task2, Task3, Task4;
+    public Sprite NewSprite;
+    public GameObject ThisProvince;
     bool[] IsPassed = {false, false, false, false};
     [SerializeField] private ProvincesEnum ProvinceNumber;
     [SerializeField] private enum ProvincesEnum
@@ -20,6 +23,10 @@ public class Province : MonoBehaviour
         for(int i = 0; i < 4; i++)
         {
             if(WebManager.player.progress[(int)ProvinceNumber * 4 + i] > 0) IsPassed[i] = true;
+        }
+        if(IsPassed[0] || IsPassed[1] || IsPassed[2] || IsPassed[3]) 
+        {
+            ThisProvince.GetComponent<Image>().sprite = NewSprite;
         }
     }
     public void ActiveTasks()
