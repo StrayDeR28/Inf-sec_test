@@ -590,6 +590,10 @@ MonoBehaviour:
   Task2: {fileID: 1933849763}
   Task3: {fileID: 1012323906}
   Task4: {fileID: 211128484}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &72370660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2074,6 +2078,10 @@ MonoBehaviour:
   Task2: {fileID: 36188864}
   Task3: {fileID: 1569504564}
   Task4: {fileID: 420784669}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &266947121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4693,8 +4701,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 143.97075, y: -134.42}
-  m_SizeDelta: {x: 164.9983, y: 100.302}
+  m_AnchoredPosition: {x: 158.98308, y: -147.31154}
+  m_SizeDelta: {x: 166.283, y: 101.8465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820840899
 MonoBehaviour:
@@ -4986,7 +4994,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 9e670b4f8b0e16641b6151af4d44d58a, type: 3}
+    m_HighlightedSprite: {fileID: 21300000, guid: 27302420750cbd3408f4b8c4375d57e7, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -5033,7 +5041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: cc8224a9fd125ae4f94bfd5020b682df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c6477282dabf90446ba96c9c047072ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6502,8 +6510,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 107.55582, y: -51.228577}
-  m_SizeDelta: {x: 112.3846, y: 101.0579}
+  m_AnchoredPosition: {x: 122.284485, y: -62.83899}
+  m_SizeDelta: {x: 113.2597, y: 102.6142}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153465570
 MonoBehaviour:
@@ -6712,6 +6720,10 @@ MonoBehaviour:
   Task2: {fileID: 1943542841}
   Task3: {fileID: 240028728}
   Task4: {fileID: 1457751268}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1159353994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7746,6 +7758,10 @@ MonoBehaviour:
   Task2: {fileID: 1904576907}
   Task3: {fileID: 1949721979}
   Task4: {fileID: 544307723}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1359057633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8637,6 +8653,10 @@ MonoBehaviour:
   Task2: {fileID: 816430327}
   Task3: {fileID: 648841199}
   Task4: {fileID: 1284818721}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1564621651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9454,8 +9474,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 93.52571, y: -154.04356}
-  m_SizeDelta: {x: 196.6841, y: 122.0377}
+  m_AnchoredPosition: {x: 108.14522, y: -167.23735}
+  m_SizeDelta: {x: 198.2156, y: 123.9169}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663864423
 MonoBehaviour:
@@ -9934,6 +9954,10 @@ MonoBehaviour:
   Task2: {fileID: 1339063284}
   Task3: {fileID: 164190117}
   Task4: {fileID: 1980801993}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1755529843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10102,6 +10126,10 @@ MonoBehaviour:
   Task2: {fileID: 1722993489}
   Task3: {fileID: 444050391}
   Task4: {fileID: 145364303}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1762397233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10528,8 +10556,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 166.50998, y: -65.05339}
-  m_SizeDelta: {x: 122.2734, y: 105.3897}
+  m_AnchoredPosition: {x: 181.69778, y: -76.876755}
+  m_SizeDelta: {x: 123.2255, y: 107.0126}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838130746
 MonoBehaviour:
@@ -11055,6 +11083,10 @@ MonoBehaviour:
   Task2: {fileID: 820840897}
   Task3: {fileID: 1838130744}
   Task4: {fileID: 1153465568}
+  IsPassed1: 0
+  IsPassed2: 0
+  IsPassed3: 0
+  IsPassed4: 0
 --- !u!114 &1896812675
 MonoBehaviour:
   m_ObjectHideFlags: 0
