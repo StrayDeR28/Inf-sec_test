@@ -590,10 +590,7 @@ MonoBehaviour:
   Task2: {fileID: 1933849763}
   Task3: {fileID: 1012323906}
   Task4: {fileID: 211128484}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 3
 --- !u!114 &72370660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2078,10 +2075,7 @@ MonoBehaviour:
   Task2: {fileID: 36188864}
   Task3: {fileID: 1569504564}
   Task4: {fileID: 420784669}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 6
 --- !u!114 &266947121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6334,8 +6328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e493ce1d10e3474789dfc326b835fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  www: http://localhost/pudge/signup.php
-  menu: {fileID: 0}
+  OnError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1134359373
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,10 +6715,7 @@ MonoBehaviour:
   Task2: {fileID: 1943542841}
   Task3: {fileID: 240028728}
   Task4: {fileID: 1457751268}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 2
 --- !u!114 &1159353994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7758,10 +7750,7 @@ MonoBehaviour:
   Task2: {fileID: 1904576907}
   Task3: {fileID: 1949721979}
   Task4: {fileID: 544307723}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 4
 --- !u!114 &1359057633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8653,10 +8642,7 @@ MonoBehaviour:
   Task2: {fileID: 816430327}
   Task3: {fileID: 648841199}
   Task4: {fileID: 1284818721}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 5
 --- !u!114 &1564621651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9954,10 +9940,7 @@ MonoBehaviour:
   Task2: {fileID: 1339063284}
   Task3: {fileID: 164190117}
   Task4: {fileID: 1980801993}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  ProvinceNumber: 1
 --- !u!114 &1755529843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10077,7 +10060,6 @@ GameObject:
   - component: {fileID: 1762397235}
   - component: {fileID: 1762397234}
   - component: {fileID: 1762397233}
-  - component: {fileID: 1762397232}
   - component: {fileID: 1762397236}
   m_Layer: 0
   m_Name: Province 8
@@ -10110,26 +10092,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1511.7189, y: -482.49298}
   m_SizeDelta: {x: 430.2123, y: 337.3903}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1762397232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762397230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e50b9f3b51be874babf31c30abd04cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Task1: {fileID: 383402195}
-  Task2: {fileID: 1722993489}
-  Task3: {fileID: 444050391}
-  Task4: {fileID: 145364303}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
 --- !u!114 &1762397233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10173,19 +10135,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1762397234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1127418117}
-        m_TargetAssemblyTypeName: CameraControl3, Assembly-CSharp
-        m_MethodName: SetTarget
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Province 8
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1762397234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11079,14 +11029,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e50b9f3b51be874babf31c30abd04cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Task1: {fileID: 1663864421}
-  Task2: {fileID: 820840897}
-  Task3: {fileID: 1838130744}
-  Task4: {fileID: 1153465568}
-  IsPassed1: 0
-  IsPassed2: 0
-  IsPassed3: 0
-  IsPassed4: 0
+  Task1: {fileID: 1153465568}
+  Task2: {fileID: 1838130744}
+  Task3: {fileID: 820840897}
+  Task4: {fileID: 1663864421}
+  ProvinceNumber: 0
 --- !u!114 &1896812675
 MonoBehaviour:
   m_ObjectHideFlags: 0

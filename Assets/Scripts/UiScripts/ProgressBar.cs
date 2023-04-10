@@ -13,13 +13,13 @@ public class ProgressBar : MonoBehaviour
     public GameObject Congratulations;
     public Slider slider;
     int progress;
-    public void OnSliderChanged()
+    void Awake()
     {
-        bits.SetText((progress%8).ToString());
-        bytes.text = (progress/8).ToString();
-        if(progress%8 == 0)
+        bits.SetText((WebManager.player.bits%8).ToString());
+        bytes.text = (WebManager.player.bits/8).ToString();
+        /*if(WebManager.player.bits%8 == 0)
         {
-            switch (progress/8)
+            switch (WebManager.player.bits/8)
             {
                 case 1:
                     NewRankMiddle.GetComponent<NewRank>().Pause();
@@ -31,7 +31,7 @@ public class ProgressBar : MonoBehaviour
                     Congratulations.GetComponent<NewRank>().Pause();
                     break;
             }
-        }
+        }*/
     }
 //для отладки
     public void UpdateProgress()
