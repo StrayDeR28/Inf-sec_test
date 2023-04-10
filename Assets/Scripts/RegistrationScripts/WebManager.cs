@@ -10,6 +10,8 @@ public class WebManager : MonoBehaviour
 
     public UnityEvent OnError;
 
+    enum ActionType {Login, Sugnup, Update}
+
     public static PlayerData player = new PlayerData();
 
     public void Login(MenuManager.MenuLogin window)
@@ -20,7 +22,7 @@ public class WebManager : MonoBehaviour
         form.AddField("email", window.email.text);
         form.AddField("password", window.password.text);
 
-        StartCoroutine(SendData(form));
+        StartCoroutine(SendData(form, ActionType.Login));
     }
     public void Signup(MenuManager.MenuSignup window)
     {
@@ -34,7 +36,7 @@ public class WebManager : MonoBehaviour
         form.AddField("nickname", window.nickName.text);
         form.AddField("password", window.password.text);
 
-        StartCoroutine(SendData(form));
+        StartCoroutine(SendData(form, ActionType.Sugnup));
     }
     public void DataUpdate(string field, int value)
     {
@@ -45,10 +47,10 @@ public class WebManager : MonoBehaviour
         form.AddField("field", field);
         form.AddField(field, value);
 
-        StartCoroutine(SendData(form));
+        StartCoroutine(SendData(form, ActionType.Update));
     }
 
-    IEnumerator SendData(WWWForm form)
+    IEnumerator SendData(WWWForm form, ActionType type)
     {
         using (UnityWebRequest request = UnityWebRequest.Post(www, form))
         {
@@ -64,15 +66,20 @@ public class WebManager : MonoBehaviour
             {
                 Debug.Log(request.downloadHandler.text);
 
-                player = JsonUtility.FromJson<PlayerData>(request.downloadHandler.text); // закоментировать
-                
-                if(player.error == ErrorCode.none)
-                {   
-                    if(!player.novel1) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene1");
-                    else if (player.novel2) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene2");
-                    else gameObject.GetComponent<SceneLoader>().StringToEnum("Map");
-                }
-                else OnError.Invoke();
+                if(type != ActionType.Update)
+                    player = JsonUtility.FromJson<PlayerData>(request.downloadHandler.text); // закоментировать
+                    
+                    if(player.error == ErrorCode.none)
+                    {   
+                        if(type == ActionType.Login)
+                            if(!player.novel1) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene1");
+                            else if (player.novel2) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene2");
+                            else gameObject.GetComponent<SceneLoader>().StringToEnum("Map");
+                    }
+                    else
+                    {
+                        OnError.Invoke();
+                    }
             }
         }
     }
