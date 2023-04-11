@@ -15,6 +15,8 @@ public class GameController : MonoBehaviour
 
     private List<StoryScene> history = new List<StoryScene>();
 
+    [SerializeField] private GameObject pauseMenu;
+
     private enum State
     {
         IDLE, ANIMATE, CHOOSE
@@ -36,7 +38,7 @@ public class GameController : MonoBehaviour
     {
         if (state == State.IDLE)
         {
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
+            if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)) && pauseMenu.GetComponent<Menu>().GetActivityFlag() == false)
             {
                 if (bottomBar.IsCompleted())
                 {
@@ -73,7 +75,7 @@ public class GameController : MonoBehaviour
                     bottomBar.SpeedUp();
                 }
             }
-            if (Input.GetMouseButtonDown(1))
+            if (Input.GetMouseButtonDown(1) && pauseMenu.GetComponent<Menu>().GetActivityFlag() == false)
             {
                 if (bottomBar.IsFirstSentence())
                 {

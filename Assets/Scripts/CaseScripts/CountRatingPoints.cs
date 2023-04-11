@@ -16,10 +16,6 @@ public class CountRatingPoints : MonoBehaviour
     {
         CalculateRatingPoints();
     }
-    // public int GetRatingPoints()//Это передать на сервер
-    // {
-    //     return ratingPoints;
-    // }
     public void TakeDifficultyLevel(int difLevel)
     {
         print("abasralsa");
