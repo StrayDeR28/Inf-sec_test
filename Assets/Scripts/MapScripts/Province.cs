@@ -34,6 +34,29 @@ public class Province : MonoBehaviour
             Flag.SetActive(true);
             ThisProvince.GetComponent<Button>().interactable = false;
         }
+        else 
+        {
+            if(IsPassed[0])
+            {
+                Task1.GetComponent<Button>().interactable = false;
+                Task1.transform.GetChild(0).gameObject.SetActive(false);
+            }
+            if(IsPassed[1])
+            {
+                Task2.GetComponent<Button>().interactable = false;
+                Task2.transform.GetChild(0).gameObject.SetActive(false);
+            }
+            if(IsPassed[2])
+            {
+                Task3.GetComponent<Button>().interactable = false;
+                Task3.transform.GetChild(0).gameObject.SetActive(false);
+            }
+            if(IsPassed[3])
+            {
+                Task4.GetComponent<Button>().interactable = false;
+                Task4.transform.GetChild(0).gameObject.SetActive(false);
+            }
+        }
     }
     public void ActiveTasks()
     {
@@ -41,44 +64,6 @@ public class Province : MonoBehaviour
         Task2.SetActive(true);
         Task3.SetActive(true);
         Task4.SetActive(true);
-
-        if(!IsPassed[0])
-        {
-            Task1.GetComponent<Button>().interactable = true;
-        }
-        else 
-        {
-            Task1.GetComponent<Button>().interactable = false;
-            Task1.transform.GetChild(0).gameObject.SetActive(false);
-        }
-        if(!IsPassed[1])
-        {
-            Task2.GetComponent<Button>().interactable = true;
-        }
-        else 
-        {
-            Task2.GetComponent<Button>().interactable = false;
-            Task2.transform.GetChild(0).gameObject.SetActive(false);
-        }
-        if(!IsPassed[2])
-        {
-            Task3.GetComponent<Button>().interactable = true;
-        }
-        else 
-        {
-            Task3.GetComponent<Button>().interactable = false;
-            Task3.transform.GetChild(0).gameObject.SetActive(false);
-        }
-        if(!IsPassed[3])
-        {
-            Task4.GetComponent<Button>().interactable = true;
-        }
-        else 
-        {
-            Task4.GetComponent<Button>().interactable = false;
-            Task4.transform.GetChild(0).gameObject.SetActive(false);
-        }
-        
     }
     public void UnActiveTasks()
     {
