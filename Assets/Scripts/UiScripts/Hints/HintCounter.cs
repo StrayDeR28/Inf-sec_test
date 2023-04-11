@@ -16,9 +16,12 @@ public class HintCounter : MonoBehaviour
     private bool pickedOnce=true; 
     private void Awake()
     {
-        //getCurrentHints - обратиться к беку за кол-вом подсказок
         hintsCount = WebManager.player.hints;
         gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
+        if (hintsCount == 0)
+        {
+            gameObject.GetComponent<Button>().interactable = false;
+        }
     }
     public void UseHint()
     {
@@ -36,12 +39,8 @@ public class HintCounter : MonoBehaviour
                 pickedOnce=false;
             }
         }
-        else if(hintsCount == 0)
-        {
-            gameObject.GetComponent<Button>().interactable = false;
-        }
-        //postCurrentHints - передаём на бек кол-во подсказок
     }
+    //нужен будет скрипт добавляющий подсказки
     public void TakeCurrentLevel(int curLevel)
     {
         currentLevel = curLevel;

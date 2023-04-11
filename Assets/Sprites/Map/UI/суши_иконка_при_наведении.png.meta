@@ -115,7 +115,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u0441\u0443\u0448\u0438_\u0438\u043A\u043E\u043D\u043A\u0430_\u043F\u0440\u0438_\u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438_0"
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 138
+        width: 1894
+        height: 1011
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e276c63953e88464fa02046b9da7963c
+      internalID: -196528687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +147,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u0441\u0443\u0448\u0438_\u0438\u043A\u043E\u043D\u043A\u0430_\u043F\u0440\u0438_\u043D\u0430\u0432\u0435\u0434\u0435\u043D\u0438\u0438_0": -196528687
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

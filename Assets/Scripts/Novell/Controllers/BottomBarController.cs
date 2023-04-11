@@ -22,7 +22,7 @@ public class BottomBarController : MonoBehaviour
     private Coroutine typingCoroutine;
     private float speedFactor = 1f;
 
-    private string playerName = "Иван";//Добавить метод получения с Бекенда имени. Убрать значение по умолчанию
+    private string playerName;
 
     private enum State
     {
@@ -33,6 +33,7 @@ public class BottomBarController : MonoBehaviour
     {
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
+        playerName = WebManager.player.nickname;
     }
 
     public int GetSentenceIndex()

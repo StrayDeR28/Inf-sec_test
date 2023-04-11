@@ -4,21 +4,14 @@ using UnityEngine;
 
 public class Menu : MonoBehaviour
 {
-    bool activeMenu = false;
+    private bool activeMenu = false;
 
     public GameObject MenuUI;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (activeMenu)
-            {
-                Resume();
-            } 
-            else
-            {
-                Pause();
-            }
+            FullScreenToggle();
         }
     }
     public void Resume()
@@ -32,5 +25,14 @@ public class Menu : MonoBehaviour
         MenuUI.SetActive(true);
         Time.timeScale = 0f;
         activeMenu = true;
+    }
+    public void FullScreenToggle()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
+
+    public bool GetActivityFlag()
+    {
+        return activeMenu;
     }
 }

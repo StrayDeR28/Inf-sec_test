@@ -909,6 +909,7 @@ MonoBehaviour:
   backgroundController: {fileID: 995301178}
   chooseController: {fileID: 1703933902}
   audioController: {fileID: 41893040}
+  pauseMenu: {fileID: 714382767}
 --- !u!114 &1159638929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,8 +936,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e493ce1d10e3474789dfc326b835fc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  www: http://localhost/pudge/signup.php
-  menu: {fileID: 0}
+  OnError:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1387861154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,8 +1455,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -80, y: -134}
-  m_SizeDelta: {x: 80, y: 100}
+  m_AnchoredPosition: {x: -112, y: -89}
+  m_SizeDelta: {x: 70, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804402790
 MonoBehaviour:
@@ -1485,7 +1487,7 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: 9e670b4f8b0e16641b6151af4d44d58a, type: 3}
+    m_HighlightedSprite: {fileID: -5884694, guid: 9e670b4f8b0e16641b6151af4d44d58a, type: 3}
     m_PressedSprite: {fileID: 0}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
@@ -1610,8 +1612,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u041F\u0440\u0438\u0432\u0435\u0442"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
-  m_sharedMaterial: {fileID: -3333667536865059299, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
+  m_sharedMaterial: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1829,8 +1831,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Emperor
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
-  m_sharedMaterial: {fileID: -3333667536865059299, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
+  m_sharedMaterial: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

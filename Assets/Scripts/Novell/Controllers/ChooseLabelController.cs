@@ -10,6 +10,8 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
     private TextMeshProUGUI textMesh;
     private ChooseController controller;
 
+    private bool chooseMade = false;
+
     void Awake()
     {
         textMesh = GetComponent<TextMeshProUGUI>();
@@ -34,7 +36,11 @@ public class ChooseLabelController : MonoBehaviour, IPointerClickHandler, IPoint
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        controller.PerformChoose(scene);
+        if (chooseMade == false)
+        {
+            controller.PerformChoose(scene);
+            chooseMade = true;
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
