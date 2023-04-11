@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Province : MonoBehaviour
+public class Province : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public GameObject Task1, Task2, Task3, Task4;
     public Sprite NewSprite;
     public GameObject ThisProvince;
     public GameObject Flag;
+    public GameObject Name;
     bool[] IsPassed = {false, false, false, false};
     [SerializeField] private ProvincesEnum ProvinceNumber;
     [SerializeField] private enum ProvincesEnum
@@ -71,5 +73,14 @@ public class Province : MonoBehaviour
         Task2.SetActive(false);
         Task3.SetActive(false);
         Task4.SetActive(false);
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        Name.SetActive(true);
+    }
+ 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        Name.SetActive(false);
     }
 }

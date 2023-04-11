@@ -590,6 +590,7 @@ MonoBehaviour:
   NewSprite: {fileID: 1169338762, guid: 3f0765e13edb167489d7c3e9f96b6297, type: 3}
   ThisProvince: {fileID: 72370657}
   Flag: {fileID: 315842167}
+  Name: {fileID: 336565440}
   ProvinceNumber: 3
 --- !u!114 &72370660
 MonoBehaviour:
@@ -1536,7 +1537,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &201975708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1958,7 +1959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &223244306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2258,6 +2259,7 @@ MonoBehaviour:
   NewSprite: {fileID: 758862250, guid: d96f74b6eb305df458382fc1b1a061c4, type: 3}
   ThisProvince: {fileID: 266947118}
   Flag: {fileID: 179174427}
+  Name: {fileID: 201975707}
   ProvinceNumber: 6
 --- !u!114 &266947121
 MonoBehaviour:
@@ -2877,7 +2879,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &336565441
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5096,8 +5098,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 352.1081, y: -414.80652}
-  m_SizeDelta: {x: 166.283, y: 101.8465}
+  m_AnchoredPosition: {x: 349.25293, y: -412.45886}
+  m_SizeDelta: {x: 162.0255, y: 101.5433}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &820840899
 MonoBehaviour:
@@ -6983,8 +6985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 315.40955, y: -330.33398}
-  m_SizeDelta: {x: 113.2597, y: 102.6142}
+  m_AnchoredPosition: {x: 313.49414, y: -328.2378}
+  m_SizeDelta: {x: 110.3599, y: 102.3086}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153465570
 MonoBehaviour:
@@ -7193,6 +7195,7 @@ MonoBehaviour:
   NewSprite: {fileID: -2122281468, guid: d60229386f063234286b2b1fb6cdfc17, type: 3}
   ThisProvince: {fileID: 1159353991}
   Flag: {fileID: 134823610}
+  Name: {fileID: 1475976421}
   ProvinceNumber: 2
 --- !u!114 &1159353994
 MonoBehaviour:
@@ -7394,7 +7397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1174305112
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7700,7 +7703,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1235853063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8485,6 +8488,7 @@ MonoBehaviour:
   NewSprite: {fileID: 214765868, guid: 38520013ad81e604f8c1bfe14603e85f, type: 3}
   ThisProvince: {fileID: 1359057630}
   Flag: {fileID: 1471283410}
+  Name: {fileID: 1782562670}
   ProvinceNumber: 4
 --- !u!114 &1359057633
 MonoBehaviour:
@@ -8610,7 +8614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1378711732
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9117,7 +9121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1475976422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9453,6 +9457,7 @@ MonoBehaviour:
   NewSprite: {fileID: -950263528, guid: 79ad4ff01cfae4c48aa4c2866c504faf, type: 3}
   ThisProvince: {fileID: 1564621648}
   Flag: {fileID: 1074485629}
+  Name: {fileID: 1235853062}
   ProvinceNumber: 5
 --- !u!114 &1564621651
 MonoBehaviour:
@@ -10272,8 +10277,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 301.27026, y: -434.73236}
-  m_SizeDelta: {x: 198.2156, y: 123.9169}
+  m_AnchoredPosition: {x: 299.71686, y: -432.32526}
+  m_SizeDelta: {x: 193.1405, y: 123.548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1663864423
 MonoBehaviour:
@@ -10752,6 +10757,7 @@ MonoBehaviour:
   NewSprite: {fileID: -1193101127, guid: ab1c2a0545390f1458ca93e33a9d1776, type: 3}
   ThisProvince: {fileID: 1755529840}
   Flag: {fileID: 1333400343}
+  Name: {fileID: 1378711731}
   ProvinceNumber: 1
 --- !u!114 &1755529843
 MonoBehaviour:
@@ -11017,7 +11023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1782562671
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11320,8 +11326,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 374.82285, y: -344.37177}
-  m_SizeDelta: {x: 123.2255, y: 107.0126}
+  m_AnchoredPosition: {x: 371.38617, y: -342.23376}
+  m_SizeDelta: {x: 120.0705, y: 106.694}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1838130746
 MonoBehaviour:
@@ -11846,6 +11852,7 @@ MonoBehaviour:
   NewSprite: {fileID: -1001197715, guid: 9d31061d14aac884e9fac3e1c6e1b879, type: 3}
   ThisProvince: {fileID: 1896812669}
   Flag: {fileID: 1172435366}
+  Name: {fileID: 1174305111}
   ProvinceNumber: 0
 --- !u!114 &1896812675
 MonoBehaviour:
