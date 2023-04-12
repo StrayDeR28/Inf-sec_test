@@ -36,7 +36,7 @@ public class HintCounter : MonoBehaviour
                 hintsCount--;
                 webManager.DataUpdate("hints", hintsCount);
                 WebManager.player.hints = hintsCount;
-                gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
+                hintsTextObject.text = hintsCount.ToString();
                 pickedOnce=false;
             }
         }
