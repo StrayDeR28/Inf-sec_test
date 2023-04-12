@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CountRatingPoints : MonoBehaviour
@@ -7,6 +8,7 @@ public class CountRatingPoints : MonoBehaviour
     [SerializeField] private GameObject timeGO;
     [SerializeField] private int ratingPoints;
     private PointsEnum difficultyLevel;
+    [SerializeField] private TMP_Text bitsCount;
 
     [SerializeField] private WebManager webManager;
 
@@ -14,11 +16,12 @@ public class CountRatingPoints : MonoBehaviour
 
     private void Awake()
     {
+        bitsCount.text = "+" + (int)difficultyLevel/10;
         CalculateRatingPoints();
     }
     public void TakeDifficultyLevel(int difLevel)
     {
-        print("abasralsa");
+        //print("abasralsa");
         switch (difLevel%4)
         {
             case 0:
