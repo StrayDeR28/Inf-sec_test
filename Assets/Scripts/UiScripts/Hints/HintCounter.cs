@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class HintCounter : MonoBehaviour
 {
     [SerializeField] private int hintsCount;
+    [SerializeField] private TMP_Text hintsTextObject;
     [SerializeField] private int currentLevel;
     [SerializeField] private GameObject pepasanObject;
     [SerializeField] private GameObject pepasanTextObject;
@@ -17,7 +18,7 @@ public class HintCounter : MonoBehaviour
     private void Awake()
     {
         hintsCount = WebManager.player.hints;
-        gameObject.GetComponentInChildren<TMP_Text>().text = hintsCount.ToString();
+        hintsTextObject.text = hintsCount.ToString();
         if (hintsCount == 0)
         {
             gameObject.GetComponent<Button>().interactable = false;
