@@ -6,7 +6,8 @@ using UnityEngine.Events;
 
 public class WebManager : MonoBehaviour
 {
-    string www = "http://localhost/pudge/signup.php";
+    //string www = "http://localhost/pudge/signup.php";
+    string www = "https://it.dpo.tsu.ru/itgame/manager.php";
 
     public UnityEvent OnError;
 
