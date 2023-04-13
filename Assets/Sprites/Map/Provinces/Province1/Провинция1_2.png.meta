@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_0"
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 159
+        width: 5561
+        height: 3207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145c9d10bd8e809438d40980030d5fe5
+      internalID: 416911689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +147,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_0": 416911689
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_1": 1590707812
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_2": -25405028
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_3": 623892961
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_4": 1518308344
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_2_5": 1734350537
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

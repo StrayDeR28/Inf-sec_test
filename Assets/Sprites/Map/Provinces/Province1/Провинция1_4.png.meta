@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -115,7 +115,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_0"
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 311
+        width: 3507
+        height: 3345
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18920eab66b71094094b6f34ef6efbef
+      internalID: -1166223091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +147,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_0": -1166223091
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_1": -461148707
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_10": -1170172321
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_11": 1436809058
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_12": 13346478
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_13": -1933350948
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_14": -924618081
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_2": 159214419
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_3": -449672790
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_4": 1779928697
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_5": 601019706
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_6": 170285987
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_7": 1843675974
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_8": 910607747
+      "\u041F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u044F1_4_9": 1979464298
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

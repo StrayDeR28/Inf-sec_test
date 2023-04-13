@@ -7,8 +7,8 @@ public class Province : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public GameObject Task1, Task2, Task3, Task4;
     public Sprite NewSprite;
     public GameObject ThisProvince;
+    public GameObject ProvinceName;
     public GameObject Flag;
-    public GameObject Name;
     bool[] IsPassed = {false, false, false, false};
     [SerializeField] private ProvincesEnum ProvinceNumber;
     [SerializeField] private enum ProvincesEnum
@@ -76,11 +76,11 @@ public class Province : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-        Name.SetActive(true);
+        ProvinceName.SetActive(true);
     }
  
     public void OnPointerExit(PointerEventData eventData)
     {
-        Name.SetActive(false);
+        ProvinceName.SetActive(false);
     }
 }
