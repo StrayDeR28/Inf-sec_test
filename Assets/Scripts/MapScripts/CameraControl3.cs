@@ -59,28 +59,25 @@ public class CameraControl3 : MonoBehaviour
         switch(obj)
         {
             case "Province 1":
-                Name.GetComponent<TMP_Text>().text = "Зерокотто\n"+"<sprite=3><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Зерокотто\n";
                 break;
             case "Province 2":
-                Name.GetComponent<TMP_Text>().text = "Питамба\n"+"<sprite=8><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Андройдзидзю\n";
                 break;
             case "Province 3":
-                Name.GetComponent<TMP_Text>().text = "Андройдзидзю\n"+"<sprite=1><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Напитонэ\n";
                 break;
             case "Province 4":
                 Name.GetComponent<TMP_Text>().text = "Реляохоки\n";
                 break;
             case "Province 5":
-                Name.GetComponent<TMP_Text>().text = "Чатаботто\n"+"<sprite=6><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Чатаботто\n";
                 break;
             case "Province 6":
-                Name.GetComponent<TMP_Text>().text = "Играхаги\n"+"<sprite=2><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Играхаги\n";
                 break;
             case "Province 7":
-                Name.GetComponent<TMP_Text>().text = "Джаваскрипту\n"+"<sprite=0><sprite=5>";
-                break;
-            case "Province 8":
-                Name.GetComponent<TMP_Text>().text = "Напитонэ\n"+"<sprite=7><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Джаваскрипту\n";
                 break;
         }
         Target = GameObject.Find(obj);        
