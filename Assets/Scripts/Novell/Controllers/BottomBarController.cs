@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using static Unity.Burst.Intrinsics.X86.Avx;
+using System.Data;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -20,17 +22,18 @@ public class BottomBarController : MonoBehaviour
     private Coroutine typingCoroutine;
     private float speedFactor = 1f;
 
-    private string playerName = "Иван";//Добавить метод получения с Бекенда имени. Убрать значение по умолчанию
+    private string playerName;
 
     private enum State
     {
         PLAYING, SPEEDED_UP, COMPLETED
     }
 
-    private void Start()
+    private void Awake()
     {
         sprites = new Dictionary<Speaker, SpriteController>();
         animator = GetComponent<Animator>();
+        playerName = WebManager.player.nickname;
     }
 
     public int GetSentenceIndex()

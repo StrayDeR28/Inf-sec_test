@@ -25,12 +25,13 @@ public class CaseManager : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(0);
-            if(PlayerPrefs.GetString("levelIndex") == "done")
+            if(PlayerPrefs.GetString("caseDone") == "done")//levelIndex
             {
                 stopwatch.GetComponent<Stopwatch>().StopStopwatch();
                 winScrene.GetComponent<CountRatingPoints>().TakeDifficultyLevel(caseNumber);
                 winScrene.SetActive(true);
-                StopCoroutine(WaitForCaseComplete());
+                //StopCoroutine(WaitForCaseComplete());
+                StopAllCoroutines();
             }
         }
     }

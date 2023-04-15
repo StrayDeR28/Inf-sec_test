@@ -5,38 +5,53 @@ using UnityEngine;
 
 public class PeposanTalk : MonoBehaviour
 {
+    [SerializeField] private TMP_Text peposanTextField;
     [SerializeField] private PepasansTextObject timesUpText;
     [SerializeField] private PepasansTextObject hintsText;
     [SerializeField] private PepasansTextObject supportPhrasesText;
     [SerializeField] private PepasansTextObject winCaseText;
     [SerializeField] private PepasansTextObject newTitleText;
+    [SerializeField] private PepasansTextObject tutorialText;
 
     private int elementNumber;
-    public void Talk(string textContent)//переделать
+    private int currentListIndex;
+    private void Awake()
+    {
+        elementNumber = 0;
+    }
+    public void Talk(string textContent)
     {
         switch(textContent)
         { 
             case "stopwatch":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(timesUpText);
+                peposanTextField.text = GetRandomListElement(timesUpText);
                 break;
             case "hint":
-                gameObject.GetComponentInChildren<TMP_Text>().text = hintsText.sentences[elementNumber];
+                peposanTextField.text = hintsText.sentences[elementNumber];
                 break;
             case "supportPhrase":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(supportPhrasesText);
+                peposanTextField.text = GetRandomListElement(supportPhrasesText);
                 break;
             case "winCase":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(winCaseText);
+                peposanTextField.text = GetRandomListElement(winCaseText);
                 break;
             case "newTitle":
-                gameObject.GetComponentInChildren<TMP_Text>().text = GetRandomListElement(newTitleText);
+                peposanTextField.text = GetRandomListElement(newTitleText);
+                break;
+            case "tutorial":
+                peposanTextField.text = tutorialText.sentences[elementNumber];
                 break;
         }
     }
     public string GetRandomListElement(PepasansTextObject textObject)
-    {
-        int randomNum = Random.Range(0, textObject.sentences.Count);
-        return textObject.sentences[randomNum];
+    {   
+        int randomNumber = -1;
+        while (randomNumber == -1 || currentListIndex == randomNumber)
+        {
+            randomNumber = Random.Range(0, textObject.sentences.Count);
+        }
+        currentListIndex = randomNumber;
+        return textObject.sentences[currentListIndex];    
     }
     public void TakeElementNumber(int elNumber)
     {

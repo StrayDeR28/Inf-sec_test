@@ -16,18 +16,20 @@ public class PeposanAnimation : MonoBehaviour
     float currentTime = 0;
     private Animator animator;
     bool flagAppear = true;
+
+    int currentListIndex;
     Sprite oldSprite;
     Sprite newSprite;
 
 
     public void ChangeImageIdle()
     {
-        int randomNumber = GetRandomListElement();
+        GetRandomListElement();
         oldSprite = pepasanTalk.GetComponent<Image>().sprite;
-        newSprite = sprites[randomNumber].sprite;
+        newSprite = sprites[currentListIndex].sprite;
         if (newSprite != oldSprite)
         {
-            pepasanDown.GetComponent<Image>().sprite = sprites[randomNumber].sprite;
+            pepasanDown.GetComponent<Image>().sprite = sprites[currentListIndex].sprite;
             DOTween.Sequence()
             .Append(pepasanTalk.GetComponent<Image>().DOFade(0.4f,0.25f))
             .AppendCallback(ChangeImage)
@@ -58,10 +60,19 @@ public class PeposanAnimation : MonoBehaviour
             flagAppear = false;
             pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
             state = "appeared";
-            StartCoroutine("HidePepasanEnum");
+            if (textContent != "tutorial")
+            {
+                StartCoroutine(HidePepasanEnum());
+            }
         }
     }
-    
+    public void PlayPepasanSequence(string textContent)
+    {
+        ChangeImageIdle();
+        pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
+    }
+
+
     public IEnumerator HidePepasanEnum()
     {
         while (true)
@@ -70,27 +81,35 @@ public class PeposanAnimation : MonoBehaviour
             currentTime += Time.deltaTime;
             if (currentTime >= 10.0)//Время, через которое анимация сменится
             {
-                currentTime = 0;
-                animator.SetTrigger("Disappear");
-                flagAppear = true;
-                state = "hidden";
-                StopAllCoroutines();
+                ForceHide();
             }
         }
+    }
+    public void ForceHide()
+    {
+        currentTime = 0;
+        animator.SetTrigger("Disappear");
+        flagAppear = true;
+        state = "hidden";
+        StopAllCoroutines();
     }
     public void ResetTime()//вызывается нажатием на кнопку
     {
         StopAllCoroutines();
         currentTime = 0;
-        StartCoroutine("HidePepasanEnum");
+        StartCoroutine(HidePepasanEnum());
     }
     public string GetState()
     {
         return state;
     }
-    public int GetRandomListElement()
+    public void GetRandomListElement()
     {
-        int randomNum = UnityEngine.Random.Range(0, sprites.Count-1);
-        return randomNum;
+        int randomNumber = -1;
+        while (randomNumber == -1 || currentListIndex == randomNumber)
+        {
+            randomNumber = UnityEngine.Random.Range(0, sprites.Count-1);
+        }
+        currentListIndex = randomNumber;
     }
 }
