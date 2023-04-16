@@ -7,6 +7,7 @@ public class PepasanTutorial : MonoBehaviour
 {
     [SerializeField] private GameObject pepasanTalkTutorial;
     [SerializeField] private Button nextTextButton;
+    [SerializeField] private GameObject progressBar;
 
     [SerializeField] private GameObject progressbarBackground;
     [SerializeField] private GameObject provinceBackground;
@@ -46,7 +47,6 @@ public class PepasanTutorial : MonoBehaviour
                     webManager.DataUpdate("tutorial", 1);
                     WebManager.player.tutorial = true;
 
-                    //TempStaticClass.tutorialDoneFlag = true;//временны класс. В финале замениться кодом Германа
                     break;
             }
             pepasanTalkTutorial.GetComponent<PeposanTalk>().TakeElementNumber(step);

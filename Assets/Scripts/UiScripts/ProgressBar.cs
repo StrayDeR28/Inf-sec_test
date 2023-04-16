@@ -12,32 +12,47 @@ public class ProgressBar : MonoBehaviour
     public GameObject NewRankSenior;
     public GameObject Congratulations;
     public Slider slider;
-    int progress;
+
+    [SerializeField] private TutorialProgress tutorialProgress;
+    [SerializeField] private enum TutorialProgress {showMidlle, showSenior, showSamurai}
     void Awake()
     {
         bits.SetText((WebManager.player.bits%8).ToString());
         bytes.text = (WebManager.player.bits/8).ToString();
-        /*if(WebManager.player.bits%8 == 0)
+        UpdateProgress();
+        if(WebManager.player.bits%8 == 0)
         {
             switch (WebManager.player.bits/8)
             {
-                case 1:
+                case 3:
                     NewRankMiddle.GetComponent<NewRank>().Pause();
                     break;
-                case 3:
+                case 5:
                     NewRankSenior.GetComponent<NewRank>().Pause();
                     break;
-                case 4:
+                case 7:
                     Congratulations.GetComponent<NewRank>().Pause();
                     break;
             }
-        }*/
+        }
     }
-//для отладки
     public void UpdateProgress()
     {
-        progress++;
-        slider.value = progress;
+        slider.value = WebManager.player.bits;
     }
-
+    public void ProgressForTutorial()
+    {
+        switch (tutorialProgress)
+        {
+            case TutorialProgress.showMidlle: 
+                slider.value = 24; 
+                break;
+            case TutorialProgress.showSenior:
+                slider.value = 40;
+                break;
+            case TutorialProgress.showSamurai:
+                slider.value = 56;
+                break;
+        }
+    }
 }

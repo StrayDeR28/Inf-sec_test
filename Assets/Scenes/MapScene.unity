@@ -524,6 +524,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pepasanTalkTutorial: {fileID: 270067511}
   nextTextButton: {fileID: 1609912321}
+  progressBar: {fileID: 2031287806}
   progressbarBackground: {fileID: 1003774829}
   provinceBackground: {fileID: 835795153}
   caseBackground: {fileID: 1110554025}
@@ -5094,7 +5095,7 @@ RectTransform:
   m_Children:
   - {fileID: 2037747071}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 36
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -6495,7 +6496,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 38
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6981,7 +6982,7 @@ RectTransform:
   m_Children:
   - {fileID: 596721536}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 39
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -7916,56 +7917,6 @@ MonoBehaviour:
   RaysPartical: {fileID: 1326885867}
   WaysPartical: {fileID: 1966958934}
   DotsPartical: {fileID: 1272957859}
---- !u!1 &1266439095
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266439096}
-  - component: {fileID: 1266439097}
-  m_Layer: 0
-  m_Name: Mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1266439096
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266439095}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1283439044}
-  m_RootOrder: 34
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -641.7803, y: 152.3046}
-  m_SizeDelta: {x: 224.44, y: 216.4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1266439097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266439095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69332bf644b0cdb409b96ccfd178195f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProvinceName: {fileID: 1174305111}
 --- !u!1 &1272957859 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4402386851608949151, guid: b4380380fdf5f9245862b12da1104b1a, type: 3}
@@ -8097,7 +8048,6 @@ RectTransform:
   - {fileID: 1762397231}
   - {fileID: 835795154}
   - {fileID: 1896812670}
-  - {fileID: 1266439096}
   - {fileID: 1838130745}
   - {fileID: 820840898}
   - {fileID: 1663864422}
@@ -10142,7 +10092,7 @@ RectTransform:
   - {fileID: 1475976422}
   - {fileID: 1378711732}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10323,7 +10273,7 @@ RectTransform:
   m_Children:
   - {fileID: 2104609438}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 37
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -11372,7 +11322,7 @@ RectTransform:
   m_Children:
   - {fileID: 1182994390}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 35
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -13081,7 +13031,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 64
+  m_MaxValue: 56
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -13105,6 +13055,7 @@ MonoBehaviour:
   NewRankSenior: {fileID: 1241222154}
   Congratulations: {fileID: 1475391668}
   slider: {fileID: 2031287808}
+  tutorialProgress: 0
 --- !u!1 &2037747070
 GameObject:
   m_ObjectHideFlags: 0

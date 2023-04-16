@@ -21,7 +21,6 @@ public class CountRatingPoints : MonoBehaviour
     }
     public void TakeDifficultyLevel(int difLevel)
     {
-        //print("abasralsa");
         switch (difLevel%4)
         {
             case 0:
@@ -45,10 +44,17 @@ public class CountRatingPoints : MonoBehaviour
     }
     public void CalculateRatingPoints()
     {
-        float time = timeGO.GetComponent<Stopwatch>().GetCurrentTime();
-        time = (int)time / 30;//время, через которое снимется очко рейтинга (в секундах)
-        ratingPoints = (int)difficultyLevel - (int)time;
-        if (ratingPoints <= ((int)difficultyLevel / 2))
+        if (PlayerPrefs.GetInt("CaseLeft") != int.Parse(PlayerPrefs.GetString("levelIndex")))
+        {
+            float time = timeGO.GetComponent<Stopwatch>().GetCurrentTime();
+            time = (int)time / 30;//время, через которое снимется очко рейтинга (в секундах)
+            ratingPoints = (int)difficultyLevel - (int)time;
+            if (ratingPoints <= ((int)difficultyLevel / 2))
+            {
+                ratingPoints = (int)difficultyLevel / 2;
+            }
+        }
+        else
         {
             ratingPoints = (int)difficultyLevel / 2;
         }
@@ -61,6 +67,6 @@ public class CountRatingPoints : MonoBehaviour
         string caseString = "e" + (index / 4 + 1).ToString() + "m" + (index % 4 + 1).ToString();
         webManager.DataUpdate(caseString, ratingPoints);
         WebManager.player.progress[index] = ratingPoints;
-
+        PlayerPrefs.SetInt("CaseLeft", -1);
     }
 }
