@@ -13,8 +13,7 @@ public class ProgressBar : MonoBehaviour
     public GameObject Congratulations;
     public Slider slider;
 
-    [SerializeField] private TutorialProgress tutorialProgress;
-    [SerializeField] private enum TutorialProgress {showMidlle, showSenior, showSamurai}
+    
     void Awake()
     {
         bits.SetText((WebManager.player.bits%8).ToString());
@@ -40,17 +39,17 @@ public class ProgressBar : MonoBehaviour
     {
         slider.value = WebManager.player.bits;
     }
-    public void ProgressForTutorial()
+    public void ProgressForTutorial(string tutorialProgress)
     {
         switch (tutorialProgress)
         {
-            case TutorialProgress.showMidlle: 
+            case "showMiddle": 
                 slider.value = 24; 
                 break;
-            case TutorialProgress.showSenior:
+            case "showSenior":
                 slider.value = 40;
                 break;
-            case TutorialProgress.showSamurai:
+            case "showSamurai":
                 slider.value = 56;
                 break;
         }
