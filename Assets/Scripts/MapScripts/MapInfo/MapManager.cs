@@ -9,7 +9,6 @@ public class MapManager : MonoBehaviour
     private bool tutorialFlag;
     private void Awake()
     {
-        //tutorialFlag = TempStaticClass.tutorialDoneFlag;//Замениться на код Германа
         tutorialFlag = WebManager.player.tutorial;
         if (tutorialFlag == false)
         {
