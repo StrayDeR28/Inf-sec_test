@@ -9,6 +9,7 @@ public class PepasanTutorial : MonoBehaviour
     [SerializeField] private Button nextTextButton;
     [SerializeField] private Button caseButton;
     [SerializeField] private GameObject progressBar;
+    [SerializeField] private GameObject palace;
 
     [SerializeField] private GameObject progressbarBackground;
     [SerializeField] private GameObject provinceBackground;
@@ -27,6 +28,7 @@ public class PepasanTutorial : MonoBehaviour
             switch (step)
             {
                 case 2:
+                    palace.GetComponent<Canvas>().overrideSorting=false;
                     mainBackground.SetActive(false);
                     progressbarBackground.SetActive(true);
                     break;

@@ -6,12 +6,21 @@ using UnityEngine.UI;
 public class ActivatePalace : MonoBehaviour
 {
     private int bits;
+    [SerializeField] private GameObject particles;
     private void Awake()
     {
         bits = WebManager.player.bits;
-        if (bits >= 24)
+        if (bits >= 40 && bits < 56)
         {
-            gameObject.GetComponent<Button>().interactable = true;//мейби добавить эффект
+            gameObject.GetComponent<Button>().interactable = true;
+            particles.gameObject.SetActive(true);
+            //gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.1");
+        }
+        else if (bits == 56)
+        {
+            gameObject.GetComponent<Button>().interactable = true;
+            particles.gameObject.SetActive(true);
+            //gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.2");
         }
     }
 }

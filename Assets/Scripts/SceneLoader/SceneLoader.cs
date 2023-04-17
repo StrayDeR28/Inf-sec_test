@@ -76,4 +76,25 @@ public class SceneLoader : MonoBehaviour
             yield return null;
         }
     }
+    public void SetNextScene(string str)
+    {
+        switch (str)
+        {
+            case "RegistrationScene":
+                LoadNextScene = ScenesEnum.Registration;
+                break;
+            case "NovellScene1":
+                LoadNextScene = ScenesEnum.Novell1;
+                break;
+            case "NovellScene2":
+                LoadNextScene = ScenesEnum.Novell2;
+                break;
+            case "Map":
+                LoadNextScene = ScenesEnum.Map;
+                break;
+            case "StatisticScene":
+                LoadNextScene = ScenesEnum.Statistic;
+                break;
+        }
+    }
 }
