@@ -18245,7 +18245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 126, y: 195.4}
+  m_AnchoredPosition: {x: 117.5, y: 195.4}
   m_SizeDelta: {x: 50, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1639325618221404380
@@ -18368,8 +18368,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -208, y: 76}
-  m_SizeDelta: {x: 415, y: 150}
+  m_AnchoredPosition: {x: -101.81, y: 66.350006}
+  m_SizeDelta: {x: 200, y: 130.69}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3609077424123371536
 MonoBehaviour:
@@ -18641,8 +18641,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -12.7142, y: 8.2}
-  m_SizeDelta: {x: 234.0359, y: 100.27}
+  m_AnchoredPosition: {x: -8, y: 13}
+  m_SizeDelta: {x: 234.0359, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3609077425142434507
 MonoBehaviour:
@@ -18667,14 +18667,14 @@ MonoBehaviour:
   m_text: 373877373783783783737837374347234727452782782782872872727278272727272722727272727272727272727272727272727
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
-  m_sharedMaterial: {fileID: -3333667536865059299, guid: 598be238356bed143b83a0d3b28cf364, type: 2}
+  m_sharedMaterial: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278192186
+  m_fontColor: {r: 0.22745098, g: 0.03137255, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -18691,8 +18691,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -18850,7 +18850,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -336.9, y: 230}
-  m_SizeDelta: {x: 314, y: 220}
+  m_SizeDelta: {x: 310, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3609077425601567457
 MonoBehaviour:
@@ -18874,7 +18874,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 163518035, guid: 70ef521707b1c6f4583af12337985dd4, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1

@@ -1229,6 +1229,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
+    - target: {fileID: 2592787620150356988, guid: 7303ffdf1e05b1c4182407ff84555926, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -122.99999
+      objectReference: {fileID: 0}
     - target: {fileID: 2592787620150356989, guid: 7303ffdf1e05b1c4182407ff84555926, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1389,6 +1393,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -171.35
       objectReference: {fileID: 0}
+    - target: {fileID: 8515313931125252520, guid: 7303ffdf1e05b1c4182407ff84555926, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -123
+      objectReference: {fileID: 0}
     - target: {fileID: 8899795081888266909, guid: 7303ffdf1e05b1c4182407ff84555926, type: 3}
       propertyPath: m_SizeDelta.y
       value: 15
@@ -1442,6 +1450,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1323858536006069472, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1528958361141441381, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
@@ -1462,6 +1474,10 @@ PrefabInstance:
       propertyPath: m_sharedMaterial
       value: 
       objectReference: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
+    - target: {fileID: 2936200900932468297, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2955846839777273700, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
       propertyPath: m_GlobalFontAsset
       value: 

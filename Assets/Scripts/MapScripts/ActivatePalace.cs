@@ -14,13 +14,13 @@ public class ActivatePalace : MonoBehaviour
         {
             gameObject.GetComponent<Button>().interactable = true;
             particles.gameObject.SetActive(true);
-            //gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.1");
+            gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.1");
         }
         else if (bits == 56)
         {
             gameObject.GetComponent<Button>().interactable = true;
             particles.gameObject.SetActive(true);
-            //gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.2");
+            gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.2");
         }
     }
 }
