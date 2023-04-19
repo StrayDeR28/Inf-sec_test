@@ -5,6 +5,7 @@ using TMPro;
 public class CameraControl3 : MonoBehaviour
 {
     public Camera MainCamera;
+    public GameObject MapButton;
     public GameObject Names;
     public GameObject Name;
     public float CamMoveSpeed = 2;
@@ -55,6 +56,7 @@ public class CameraControl3 : MonoBehaviour
         }
         canMove = true;
         Names.SetActive(false);
+        MapButton.SetActive(true);
         Name.SetActive(true);
         switch(obj)
         {
@@ -95,6 +97,7 @@ public class CameraControl3 : MonoBehaviour
             Target.GetComponent<Image>().enabled = true;
         }
         Names.SetActive(true);
+        MapButton.SetActive(false);
         Name.SetActive(false);
         canMove = true;
         CamSize = 540;
