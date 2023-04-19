@@ -9,6 +9,7 @@ public class CountRatingPoints : MonoBehaviour
     [SerializeField] private int ratingPoints;
     private PointsEnum difficultyLevel;
     [SerializeField] private TMP_Text bitsCount;
+    [SerializeField] private AudioSource winSound;
 
     [SerializeField] private WebManager webManager;
 
@@ -16,6 +17,7 @@ public class CountRatingPoints : MonoBehaviour
 
     private void Awake()
     {
+        winSound.Play();
         bitsCount.text = "+" + (int)difficultyLevel/10;
         CalculateRatingPoints();
     }

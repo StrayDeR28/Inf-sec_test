@@ -52,7 +52,7 @@ public class GameController : MonoBehaviour
                                 gameObject.GetComponent<WebManager>().DataUpdate("novel1", 1);
                                 WebManager.player.novel1 = true;
                             }
-                            else if (SceneManager.GetActiveScene().name == "NovellScene2") 
+                            else if (SceneManager.GetActiveScene().name == "NovellScene2.2" || SceneManager.GetActiveScene().name == "NovellScene2.1") 
                             {
                                 WebManager.player.novel2 = false;
                             }

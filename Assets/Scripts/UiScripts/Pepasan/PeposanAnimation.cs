@@ -10,6 +10,7 @@ public class PeposanAnimation : MonoBehaviour
     [SerializeField] private List<Image> sprites;
     [SerializeField] private GameObject pepasanDown;
     [SerializeField] private GameObject pepasanTalk;
+    [SerializeField] private AudioSource typingSound;
 
     private string state = "hidden";//состояния, для передачи между скриптами
 
@@ -60,6 +61,7 @@ public class PeposanAnimation : MonoBehaviour
             flagAppear = false;
             pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
             state = "appeared";
+            Invoke("PlayTypingSound", 1f);
             if (textContent != "tutorial")
             {
                 StartCoroutine(HidePepasanEnum());
@@ -70,6 +72,11 @@ public class PeposanAnimation : MonoBehaviour
     {
         ChangeImageIdle();
         pepasanTalk.GetComponent<PeposanTalk>().Talk(textContent);
+        PlayTypingSound();
+        if (textContent != "tutorial")
+        {
+            StartCoroutine(HidePepasanEnum());
+        }
     }
 
 
@@ -111,5 +118,9 @@ public class PeposanAnimation : MonoBehaviour
             randomNumber = UnityEngine.Random.Range(0, sprites.Count-1);
         }
         currentListIndex = randomNumber;
+    }
+    public void PlayTypingSound()
+    {
+        typingSound.Play();
     }
 }
