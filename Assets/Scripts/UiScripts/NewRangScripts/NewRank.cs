@@ -13,6 +13,12 @@ public class NewRank : MonoBehaviour
     public GameObject RaysPartical;
     public GameObject WaysPartical;
     public GameObject DotsPartical;
+
+    [SerializeField] private AudioSource newTitleSound;
+    private void Awake()
+    {
+        newTitleSound.Play();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Return) && activeNewRankMenu)

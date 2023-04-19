@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 6
+  LoadNextScene: 7
 --- !u!1 &1961796991003039115
 GameObject:
   m_ObjectHideFlags: 0

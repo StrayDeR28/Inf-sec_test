@@ -18,7 +18,7 @@ MonoBehaviour:
       \u042F\u043F\u043E\u043D\u0438\u0438>"
     speaker: {fileID: 11400000, guid: 2030cd533581d4d48befdbbd7cc6d7e8, type: 2}
     actions: []
-    music: {fileID: 8300000, guid: ac5aaaa8047e27144a0491e6e97d3823, type: 3}
+    music: {fileID: 8300000, guid: 7943c38b0d5ff664e8a9e02ced185ab4, type: 3}
     sound: {fileID: 0}
   background: {fileID: 21300000, guid: 6b9c782c01267c14c9aa92d9666436b3, type: 3}
   nextScene: {fileID: 11400000, guid: 8d5b2ba4c97070542a47c754d53924bb, type: 2}

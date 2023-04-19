@@ -5,6 +5,7 @@ using UnityEngine;
 public class Menu : MonoBehaviour
 {
     private bool activeMenu = false;
+    [SerializeField] private AudioSource clickSound;
 
     public GameObject MenuUI;
     void Update()
@@ -29,6 +30,10 @@ public class Menu : MonoBehaviour
     public void FullScreenToggle()
     {
         Screen.fullScreen = !Screen.fullScreen;
+    }
+    public void PlayClickSound()
+    {
+        clickSound.Play();
     }
 
     public bool GetActivityFlag()
