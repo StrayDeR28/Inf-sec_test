@@ -335,7 +335,7 @@ MonoBehaviour:
   backgroundController: {fileID: 1574576982}
   chooseController: {fileID: 1153113079}
   audioController: {fileID: 2025759915}
-  pauseMenu: {fileID: 0}
+  pauseMenu: {fileID: 784292640}
 --- !u!114 &423139309
 MonoBehaviour:
   m_ObjectHideFlags: 0
