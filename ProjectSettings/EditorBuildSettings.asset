@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StatisticScene.unity
     guid: 2264af3cc9483404fa1165d2833f84da
+  - enabled: 1
+    path: Assets/Scenes/CaseSceneWide.unity
+    guid: 6f97f140ba4b8364c9537182f5c5192f
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: b035e72ef2bc9de4a8940e26f51575fc, type: 2}

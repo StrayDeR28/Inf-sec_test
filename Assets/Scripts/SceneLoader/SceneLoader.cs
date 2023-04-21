@@ -10,7 +10,7 @@ public class SceneLoader : MonoBehaviour
     private string sceneName;
     [SerializeField] private ScenesEnum LoadNextScene = ScenesEnum.Registration;
 
-    [SerializeField] private enum ScenesEnum {None=0, Registration=1, Novell1=2, Map=3, Case=4, NovellScene21=5, NovellScene22 = 6, Statistic = 7};
+    [SerializeField] private enum ScenesEnum {None=0, Registration=1, Novell1=2, Map=3, Case=4, NovellScene21=5, NovellScene22 = 6, Statistic = 7, CaseWide = 8};
     public void LoadScene()
     {
         Time.timeScale = 1f;
@@ -30,6 +30,10 @@ public class SceneLoader : MonoBehaviour
                 break;
             case ScenesEnum.Case:
                 sceneName = "CaseSceneMain";
+                StartCoroutine(LoadSceneAsync());
+                break;
+            case ScenesEnum.CaseWide:
+                sceneName = "CaseSceneWide";
                 StartCoroutine(LoadSceneAsync());
                 break;
             case ScenesEnum.NovellScene21:

@@ -15327,7 +15327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 4
+  LoadNextScene: 8
 --- !u!114 &1838130750
 MonoBehaviour:
   m_ObjectHideFlags: 0
