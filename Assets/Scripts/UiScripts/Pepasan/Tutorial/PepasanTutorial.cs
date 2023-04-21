@@ -10,6 +10,7 @@ public class PepasanTutorial : MonoBehaviour
     [SerializeField] private Button caseButton;
     [SerializeField] private GameObject progressBar;
     [SerializeField] private GameObject palace;
+    [SerializeField] private Button mapZoomButton;
 
     [SerializeField] private GameObject progressbarBackground;
     [SerializeField] private GameObject provinceBackground;
@@ -23,7 +24,7 @@ public class PepasanTutorial : MonoBehaviour
     public void TutorialNextStep()
     {
         step++;
-        if (step <= 24)
+        if (step <= 26)
         {
             switch (step)
             {
@@ -49,22 +50,31 @@ public class PepasanTutorial : MonoBehaviour
                     menuBackground.SetActive(false);
                     menuBackground.transform.GetChild(0).gameObject.SetActive(false);
                     provinceBackground.SetActive(true);
+                    mapZoomButton.interactable = false;
                     nextTextButton.interactable = false;
                     break;
                 case 12:
                     provinceBackground.SetActive(false);
-                    provinceBackground.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
-                    provinceBackground.transform.GetChild(0).gameObject.SetActive(false);
                     menuBackground.SetActive(true);
                     nextTextButton.interactable = true;
                     break;
                 case 14:
+                    mapZoomButton.interactable = true;
+                    nextTextButton.interactable = false;
+                    break;
+                case 15:
+                    mapZoomButton.interactable = false;
                     menuBackground.SetActive(false);
                     provinceBackground.SetActive(true);
+                    break;
+                case 16:
+                    nextTextButton.interactable = true;
+                    provinceBackground.transform.GetChild(0).gameObject.SetActive(false);
+                    provinceBackground.GetComponent<Image>().color = new Color32(0, 0, 0, 0);
                     caseBackground.SetActive(true);
                     caseButton.interactable = false;
                     break;
-                case 24:
+                case 26:
                     caseButton.interactable = true;
 
                     webManager.DataUpdate("tutorial", 1);
