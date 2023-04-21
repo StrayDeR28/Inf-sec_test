@@ -13722,7 +13722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 4
+  LoadNextScene: 8
 --- !u!114 &1663864427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13735,7 +13735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caseNumber: 0
+  caseNumber: 3
 --- !u!114 &1663864428
 MonoBehaviour:
   m_ObjectHideFlags: 0
