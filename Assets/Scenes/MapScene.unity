@@ -661,6 +661,7 @@ MonoBehaviour:
   progressBar: {fileID: 2031287806}
   palace: {fileID: 950674359}
   mapZoomButton: {fileID: 1873778606}
+  menuStatisticButton: {fileID: 2063287184}
   progressbarBackground: {fileID: 1003774829}
   provinceBackground: {fileID: 835795153}
   caseBackground: {fileID: 1110554025}
@@ -16886,6 +16887,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2063287184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1961796990888229324, guid: 57e58fc140183b54a89124a7268540d6, type: 3}
+  m_PrefabInstance: {fileID: 656038431}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2075910996

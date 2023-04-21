@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,7 @@ public class PepasanTutorial : MonoBehaviour
     [SerializeField] private GameObject progressBar;
     [SerializeField] private GameObject palace;
     [SerializeField] private Button mapZoomButton;
+    [SerializeField] private Button menuStatisticButton;
 
     [SerializeField] private GameObject progressbarBackground;
     [SerializeField] private GameObject provinceBackground;
@@ -29,6 +31,8 @@ public class PepasanTutorial : MonoBehaviour
             switch (step)
             {
                 case 2:
+                    menuStatisticButton.interactable = false;
+                    menuStatisticButton.GetComponentInChildren<TMP_Text>().color = new Color32(166, 166, 166, 255);
                     palace.GetComponent<Canvas>().overrideSorting=false;
                     mainBackground.SetActive(false);
                     progressbarBackground.SetActive(true);
