@@ -1037,7 +1037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -33.5, y: -30.2}
   m_SizeDelta: {x: 38.0735, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &94875170
@@ -1843,7 +1843,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 7.5, y: -2.4}
   m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255277580
@@ -3927,6 +3927,7 @@ GameObject:
   - component: {fileID: 555878548}
   - component: {fileID: 555878547}
   - component: {fileID: 555878546}
+  - component: {fileID: 555878549}
   m_Layer: 0
   m_Name: Province 3 Task 2
   m_TagString: Untagged
@@ -3952,8 +3953,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 580.3841, y: -388.02576}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 587.9054, y: -408.02258}
+  m_SizeDelta: {x: 109.0416, y: 83.0323}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555878546
 MonoBehaviour:
@@ -4012,15 +4013,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1996707949, guid: 94cfcf6096f1e51418b14c8443d7a9f3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4037,6 +4038,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555878544}
   m_CullTransparentMesh: 1
+--- !u!114 &555878549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555878544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &596721535
 GameObject:
   m_ObjectHideFlags: 0
@@ -4204,6 +4218,7 @@ GameObject:
   - component: {fileID: 633711547}
   - component: {fileID: 633711546}
   - component: {fileID: 633711545}
+  - component: {fileID: 633711548}
   m_Layer: 0
   m_Name: Province 3 Task 4
   m_TagString: Untagged
@@ -4229,8 +4244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 580.3841, y: -448.02576}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 499.21405, y: -358.91858}
+  m_SizeDelta: {x: 153.5591, y: 85.4058}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633711545
 MonoBehaviour:
@@ -4289,15 +4304,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -402246116, guid: 884c8d328f6580c4f8f88f7b3f113502, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4314,6 +4329,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633711543}
   m_CullTransparentMesh: 1
+--- !u!114 &633711548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633711543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &639456912 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4516573445113660945, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
@@ -6309,6 +6337,7 @@ GameObject:
   - component: {fileID: 936989827}
   - component: {fileID: 936989826}
   - component: {fileID: 936989825}
+  - component: {fileID: 936989828}
   m_Layer: 0
   m_Name: Province 4 Task 2
   m_TagString: Untagged
@@ -6330,12 +6359,12 @@ RectTransform:
   m_Children:
   - {fileID: 454005113}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 715, y: -537}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 703.0964, y: -568.2056}
+  m_SizeDelta: {x: 95.7165, y: 107.4699}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &936989825
 MonoBehaviour:
@@ -6394,15 +6423,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1658368656, guid: 526062bf443b8174ca2fc06f1d7add80, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6419,6 +6448,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936989823}
   m_CullTransparentMesh: 1
+--- !u!114 &936989828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936989823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &949740514
 GameObject:
   m_ObjectHideFlags: 0
@@ -7534,6 +7576,7 @@ GameObject:
   - component: {fileID: 1059169461}
   - component: {fileID: 1059169460}
   - component: {fileID: 1059169459}
+  - component: {fileID: 1059169462}
   m_Layer: 0
   m_Name: Province 4 Task 1
   m_TagString: Untagged
@@ -7555,12 +7598,12 @@ RectTransform:
   m_Children:
   - {fileID: 255277579}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 655, y: -537}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 724.4814, y: -598.8379}
+  m_SizeDelta: {x: 102.9927, y: 84.9046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059169459
 MonoBehaviour:
@@ -7619,15 +7662,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1727949452, guid: 0469821ad1238c640bef5dc2cf60b0c6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -7644,6 +7687,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1059169457}
   m_CullTransparentMesh: 1
+--- !u!114 &1059169462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059169457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &1071612610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8518,7 +8574,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.6, y: 13.3}
   m_SizeDelta: {x: 38.0735, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137745593
@@ -9959,7 +10015,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 3.5, y: 7.5}
   m_SizeDelta: {x: 62.6856, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272980005
@@ -10121,10 +10177,10 @@ RectTransform:
   - {fileID: 1653108154}
   - {fileID: 555878545}
   - {fileID: 633711544}
+  - {fileID: 1327262939}
   - {fileID: 1059169458}
   - {fileID: 936989824}
   - {fileID: 1559071093}
-  - {fileID: 1327262939}
   - {fileID: 1362170965}
   - {fileID: 105992750}
   - {fileID: 2058095872}
@@ -10418,6 +10474,7 @@ GameObject:
   - component: {fileID: 1327262942}
   - component: {fileID: 1327262941}
   - component: {fileID: 1327262940}
+  - component: {fileID: 1327262943}
   m_Layer: 0
   m_Name: Province 3 Task 3
   m_TagString: Untagged
@@ -10439,12 +10496,12 @@ RectTransform:
   m_Children:
   - {fileID: 1137745592}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520.3841, y: -448.02576}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 545.4611, y: -438.534}
+  m_SizeDelta: {x: 174.7089, y: 125.2202}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327262940
 MonoBehaviour:
@@ -10503,15 +10560,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1691375268, guid: 47fd1f7215c33b64b8b1f17f536e497b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -10528,6 +10585,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1327262938}
   m_CullTransparentMesh: 1
+--- !u!114 &1327262943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327262938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &1328307812
 GameObject:
   m_ObjectHideFlags: 0
@@ -10987,6 +11057,7 @@ GameObject:
   - component: {fileID: 1362170968}
   - component: {fileID: 1362170967}
   - component: {fileID: 1362170966}
+  - component: {fileID: 1362170969}
   m_Layer: 0
   m_Name: Province 4 Task 4
   m_TagString: Untagged
@@ -11012,8 +11083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 715, y: -597}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 682.7102, y: -505.37744}
+  m_SizeDelta: {x: 102.3527, y: 97.0917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1362170966
 MonoBehaviour:
@@ -11072,15 +11143,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -936688825, guid: 4494f3903bcb94d4f8c75f336730cea6, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11097,6 +11168,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362170964}
   m_CullTransparentMesh: 1
+--- !u!114 &1362170969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362170964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &1378711731
 GameObject:
   m_ObjectHideFlags: 0
@@ -11884,7 +11968,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -6.7, y: -4.9}
   m_SizeDelta: {x: 62.6856, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1489139326
@@ -12260,6 +12344,7 @@ GameObject:
   - component: {fileID: 1559071096}
   - component: {fileID: 1559071095}
   - component: {fileID: 1559071094}
+  - component: {fileID: 1559071097}
   m_Layer: 0
   m_Name: Province 4 Task 3
   m_TagString: Untagged
@@ -12281,12 +12366,12 @@ RectTransform:
   m_Children:
   - {fileID: 94875169}
   m_Father: {fileID: 1283439044}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 655, y: -597}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 667.0261, y: -580.5083}
+  m_SizeDelta: {x: 128.6088, y: 187.5478}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1559071094
 MonoBehaviour:
@@ -12345,15 +12430,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1345001920, guid: 4f91a9fa47dcf004ea98789169594049, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -12370,6 +12455,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559071092}
   m_CullTransparentMesh: 1
+--- !u!114 &1559071097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559071092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &1564621648
 GameObject:
   m_ObjectHideFlags: 0
@@ -13338,6 +13436,7 @@ GameObject:
   - component: {fileID: 1653108157}
   - component: {fileID: 1653108156}
   - component: {fileID: 1653108155}
+  - component: {fileID: 1653108158}
   m_Layer: 0
   m_Name: Province 3 Task 1
   m_TagString: Untagged
@@ -13363,8 +13462,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 520.3841, y: -388.02576}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 648.27826, y: -453.56882}
+  m_SizeDelta: {x: 74.6588, y: 67.5679}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653108155
 MonoBehaviour:
@@ -13423,15 +13522,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9622642, g: 0.24964403, b: 0.24964403, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -890686414, guid: 444510f731d3eb242abdee7425351eae, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13448,6 +13547,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653108153}
   m_CullTransparentMesh: 1
+--- !u!114 &1653108158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653108153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9226edf1f3109a94f808932ff38233e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaLevel: 1
 --- !u!1 &1663864421
 GameObject:
   m_ObjectHideFlags: 0
