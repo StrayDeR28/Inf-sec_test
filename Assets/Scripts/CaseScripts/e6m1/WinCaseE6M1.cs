@@ -8,10 +8,11 @@ public class WinCaseE6M1 : MonoBehaviour
     public void SetPieceCounter()
     {
         pieceCounter++;
+        print(pieceCounter);
     }
     public void CaseWin()
     {
-        if ( pieceCounter == 16 )//кол-во элементов для завершения
+        if ( pieceCounter == 20 )//кол-во элементов для завершения
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
