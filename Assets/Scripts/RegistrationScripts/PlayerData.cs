@@ -22,7 +22,7 @@ public class PlayerData
     public bool tutorial;
 
     public ErrorCode error;
-    public RankCode rank;
+    public RankCode title;
 }
 
 public enum ErrorCode {none, loginEmailError, loginPassError, signupEmailError, signupNickError}

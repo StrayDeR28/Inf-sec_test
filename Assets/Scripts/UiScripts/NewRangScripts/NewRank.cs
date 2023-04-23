@@ -74,15 +74,15 @@ public class NewRank : MonoBehaviour
     }*/
     private void SetNewRank()
     {
-        switch (WebManager.player.rank)
+        switch (WebManager.player.title)
         {
             case RankCode.middle:
-                webManager.DataUpdate("rank", 2);
-                WebManager.player.rank = RankCode.middleEarn;
+                webManager.DataUpdate("title", 2);
+                WebManager.player.title = RankCode.middleEarn;
                 break;
             case RankCode.senior:
-                webManager.DataUpdate("rank", 4);
-                WebManager.player.rank = RankCode.seniorEarn;
+                webManager.DataUpdate("title", 4);
+                WebManager.player.title = RankCode.seniorEarn;
                 break;
         }
     }

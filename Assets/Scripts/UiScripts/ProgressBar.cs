@@ -20,7 +20,7 @@ public class ProgressBar : MonoBehaviour
         bytes.text = (WebManager.player.bits/8).ToString();
         UpdateProgress();
         SetNewRank();
-        switch (WebManager.player.rank)
+        switch (WebManager.player.title)
         {
             case RankCode.middle:
                 NewRankMiddle.GetComponent<NewRank>().Pause();
@@ -50,20 +50,20 @@ public class ProgressBar : MonoBehaviour
     }
     public void SetNewRank()
     {
-        if (WebManager.player.rank == RankCode.junior && WebManager.player.bits >= 24)
+        if (WebManager.player.title == RankCode.junior && WebManager.player.bits >= 24)
         {
-            webManager.DataUpdate("rank", 1);
-            WebManager.player.rank = RankCode.middle;
+            webManager.DataUpdate("title", 1);
+            WebManager.player.title = RankCode.middle;
         }
-        else if (WebManager.player.rank == RankCode.middleEarn && WebManager.player.bits >= 40)
+        else if (WebManager.player.title == RankCode.middleEarn && WebManager.player.bits >= 40)
         {
-            webManager.DataUpdate("rank", 3);
-            WebManager.player.rank = RankCode.senior;
+            webManager.DataUpdate("title", 3);
+            WebManager.player.title = RankCode.senior;
         }
         else if (WebManager.player.bits >= 56)
         {
-            webManager.DataUpdate("rank", 5);
-            WebManager.player.rank = RankCode.samurai;
+            webManager.DataUpdate("title", 5);
+            WebManager.player.title = RankCode.samurai;
         }
     }
     public void UpdateProgress()
