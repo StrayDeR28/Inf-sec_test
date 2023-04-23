@@ -13,13 +13,26 @@ public class ProgressBar : MonoBehaviour
     public GameObject Congratulations;
     public Slider slider;
 
-    
+    [SerializeField] private WebManager webManager;
     void Awake()
     {
         bits.SetText((WebManager.player.bits%8).ToString());
         bytes.text = (WebManager.player.bits/8).ToString();
         UpdateProgress();
-        if(WebManager.player.bits%8 == 0)
+        SetNewRank();
+        switch (WebManager.player.rank)
+        {
+            case RankCode.middle:
+                NewRankMiddle.GetComponent<NewRank>().Pause();
+                break;
+            case RankCode.senior:
+                NewRankSenior.GetComponent<NewRank>().Pause();
+                break;
+            case RankCode.samurai:
+                Congratulations.GetComponent<NewRank>().Pause();
+                break;
+        }
+        /*if(WebManager.player.bits%8 == 0)
         {
             switch (WebManager.player.bits/8)
             {
@@ -33,6 +46,24 @@ public class ProgressBar : MonoBehaviour
                     Congratulations.GetComponent<NewRank>().Pause();
                     break;
             }
+        }*/
+    }
+    public void SetNewRank()
+    {
+        if (WebManager.player.rank == RankCode.junior && WebManager.player.bits >= 24)
+        {
+            webManager.DataUpdate("rank", 1);
+            WebManager.player.rank = RankCode.middle;
+        }
+        else if (WebManager.player.rank == RankCode.middleEarn && WebManager.player.bits >= 40)
+        {
+            webManager.DataUpdate("rank", 3);
+            WebManager.player.rank = RankCode.senior;
+        }
+        else if (WebManager.player.bits >= 56)
+        {
+            webManager.DataUpdate("rank", 5);
+            WebManager.player.rank = RankCode.samurai;
         }
     }
     public void UpdateProgress()

@@ -14,6 +14,7 @@ public class NewRank : MonoBehaviour
     public GameObject WaysPartical;
     public GameObject DotsPartical;
 
+    [SerializeField] private WebManager webManager;
     [SerializeField] private AudioSource newTitleSound;
     private void Awake()
     {
@@ -28,6 +29,7 @@ public class NewRank : MonoBehaviour
     }
     public void Resume()
     {
+        SetNewRank();
         RaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
         WaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
         DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
@@ -70,6 +72,20 @@ public class NewRank : MonoBehaviour
         WaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
         DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
     }*/
+    private void SetNewRank()
+    {
+        switch (WebManager.player.rank)
+        {
+            case RankCode.middle:
+                webManager.DataUpdate("rank", 2);
+                WebManager.player.rank = RankCode.middleEarn;
+                break;
+            case RankCode.senior:
+                webManager.DataUpdate("rank", 4);
+                WebManager.player.rank = RankCode.seniorEarn;
+                break;
+        }
+    }
     private void Animation()
     {
         activeNewRankMenu = !activeNewRankMenu;

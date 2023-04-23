@@ -9757,6 +9757,7 @@ MonoBehaviour:
   RaysPartical: {fileID: 1644973912}
   WaysPartical: {fileID: 992433362}
   DotsPartical: {fileID: 645921974}
+  webManager: {fileID: 1127418120}
   newTitleSound: {fileID: 348897878}
 --- !u!1 &1235853062
 GameObject:
@@ -9989,6 +9990,7 @@ MonoBehaviour:
   RaysPartical: {fileID: 1326885867}
   WaysPartical: {fileID: 1966958934}
   DotsPartical: {fileID: 1272957859}
+  webManager: {fileID: 1127418120}
   newTitleSound: {fileID: 348897878}
 --- !u!1 &1247883848
 GameObject:
@@ -11972,6 +11974,7 @@ MonoBehaviour:
   RaysPartical: {fileID: 2113549061}
   WaysPartical: {fileID: 1103066583}
   DotsPartical: {fileID: 128401273}
+  webManager: {fileID: 1127418120}
   newTitleSound: {fileID: 348897878}
 --- !u!1 &1475976421
 GameObject:
@@ -16776,6 +16779,7 @@ MonoBehaviour:
   NewRankSenior: {fileID: 1241222154}
   Congratulations: {fileID: 1475391668}
   slider: {fileID: 2031287808}
+  webManager: {fileID: 1127418120}
 --- !u!1 &2037747070
 GameObject:
   m_ObjectHideFlags: 0

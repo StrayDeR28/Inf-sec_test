@@ -17,12 +17,7 @@ MonoBehaviour:
       \u0422\u0432\u043E\u044F \u043C\u0438\u0441\u0441\u0438\u044F \u043D\u0435
       \u0437\u0430\u043A\u043E\u043D\u0447\u0435\u043D\u0430."
     speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-      spriteIndex: 0
-      actionType: 1
-      coords: {x: 400, y: 0}
-      moveSpeed: 0
+    actions: []
     music: {fileID: 8300000, guid: 7943c38b0d5ff664e8a9e02ced185ab4, type: 3}
     sound: {fileID: 8300000, guid: e772c0e4b77f073418cfa2208a6271b5, type: 3}
   - text: "\u0422\u0435\u0440\u0440\u0438\u0442\u043E\u0440\u0438\u0438 \u043C\u043E\u0435\u0439
@@ -34,12 +29,7 @@ MonoBehaviour:
       \u044F \u0442\u0435\u0431\u044F \u043D\u0430\u0433\u0440\u0430\u0436\u0443
       \u0431\u0430\u0439\u0442\u0430\u043C\u0438!"
     speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-      spriteIndex: 1
-      actionType: 0
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
+    actions: []
     music: {fileID: 8300000, guid: 7943c38b0d5ff664e8a9e02ced185ab4, type: 3}
     sound: {fileID: 8300000, guid: 29d124bc991565d4c8e57ae819ae9e59, type: 3}
   - text: "\u041F\u043E\u043C\u043D\u0438, \u0447\u0442\u043E \u0442\u043E\u043B\u044C\u043A\u043E
@@ -47,23 +37,13 @@ MonoBehaviour:
       \u0418\u043C\u043F\u0435\u0440\u0438\u044E \u043E\u0442 \u0432\u0440\u0430\u0433\u043E\u0432!
       K\u014Dun o!"
     speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-      spriteIndex: 0
-      actionType: 0
-      coords: {x: 0, y: 0}
-      moveSpeed: 0
+    actions: []
     music: {fileID: 8300000, guid: 7943c38b0d5ff664e8a9e02ced185ab4, type: 3}
     sound: {fileID: 8300000, guid: e772c0e4b77f073418cfa2208a6271b5, type: 3}
   - text: <...>
     speaker: {fileID: 11400000, guid: 2030cd533581d4d48befdbbd7cc6d7e8, type: 2}
-    actions:
-    - speaker: {fileID: 11400000, guid: 3d6197ceaa0daca48a5724f78f5c0b9a, type: 2}
-      spriteIndex: 0
-      actionType: 3
-      coords: {x: 400, y: 0}
-      moveSpeed: 0
+    actions: []
     music: {fileID: 8300000, guid: 7943c38b0d5ff664e8a9e02ced185ab4, type: 3}
     sound: {fileID: 0}
-  background: {fileID: 21300000, guid: 76d0b0b292e712c4dbd26b1a673a4981, type: 3}
+  background: {fileID: 21300000, guid: d435b847e646496479b434a278a05626, type: 3}
   nextScene: {fileID: 0}

@@ -26,4 +26,4 @@ public class PlayerData
 }
 
 public enum ErrorCode {none, loginEmailError, loginPassError, signupEmailError, signupNickError}
-public enum RankCode {junior, middle, senior, samurai}
+public enum RankCode {junior, middle, middleEarn, senior, seniorEarn, samurai }
