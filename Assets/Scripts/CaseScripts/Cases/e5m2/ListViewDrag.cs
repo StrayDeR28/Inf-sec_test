@@ -4,67 +4,61 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ListViewDrag : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler
+public class ListViewDrag : MonoBehaviour, IPointerDownHandler, IDragHandler,  IBeginDragHandler, IEndDragHandler
 {
-    public RectTransform currentTransform;
-    private GameObject mainContent;
-    private Vector3 currentPossition;
-
-    private int totalChild;
-    [SerializeField] private Canvas canvas;
     [SerializeField] private int elementNumber;
+    [SerializeField] private Canvas canvas;
+    private RectTransform rectTransform;
+    [SerializeField] private GameObject oldPositionHolder;
+
+    Transform parentAfterDrag;
     private void Awake()
     {
-        mainContent = currentTransform.parent.gameObject;
-        totalChild = mainContent.transform.childCount;
-    }
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        currentPossition = currentTransform.position;
-    }
-
-    public void OnDrag(PointerEventData eventData)
-    {
-        currentTransform.position += (Vector3)eventData.delta;
-        //new Vector3(currentTransform.position.x, eventData.position.y, currentTransform.position.z);//а если всё от eventData?
-
-        for (int i = 0; i < totalChild; i++)
-        {
-            if (i != currentTransform.GetSiblingIndex())
-            {
-                Transform otherTransform = mainContent.transform.GetChild(i);
-                int distance = (int)Vector3.Distance(currentTransform.position,
-                    otherTransform.position);
-                if (distance <= 10)
-                {
-                    Vector3 otherTransformOldPosition = otherTransform.position;
-                    otherTransform.position = new Vector3(otherTransform.position.x, currentPossition.y,
-                        otherTransform.position.z);
-                    currentTransform.position = new Vector3(currentTransform.position.x, otherTransformOldPosition.y,
-                        currentTransform.position.z);
-                    currentTransform.SetSiblingIndex(otherTransform.GetSiblingIndex());
-                    currentPossition = currentTransform.position;
-                }
-            }
-        }
+        rectTransform = GetComponent<RectTransform>();
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 0.6f;
         gameObject.GetComponent<Image>().color = color;
-        //gameObject.GetComponent<Image>().raycastTarget = false;
+        gameObject.GetComponent<Image>().raycastTarget = false;
     }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (rectTransform.anchoredPosition.x != 133)
+        {
+            rectTransform.anchoredPosition = new Vector2(133, rectTransform.anchoredPosition.y);
+        }       
+    }
+
     public void OnEndDrag(PointerEventData eventData)
     {
+        //костыль
+        if(rectTransform.anchoredPosition.y >=168 || rectTransform.anchoredPosition.y <= -234)
+        {
+            rectTransform.anchoredPosition = new Vector2(oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition().x, oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition().y);
+        }
+        if( Mathf.Abs(oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition().y - rectTransform.anchoredPosition.y) <= 35f)
+        {
+            print("dfs");
+            rectTransform.anchoredPosition = new Vector2 (oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition().x, oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition().y);
+        }
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 1f;
         gameObject.GetComponent<Image>().color = color;
-       // gameObject.GetComponent<Image>().raycastTarget = true;
+        gameObject.GetComponent<Image>().raycastTarget = true;
     }
-    public void OnPointerUp(PointerEventData eventData)
+
+    public void OnPointerDown(PointerEventData eventData)
     {
-        currentTransform.position = currentPossition;
+        oldPositionHolder.GetComponent<OldPositionHolder>().SetOldPosition(rectTransform.anchoredPosition);
+    }
+
+    public void OnDrop(PointerEventData eventData)
+    {
+
     }
     public int GetElementNumber()
     {
