@@ -6,28 +6,19 @@ using UnityEngine.UI;
 
 public class LIstViewDrop : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private int elementNumber;
     [SerializeField] private bool rightElement;
-    [SerializeField] private GameObject oldPositionHolder;
     public void OnDrop(PointerEventData eventData)
     {
-        
-        eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
+        var oldElementTransform = transform.GetChild(0);//смена строк
+        oldElementTransform.SetParent(eventData.pointerDrag.transform.parent);
+        oldElementTransform.localPosition = Vector3.zero;
+
+        var newElementTransform = eventData.pointerDrag.transform;
+        newElementTransform.SetParent(transform);
+        newElementTransform.localPosition = Vector3.zero;
+
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 1f;
         gameObject.GetComponent<Image>().color = color;
-        GetComponent<RectTransform>().anchoredPosition = oldPositionHolder.GetComponent<OldPositionHolder>().GetOldPosition();
-        if (eventData.pointerDrag.GetComponent<ListViewDrag>().GetElementNumber() == elementNumber)
-        {
-            rightElement = true;
-        }
-        else
-        {
-            rightElement = false;
-        }
-    }
-    public bool IsRightElement()
-    {
-        return rightElement;
     }
 }
