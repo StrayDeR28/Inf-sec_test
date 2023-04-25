@@ -12,9 +12,9 @@ public class E7M1Drop : MonoBehaviour, IDropHandler
         if (transform.childCount == 0)
         {
             eventData.pointerDrag.transform.SetParent(transform);
-            if (eventData.pointerDrag.GetComponent<E5M3Drag>() && eventData.pointerDrag.GetComponent<E5M3Drag>().GetPieceNumber() == pieceNumber)
+            if (eventData.pointerDrag.GetComponent<E7M1Drag>() && eventData.pointerDrag.GetComponent<E7M1Drag>().GetPieceNumber() == pieceNumber)
             {
-                eventData.pointerDrag.GetComponent<E5M3Drag>().SetRightPositionFlag(true);
+                eventData.pointerDrag.GetComponent<E7M1Drag>().SetRightPositionFlag(true);
             }
         }
         Color color = gameObject.GetComponent<Image>().color;

@@ -10,16 +10,13 @@ public class WinCaseE7M1 : MonoBehaviour
         bool checkCondition = false;
         foreach (GameObject item in blocks)
         {
-            checkCondition = item.GetComponent<E5M3Drag>().GetRightPositionFlag();
+            checkCondition = item.GetComponent<E7M1Drag>().GetRightPositionFlag();
             if (checkCondition == false)
             {
                 return;
             }
         }
-        if (checkCondition == true)
-        {
-            gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
-        }
+        gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
     }
 }
 
