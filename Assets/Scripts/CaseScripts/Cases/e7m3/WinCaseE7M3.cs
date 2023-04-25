@@ -8,7 +8,7 @@ public class WinCaseE7M3 : MonoBehaviour
     [SerializeField] private TMP_InputField answerInputField;
     public void CaseWin()
     {
-        if (answerInputField.text != null && (answerInputField.text == "1")) 
+        if (answerInputField.text != null && (answerInputField.text == "_icon-header-logo")) 
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
