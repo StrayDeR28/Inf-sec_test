@@ -3,17 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WinCaseE5M2 : MonoBehaviour
-{
+{   
+    [SerializeField] private GameObject grid;
     [SerializeField] private List<GameObject> elementsPosition;
     public void CheckParts()
     {
+        var gridTransform = grid.GetComponent<Transform>();
         bool checkCondition = false;
-        foreach (GameObject item in elementsPosition)
+        for (int i = 0; i < gridTransform.childCount; i++) 
         {
-            checkCondition = item.GetComponent<LIstViewDrop>().IsRightElement();
-            if (checkCondition == false)
+            if (gridTransform.GetChild(i).GetChild(0) != elementsPosition[i].transform)
             {
-                return;
+                checkCondition = false;
+                print(checkCondition);
+                break;
+            }
+            else
+            {
+                checkCondition = true;
+                print(checkCondition);
             }
         }
         if (checkCondition == true)
