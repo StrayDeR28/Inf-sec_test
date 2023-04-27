@@ -5,10 +5,21 @@ using UnityEngine;
 
 public class WinCaseE4M2 : MonoBehaviour
 {
-    
+    [SerializeField] List<Drag4> rows;
+
+    bool flag;
 
     public void CaseWin()
     {
-        gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
+        foreach (var row in rows)
+        {
+            flag = true;
+            flag &= row.flag;
+        }
+        if(flag)
+        {
+            print("крутой");
+            gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
+        }
     }
 }
