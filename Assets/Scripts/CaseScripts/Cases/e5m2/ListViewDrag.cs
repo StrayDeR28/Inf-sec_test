@@ -8,12 +8,18 @@ public class ListViewDrag : MonoBehaviour, IPointerDownHandler, IDragHandler,  I
 {
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
+    Transform parentAfterDrag;
+    private Transform rootTransfrom;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+        rootTransfrom = transform.root;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        parentAfterDrag = transform.parent;
+        transform.SetParent(transform.root);
+        transform.SetAsLastSibling();
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 0.6f;
         gameObject.GetComponent<Image>().color = color;
@@ -23,14 +29,18 @@ public class ListViewDrag : MonoBehaviour, IPointerDownHandler, IDragHandler,  I
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
-        if (rectTransform.anchoredPosition.x != 0)//ограничение перемещения только по вертикали
+        if (rectTransform.anchoredPosition.x != 133)//ограничение перемещения только по вертикали
         {
-            rectTransform.anchoredPosition = new Vector2(0, rectTransform.anchoredPosition.y);
+            rectTransform.anchoredPosition = new Vector2(133, rectTransform.anchoredPosition.y);
         }  
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (transform.parent == rootTransfrom)
+        {
+            transform.SetParent(parentAfterDrag);
+        }
         transform.localPosition = Vector3.zero;
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 1f;
@@ -42,4 +52,5 @@ public class ListViewDrag : MonoBehaviour, IPointerDownHandler, IDragHandler,  I
     {
 
     }
+    public Transform GetTransform() { return parentAfterDrag; }
 }
