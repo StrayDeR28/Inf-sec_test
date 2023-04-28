@@ -30,7 +30,7 @@ public class SpriteController : MonoBehaviour
         }
         else
         {
-            animator.enabled = false;
+            //animator.enabled = false;//я не понял, зачем выключать обновление аниматору. Если выключать, при возврате на action APPEAR будет ломаться смена спрайтов
             canvasGroup.alpha = 1;
         }
         rect.localPosition = coords;
