@@ -9,7 +9,6 @@ public class E5M3Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     [SerializeField] private int pieceNumber;
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
-    [SerializeField] private bool rightPosition = false;
     Transform parentAfterDrag;
     private Transform rootTransfrom;
     private void Awake()
@@ -22,7 +21,6 @@ public class E5M3Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
         transform.SetAsLastSibling();
-        rightPosition = false;
         Color color = gameObject.GetComponent<Image>().color;
         color.a = 0.6f;
         gameObject.GetComponent<Image>().color = color;
@@ -55,9 +53,4 @@ public class E5M3Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     {
         return pieceNumber;
     }
-    public void SetRightPositionFlag(bool flag)
-    {
-        rightPosition = flag;
-    }
-    public bool GetRightPositionFlag() { return rightPosition; }
 }

@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class WinCaseE5M3 : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> blocks;
-    public void CheckParts()
+    [SerializeField] private GameObject content;
+    [SerializeField] private List<GameObject> contentPosition;
+    public void CheckСontentPosition()
     {
+        var contentTransform = content.GetComponent<Transform>();
         bool checkCondition = false;
-        foreach (GameObject item in blocks)
+        for (int i = 1; i < contentTransform.childCount; i++)//от 1 т.к. первый ребенок - это задний фон
         {
-            checkCondition = item.GetComponent<E5M3Drag>().GetRightPositionFlag();
-            if (checkCondition == false)
+            if (contentTransform.GetChild(i).childCount >0)
             {
-                return;
+                if (contentTransform.GetChild(i).GetChild(0) != contentPosition[i-1].transform)
+                {
+                    checkCondition = false;
+                    print(checkCondition);
+                    break;
+                }
+                else
+                {
+                    checkCondition = true;
+                    print(checkCondition);
+                }
+            }
+            else
+            {
+                checkCondition = false;
+                print("no Child");
+                break;
             }
         }
         if (checkCondition == true)
