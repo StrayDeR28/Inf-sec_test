@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class E5M3Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
-    [SerializeField] private int pieceNumber;
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     Transform parentAfterDrag;
@@ -48,9 +47,5 @@ public class E5M3Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     public void OnPointerDown(PointerEventData eventData)
     {
 
-    }
-    public int GetPieceNumber()
-    {
-        return pieceNumber;
     }
 }

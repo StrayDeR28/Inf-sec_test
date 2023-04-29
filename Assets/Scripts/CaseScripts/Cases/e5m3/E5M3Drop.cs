@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class E5M3Drop : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private int pieceNumber;
     public void OnDrop(PointerEventData eventData)
     {
         if (transform.childCount == 0)
