@@ -12,47 +12,42 @@ public class Stats {
 
     public enum Type {
         Zerokotto,
-        Pitamba,
         Androididzu,
+        Napitone,
         Reliaochoki,
         Chatabotto,
         Igrahagi,
         Javascriptu,
-        Napitone,
     }
 
     private SingleStat ZerokottoStat;
-    private SingleStat PitambaStat;
     private SingleStat AndroididzuStat;
+    private SingleStat NapitoneStat;
     private SingleStat ReliaochokiStat;
     private SingleStat ChatabottoStat;
     private SingleStat IgrahagiStat;
     private SingleStat JavascriptuStat;
-    private SingleStat NapitoneStat;
 
-    public Stats(int ZerokottoStatAmount, int PitambaStatAmount, int AndroididzuStatAmount, int ReliaochokiStatAmount, int ChatabottoStatAmount, int IgrahagiStatAmount, int JavascriptuStatAmount, int NapitoneStatAmount) {
+    public Stats(int ZerokottoStatAmount, int AndroididzuStatAmount, int NapitoneStatAmount, int ReliaochokiStatAmount, int ChatabottoStatAmount, int IgrahagiStatAmount, int JavascriptuStatAmount) {
         ZerokottoStat   = new SingleStat(ZerokottoStatAmount);
-        PitambaStat     = new SingleStat(PitambaStatAmount);
         AndroididzuStat = new SingleStat(AndroididzuStatAmount);
+        NapitoneStat    = new SingleStat(NapitoneStatAmount);
         ReliaochokiStat = new SingleStat(ReliaochokiStatAmount);
         ChatabottoStat  = new SingleStat(ChatabottoStatAmount);
         IgrahagiStat    = new SingleStat(IgrahagiStatAmount);
         JavascriptuStat = new SingleStat(JavascriptuStatAmount);
-        NapitoneStat    = new SingleStat(NapitoneStatAmount);
     }
-
 
     private SingleStat GetSingleStat(Type statType) {
         switch (statType) {
         default:
         case Type.Zerokotto:    return ZerokottoStat;
-        case Type.Pitamba:      return PitambaStat;
         case Type.Androididzu:  return AndroididzuStat;
+        case Type.Napitone:     return NapitoneStat;
         case Type.Reliaochoki:  return ReliaochokiStat;
         case Type.Chatabotto:   return ChatabottoStat;
         case Type.Igrahagi:     return IgrahagiStat;
         case Type.Javascriptu:  return JavascriptuStat;
-        case Type.Napitone:     return NapitoneStat;
         }
     }
     
