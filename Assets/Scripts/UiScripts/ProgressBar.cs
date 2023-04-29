@@ -50,6 +50,11 @@ public class ProgressBar : MonoBehaviour
             webManager.DataUpdate("title", 5);
             WebManager.player.title = RankCode.samurai;
         }
+        else if (WebManager.player.title == RankCode.samurai)
+        {
+            webManager.DataUpdate("title", 6);
+            WebManager.player.title = RankCode.samuraiEarn;
+        }
     }
     public void UpdateProgress()
     {
