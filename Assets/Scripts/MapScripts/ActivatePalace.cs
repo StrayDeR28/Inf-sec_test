@@ -16,7 +16,7 @@ public class ActivatePalace : MonoBehaviour
             particles.gameObject.SetActive(true);
             gameObject.GetComponent<SceneLoader>().SetNextScene("NovellScene2.1");
         }
-        else if (bits == 56)
+        else if (bits >= 56)
         {
             gameObject.GetComponent<Button>().interactable = true;
             particles.gameObject.SetActive(true);
