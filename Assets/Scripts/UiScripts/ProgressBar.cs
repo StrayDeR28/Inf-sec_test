@@ -32,21 +32,6 @@ public class ProgressBar : MonoBehaviour
                 Congratulations.GetComponent<NewRank>().Pause();
                 break;
         }
-        /*if(WebManager.player.bits%8 == 0)
-        {
-            switch (WebManager.player.bits/8)
-            {
-                case 3:
-                    NewRankMiddle.GetComponent<NewRank>().Pause();
-                    break;
-                case 5:
-                    NewRankSenior.GetComponent<NewRank>().Pause();
-                    break;
-                case 7:
-                    Congratulations.GetComponent<NewRank>().Pause();
-                    break;
-            }
-        }*/
     }
     public void SetNewRank()
     {
@@ -60,7 +45,7 @@ public class ProgressBar : MonoBehaviour
             webManager.DataUpdate("title", 3);
             WebManager.player.title = RankCode.senior;
         }
-        else if (WebManager.player.bits >= 56)
+        else if (WebManager.player.title == RankCode.seniorEarn && WebManager.player.bits >= 56)
         {
             webManager.DataUpdate("title", 5);
             WebManager.player.title = RankCode.samurai;
