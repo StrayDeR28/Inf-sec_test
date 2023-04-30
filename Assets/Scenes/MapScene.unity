@@ -6640,6 +6640,8 @@ GameObject:
   - component: {fileID: 936989826}
   - component: {fileID: 936989825}
   - component: {fileID: 936989828}
+  - component: {fileID: 936989830}
+  - component: {fileID: 936989829}
   m_Layer: 0
   m_Name: Province 4 Task 2
   m_TagString: Untagged
@@ -6763,6 +6765,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &936989829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936989823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 4
+--- !u!114 &936989830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936989823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 13
 --- !u!1 &949740514
 GameObject:
   m_ObjectHideFlags: 0
@@ -6776,6 +6805,8 @@ GameObject:
   - component: {fileID: 949740517}
   - component: {fileID: 949740516}
   - component: {fileID: 949740519}
+  - component: {fileID: 949740521}
+  - component: {fileID: 949740520}
   m_Layer: 0
   m_Name: Province 2 Task 2
   m_TagString: Untagged
@@ -6847,7 +6878,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 949740517}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 949740520}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 949740521}
+        m_TargetAssemblyTypeName: SendCaseNumber, Assembly-CSharp
+        m_MethodName: EnumToPlayerPrefs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &949740517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6899,6 +6954,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &949740520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949740514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 8
+--- !u!114 &949740521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949740514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 5
 --- !u!1 &950674359
 GameObject:
   m_ObjectHideFlags: 0
@@ -7772,6 +7854,8 @@ GameObject:
   - component: {fileID: 1059169460}
   - component: {fileID: 1059169459}
   - component: {fileID: 1059169462}
+  - component: {fileID: 1059169464}
+  - component: {fileID: 1059169463}
   m_Layer: 0
   m_Name: Province 4 Task 1
   m_TagString: Untagged
@@ -7895,6 +7979,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1059169463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059169457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 4
+--- !u!114 &1059169464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059169457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 12
 --- !u!1 &1071612610
 GameObject:
   m_ObjectHideFlags: 0
@@ -8837,6 +8948,8 @@ GameObject:
   - component: {fileID: 1141350361}
   - component: {fileID: 1141350360}
   - component: {fileID: 1141350363}
+  - component: {fileID: 1141350365}
+  - component: {fileID: 1141350364}
   m_Layer: 0
   m_Name: Province 2 Task 3
   m_TagString: Untagged
@@ -8908,7 +9021,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1141350361}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1141350365}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1141350364}
+        m_TargetAssemblyTypeName: SendCaseNumber, Assembly-CSharp
+        m_MethodName: EnumToPlayerPrefs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1141350361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8960,6 +9097,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1141350364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141350358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 6
+--- !u!114 &1141350365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141350358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 8
 --- !u!1 &1153465568
 GameObject:
   m_ObjectHideFlags: 0
@@ -11269,6 +11433,8 @@ GameObject:
   - component: {fileID: 1362170967}
   - component: {fileID: 1362170966}
   - component: {fileID: 1362170969}
+  - component: {fileID: 1362170971}
+  - component: {fileID: 1362170970}
   m_Layer: 0
   m_Name: Province 4 Task 3
   m_TagString: Untagged
@@ -11392,6 +11558,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1362170970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362170964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 4
+--- !u!114 &1362170971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362170964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 15
 --- !u!1 &1378711731
 GameObject:
   m_ObjectHideFlags: 0
@@ -12557,6 +12750,8 @@ GameObject:
   - component: {fileID: 1559071095}
   - component: {fileID: 1559071094}
   - component: {fileID: 1559071097}
+  - component: {fileID: 1559071099}
+  - component: {fileID: 1559071098}
   m_Layer: 0
   m_Name: Province 4 Task 4
   m_TagString: Untagged
@@ -12680,6 +12875,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1559071098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559071092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 4
+--- !u!114 &1559071099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1559071092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 14
 --- !u!1 &1564621648
 GameObject:
   m_ObjectHideFlags: 0
@@ -13298,6 +13520,8 @@ GameObject:
   - component: {fileID: 1634388165}
   - component: {fileID: 1634388164}
   - component: {fileID: 1634388167}
+  - component: {fileID: 1634388169}
+  - component: {fileID: 1634388168}
   m_Layer: 0
   m_Name: Province 2 Task 4
   m_TagString: Untagged
@@ -13369,7 +13593,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1634388165}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1634388168}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1634388169}
+        m_TargetAssemblyTypeName: SendCaseNumber, Assembly-CSharp
+        m_MethodName: EnumToPlayerPrefs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1634388165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13421,6 +13669,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1634388168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634388162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 4
+--- !u!114 &1634388169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634388162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 7
 --- !u!1 &1637287167
 GameObject:
   m_ObjectHideFlags: 0
@@ -15299,6 +15574,8 @@ GameObject:
   - component: {fileID: 1833026601}
   - component: {fileID: 1833026600}
   - component: {fileID: 1833026603}
+  - component: {fileID: 1833026605}
+  - component: {fileID: 1833026604}
   m_Layer: 0
   m_Name: Province 2 Task 1
   m_TagString: Untagged
@@ -15370,7 +15647,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1833026601}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1833026605}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1833026604}
+        m_TargetAssemblyTypeName: SendCaseNumber, Assembly-CSharp
+        m_MethodName: EnumToPlayerPrefs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1833026601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15422,6 +15723,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaLevel: 1
+--- !u!114 &1833026604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833026598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5517cc5c7f286d843a23bd761bb8df22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caseNumber: 4
+--- !u!114 &1833026605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833026598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55767b620d221346b0cf6f836e4a464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
+  LoadNextScene: 8
 --- !u!1 &1833115931
 GameObject:
   m_ObjectHideFlags: 0
