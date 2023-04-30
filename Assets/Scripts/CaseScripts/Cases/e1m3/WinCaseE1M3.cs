@@ -9,13 +9,13 @@ public class WinCaseE1M3 : MonoBehaviour
     [SerializeField] private List<GameObject> contentPosition2;
     public void CheckСontentPosition()
     {
-        var contentTransform = content.GetComponent<Transform>();//скорее всего нужно будет поменять кол-во неучитываемых детей или делать детей детей
+        var contentTransform = content.GetComponent<Transform>();
         bool checkCondition = false;
-        for (int i = 1; i < contentTransform.childCount; i++)//от 1 т.к. первый ребенок - это задний фон
+        for (int i = 7; i < contentTransform.childCount; i++)//от 7 т.к. первый ребенок - это задний фон
         {
             if (contentTransform.GetChild(i).childCount > 0)
             {
-                if (contentTransform.GetChild(i).GetChild(0) != contentPosition1[i - 1].transform)
+                if (contentTransform.GetChild(i).GetChild(0) != contentPosition1[i - 7].transform)
                 {
                     checkCondition = false;
                     print(checkCondition);
@@ -36,11 +36,11 @@ public class WinCaseE1M3 : MonoBehaviour
         }
         if (checkCondition == false)
         {
-            for (int i = 1; i < contentTransform.childCount; i++)//от 1 т.к. первый ребенок - это задний фон
+            for (int i = 7; i < contentTransform.childCount; i++)//от 7 т.к. первый ребенок - это задний фон
             {
                 if (contentTransform.GetChild(i).childCount > 0)
                 {
-                    if (contentTransform.GetChild(i).GetChild(0) != contentPosition2[i - 1].transform)
+                    if (contentTransform.GetChild(i).GetChild(0) != contentPosition2[i - 7].transform)
                     {
                         checkCondition = false;
                         print(checkCondition);
