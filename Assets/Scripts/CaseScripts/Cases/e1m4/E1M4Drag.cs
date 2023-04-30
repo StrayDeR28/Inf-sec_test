@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class E7M1Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
+public class E1M4Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
@@ -29,11 +29,15 @@ public class E7M1Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     public void OnDrag(PointerEventData eventData)
     {
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
+        if (rectTransform.anchoredPosition.x != 0)//ограничение перемещения только по вертикали
+        {
+            rectTransform.anchoredPosition = new Vector2(0, rectTransform.anchoredPosition.y);
+        }  
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if(transform.parent == rootTransfrom)
+        if (transform.parent == rootTransfrom)
         {
             transform.SetParent(parentAfterDrag);
         }
@@ -48,4 +52,5 @@ public class E7M1Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     {
 
     }
+    public Transform GetTransform() { return parentAfterDrag; }
 }

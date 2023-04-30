@@ -4,19 +4,38 @@ using UnityEngine;
 
 public class WinCaseE7M1 : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> blocks;
-    public void CheckParts()
+    [SerializeField] private GameObject content;
+    [SerializeField] private List<GameObject> contentPosition;
+    public void CheckContentPosition()
     {
+        var contentTransform = content.GetComponent<Transform>();
         bool checkCondition = false;
-        foreach (GameObject item in blocks)
+        for (int i = 0; i < contentTransform.childCount; i++)//от 1 т.к. первый ребенок - это задний фон
         {
-            checkCondition = item.GetComponent<E7M1Drag>().GetRightPositionFlag();
-            if (checkCondition == false)
+            if (contentTransform.GetChild(i).childCount >0)
             {
-                return;
+                if (contentTransform.GetChild(i).GetChild(0) != contentPosition[i].transform)
+                {
+                    checkCondition = false;
+                    print(checkCondition);
+                    break;
+                }
+                else
+                {
+                    checkCondition = true;
+                    print(checkCondition);
+                }
+            }
+            else
+            {
+                checkCondition = false;
+                print("no Child");
+                break;
             }
         }
-        gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
+        if (checkCondition == true)
+        {
+            gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
+        }
     }
 }
-
