@@ -9,7 +9,7 @@ public class WinCaseE4M3 : MonoBehaviour
 
     public void CaseWin()
     {
-        if(answerInputField.text == "1, 1, 1") // ", , 3039"
+        if(answerInputField.text == "HJE, CTF, 2802" || answerInputField.text == "hje, ctf, 2802") // ", , 3039"
         {
             print("крутой");
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();

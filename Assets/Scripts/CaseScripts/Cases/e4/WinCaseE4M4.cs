@@ -9,7 +9,7 @@ public class WinCaseE4M4 : MonoBehaviour
 
     public void CaseWin()
     {
-        if(answerInputField.text == "4")
+        if(answerInputField.text == "5")
         {
             print("крутой");
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
