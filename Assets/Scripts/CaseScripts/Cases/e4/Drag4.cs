@@ -23,7 +23,7 @@ public class Drag4 : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHan
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        //rectTransform.SetAsLastSibling();
+        rectTransform.SetAsLastSibling();
         canvasGroup.alpha = 0.6f;
         canvasGroup.blocksRaycasts = false;
     }
