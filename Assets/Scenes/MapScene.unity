@@ -791,8 +791,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Task1: {fileID: 1059169457}
   Task2: {fileID: 936989823}
-  Task3: {fileID: 1559071092}
-  Task4: {fileID: 1362170964}
+  Task3: {fileID: 1362170964}
+  Task4: {fileID: 1559071092}
   NewSprite: {fileID: 1169338762, guid: 3f0765e13edb167489d7c3e9f96b6297, type: 3}
   ThisProvince: {fileID: 72370657}
   ProvinceName: {fileID: 336565440}
