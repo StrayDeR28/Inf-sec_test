@@ -12,8 +12,8 @@ public class UI_StatsRadarChart : MonoBehaviour {
 
     private void Awake() {
         radarMeshCanvasRenderer = transform.Find("radarMesh").GetComponent<CanvasRenderer>();
-        stats = new Stats(80,80,40,80,40,80,40);
-        for(int i = 0; i < 7; i++)
+        stats = new Stats(80,80,80,80,80,80,80);
+        /*for(int i = 0; i < 7; i++)
         {
             int Stat = 0;
             for(int j = 0; j < 4; j++)
@@ -21,7 +21,7 @@ public class UI_StatsRadarChart : MonoBehaviour {
                 Stat += WebManager.player.progress[i*4+j];
             }
             stats.SetStatAmount((Stats.Type)i,Stat);
-        }
+        }*/
         SetStats(stats);
     }
 
