@@ -10,9 +10,9 @@ public class NewRank : MonoBehaviour
 
     public GameObject NewRankScreen;
     public GameObject NewRankMenu;
-    public GameObject RaysPartical;
+/*    public GameObject RaysPartical;
     public GameObject WaysPartical;
-    public GameObject DotsPartical;
+    public GameObject DotsPartical;*/
 
     [SerializeField] private WebManager webManager;
     [SerializeField] private AudioSource newTitleSound;
@@ -30,10 +30,10 @@ public class NewRank : MonoBehaviour
     public void Resume()
     {
         SetNewRank();
-        RaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
+        /*RaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
         WaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
-        DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
-        NewRankMenu.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);
+        DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(0,0,0), 1);*/
+        NewRankMenu.GetComponent<RectTransform>().DOScale(new Vector3(0, 0, 0), 1);
         DOTween.Sequence()
         .Append(NewRankScreen.GetComponent<Image>().DOFade(0, 1))
         .AppendCallback(Animation);
@@ -41,12 +41,12 @@ public class NewRank : MonoBehaviour
     public void Pause() 
     {
         Animation();
-        RaysPartical.SetActive(activeNewRankMenu);
+        /*RaysPartical.SetActive(activeNewRankMenu);*/
         NewRankScreen.GetComponent<Image>().DOFade(0.5f, 1);
         NewRankMenu.GetComponent<RectTransform>().DOScale(new Vector3(1,1,1), 1);
-        RaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
+        /*RaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
         WaysPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
-        DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);
+        DotsPartical.GetComponent<RectTransform>().DOScale(new Vector3(10,10,0), 1);*/
     }
     
     /*public void Resume()
