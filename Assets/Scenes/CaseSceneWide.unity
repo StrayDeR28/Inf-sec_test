@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 68134925}
   - component: {fileID: 68134928}
   - component: {fileID: 68134927}
-  - component: {fileID: 68134926}
   m_Layer: 5
   m_Name: BitImage
   m_TagString: Untagged
@@ -157,32 +156,11 @@ RectTransform:
   m_Father: {fileID: 1909630410}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95, y: -143.49}
-  m_SizeDelta: {x: 41, y: 43}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 95, y: -143.48999}
+  m_SizeDelta: {x: -797, y: -521}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &68134926
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 68134924}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 2
-  m_TargetDisplay: 0
 --- !u!114 &68134927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,7 +354,7 @@ RectTransform:
   m_GameObject: {fileID: 122433544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1203557609}
@@ -2924,7 +2902,6 @@ GameObject:
   - component: {fileID: 793707188}
   - component: {fileID: 793707191}
   - component: {fileID: 793707190}
-  - component: {fileID: 793707189}
   m_Layer: 5
   m_Name: MoneyBag
   m_TagString: Untagged
@@ -2947,32 +2924,11 @@ RectTransform:
   m_Father: {fileID: 1909630410}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -52, y: -130}
-  m_SizeDelta: {x: 103, y: 131}
+  m_SizeDelta: {x: -735, y: -433}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &793707189
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793707187}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 2
-  m_TargetDisplay: 0
 --- !u!114 &793707190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3973,7 +3929,6 @@ GameObject:
   - component: {fileID: 1082044736}
   - component: {fileID: 1082044739}
   - component: {fileID: 1082044738}
-  - component: {fileID: 1082044737}
   m_Layer: 5
   m_Name: BitsText
   m_TagString: Untagged
@@ -3996,32 +3951,11 @@ RectTransform:
   m_Father: {fileID: 1909630410}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49.29, y: -143.30392}
-  m_SizeDelta: {x: 202.57, y: 90.088}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 49.29001, y: -143.30392}
+  m_SizeDelta: {x: -635.43, y: -473.912}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &1082044737
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1082044735}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 2
-  m_TargetDisplay: 0
 --- !u!114 &1082044738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5764,7 +5698,6 @@ GameObject:
   - component: {fileID: 1753825579}
   - component: {fileID: 1753825582}
   - component: {fileID: 1753825581}
-  - component: {fileID: 1753825580}
   m_Layer: 5
   m_Name: Buttom
   m_TagString: Untagged
@@ -5787,32 +5720,11 @@ RectTransform:
   m_Father: {fileID: 1909630410}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 45.6, y: -143.8}
-  m_SizeDelta: {x: 210, y: 90}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 45.600006, y: -143.79999}
+  m_SizeDelta: {x: -628, y: -474}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!223 &1753825580
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753825578}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 1
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
-  m_TargetDisplay: 0
 --- !u!114 &1753825581
 MonoBehaviour:
   m_ObjectHideFlags: 0
