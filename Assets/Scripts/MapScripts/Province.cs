@@ -51,12 +51,11 @@ public class Province : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             if(IsPassed[0] && IsPassed[1] && !IsPassed[2])
             {
                 Task3.GetComponent<Button>().interactable = true;
-                Task3.transform.GetChild(0).gameObject.SetActive(true);
             }
             if(IsPassed[2])
             {
+                Task3.transform.GetChild(0).gameObject.SetActive(false);
                 Task4.GetComponent<Button>().interactable = true;
-                Task4.transform.GetChild(0).gameObject.SetActive(true);
             }
         }
     }

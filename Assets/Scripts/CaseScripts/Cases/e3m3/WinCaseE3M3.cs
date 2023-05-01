@@ -8,7 +8,7 @@ public class WinCaseE3M3 : MonoBehaviour
     [SerializeField] private TMP_InputField answerInputField;
     public void CaseWin()
     {
-        if (answerInputField.text != null && (answerInputField.text == "9-В")) 
+        if (answerInputField.text != null && ((answerInputField.text == "9-C") || (answerInputField.text == "9-c"))) 
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
