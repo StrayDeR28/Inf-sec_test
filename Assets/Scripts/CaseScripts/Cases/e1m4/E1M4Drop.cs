@@ -20,9 +20,5 @@ public class E1M4Drop : MonoBehaviour, IDropHandler
             newElementTransform.SetParent(transform);
             newElementTransform.localPosition = Vector3.zero;
         }
-
-        Color color = gameObject.GetComponent<Image>().color;
-        color.a = 1f;
-        gameObject.GetComponent<Image>().color = color;
     }
 }
