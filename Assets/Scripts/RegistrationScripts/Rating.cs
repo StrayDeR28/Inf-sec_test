@@ -77,7 +77,7 @@ public class Rating : MonoBehaviour
     IEnumerator GetPosition()
     {
         WWWForm form = new WWWForm();
-        form.AddField("id", 22);
+        form.AddField("id", WebManager.player.id);
 
         using (UnityWebRequest request = UnityWebRequest.Post(www, form))
         {
