@@ -43,6 +43,19 @@ public class MenuManager : MonoBehaviour
     
     public WebManager webManager;
 
+    public Button signupButton;
+
+    public void OnSignupSet()
+    {
+        signupButton.image.color = new Color32(100, 255, 80, 255);
+        signupButton.GetComponentInChildren<TMP_Text>().text = "Регистрация успешна";
+    }
+    public void OnSignupReset()
+    {
+        signupButton.image.color = Color.white;
+        signupButton.GetComponentInChildren<TMP_Text>().text = "Зарегистрироваться";
+    }
+
     public void WebError()
     {
         switch(WebManager.player.error)
