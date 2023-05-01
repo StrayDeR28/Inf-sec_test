@@ -474,8 +474,8 @@ GameObject:
   - component: {fileID: 3287916652854508514}
   - component: {fileID: 3287916652854508515}
   - component: {fileID: 3287916652854508540}
-  - component: {fileID: 3107101323045133696}
   - component: {fileID: 3287916652854508543}
+  - component: {fileID: 2895206576181826869}
   m_Layer: 5
   m_Name: SendAnswerButton 2
   m_TagString: Untagged
@@ -597,8 +597,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3107101323045133696}
-        m_TargetAssemblyTypeName: WinCaseE5M4, Assembly-CSharp
+      - m_Target: {fileID: 2895206576181826869}
+        m_TargetAssemblyTypeName: WinCaseE5M1, Assembly-CSharp
         m_MethodName: CaseWin
         m_Mode: 1
         m_Arguments:
@@ -621,19 +621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99fde8ece2b52734591052a75d8780fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3107101323045133696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3287916652854508513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c5ba0a7666b24a4084b885c686ae0a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  answerInputField: {fileID: 3287916653538420205}
 --- !u!114 &3287916652854508543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -647,6 +634,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickSound: {fileID: 3287916653660220811}
+--- !u!114 &2895206576181826869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287916652854508513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b03824f55a7deb4fa99b480bf8fda8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  answerInputField: {fileID: 3287916653538420205}
 --- !u!1 &3287916653053642348
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 26
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2616,16 +2616,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0414\u043E\u0440\u043E\u0433\u043E\u0439<b> <\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430></b>,
-    \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C \u0442\u0435\u0431\u044F
-    \u0432 \u043F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u0438 <b>\u0427\u0430\u0442\u0430\u0431\u043E\u0442\u0442\u043E!</b>\n\u041D\u0430\u0448\u0438
+  m_text: "\u0414\u043E\u0440\u043E\u0433\u043E\u0439(-\u0430\u044F)<b> <\u0418\u043C\u044F
+    \u0438\u0433\u0440\u043E\u043A\u0430></b>, \u043F\u0440\u0438\u0432\u0435\u0442\u0441\u0442\u0432\u0443\u0435\u043C
+    \u0442\u0435\u0431\u044F \u0432 \u043F\u0440\u043E\u0432\u0438\u043D\u0446\u0438\u0438
+    <b>\u0427\u0430\u0442\u0430\u0431\u043E\u0442\u0442\u043E!</b>\n\u041D\u0430\u0448\u0438
     \u0436\u0438\u0442\u0435\u043B\u0438 \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043B\u0438
     \u043C\u043D\u043E\u0433\u0438\u0435 \u0441\u0444\u0435\u0440\u044B \u0436\u0438\u0437\u043D\u0438,
     \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F \u043F\u043E\u0437\u043D\u0430\u043D\u0438\u044F
     \u0432 \u043E\u0431\u043B\u0430\u0441\u0442\u044F\u0445 \u043C\u0430\u0448\u0438\u043D\u043D\u043E\u0433\u043E
     \u043E\u0431\u0443\u0447\u0435\u043D\u0438\u044F \u0438 \u043E\u0431\u0440\u0430\u0431\u043E\u0442\u043A\u0438
     \u0431\u043E\u043B\u044C\u0448\u0438\u0445 \u0434\u0430\u043D\u043D\u044B\u0445.
-    \u0427\u0430\u0442-\u0431\u043E\u0442\u044B \u043F\u043E\u043C\u043E\u0433\u0430\u044E\u0442
+    \n\u0427\u0430\u0442-\u0431\u043E\u0442\u044B \u043F\u043E\u043C\u043E\u0433\u0430\u044E\u0442
     \u043D\u0430\u0448\u0438\u043C \u0434\u0438\u0437\u0430\u0439\u043D\u0435\u0440\u0430\u043C
     \u0432 \u043F\u043E\u0438\u0441\u043A\u0435 \u0432\u0434\u043E\u0445\u043D\u043E\u0432\u0435\u043D\u0438\u044F,
     \u043F\u0438\u0441\u0430\u0442\u0435\u043B\u044F\u043C \u2013 \u0432 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u0438
@@ -2673,7 +2674,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -3
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
