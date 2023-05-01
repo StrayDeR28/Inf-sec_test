@@ -7985,7 +7985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 8
+  LoadNextScene: 4
 --- !u!114 &1059169464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11531,7 +11531,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 8
+  LoadNextScene: 4
 --- !u!114 &1362170971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13738,7 +13738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingIndicatorSO: {fileID: 11400000, guid: 751432b9a653e7241a1868ec0eac4c75, type: 2}
-  LoadNextScene: 8
+  LoadNextScene: 4
 --- !u!114 &1634388169
 MonoBehaviour:
   m_ObjectHideFlags: 0
