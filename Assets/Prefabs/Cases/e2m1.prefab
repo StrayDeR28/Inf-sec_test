@@ -2855,14 +2855,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430>, \u043D\u0430\u0448\u0438
+  m_text: "<b><\u0418\u043C\u044F \u0438\u0433\u0440\u043E\u043A\u0430></b>, \u043D\u0430\u0448\u0438
     \u0441\u0430\u043C\u044B\u0435 \u0441\u0438\u043B\u044C\u043D\u044B\u0435 \u0432\u043E\u0438\u043D\u044B
     \u0441\u0442\u0430\u0440\u0430\u044E\u0442\u0441\u044F \u0443\u0431\u0435\u0440\u0435\u0447\u044C
     \u0441\u0432\u044F\u0449\u0435\u043D\u043D\u044B\u0435 \u0438\u0441\u0442\u043E\u0440\u0438\u0447\u0435\u0441\u043A\u0438\u0435
     \u044D\u043A\u0441\u043F\u043E\u043D\u0430\u0442\u044B \u042F\u043F\u043E\u043D\u0438\u0438.
     \u041F\u043E\u043C\u043E\u0433\u0438 \u0438\u043C \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E
     \u0441\u043E\u0440\u0442\u0438\u0440\u043E\u0432\u0430\u0442\u044C \u044D\u043A\u0441\u043F\u043E\u043D\u0430\u0442\u044B-\u044D\u043B\u0435\u043C\u0435\u043D\u0442\u044B
-    \u043F\u043E \u043A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F\u043C"
+    \u043F\u043E \u043A\u043E\u043B\u043B\u0435\u043A\u0446\u0438\u044F\u043C."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
   m_sharedMaterial: {fileID: 1039060834059496764, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}
@@ -2901,7 +2901,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 26
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -3144,7 +3144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9725491, g: 0.68235296, b: 0.73333335, a: 1}
+  m_Color: {r: 0.9960785, g: 0.8352942, b: 0.85098046, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3196,10 +3196,10 @@ RectTransform:
   m_Father: {fileID: 5191680620691487531}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -425, y: -100.07}
-  m_SizeDelta: {x: 254, y: 145}
+  m_SizeDelta: {x: -1094, y: -347}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5191680621372534873
 CanvasRenderer:
@@ -5255,7 +5255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100.070015}
+  m_AnchoredPosition: {x: 0, y: -100.07001}
   m_SizeDelta: {x: 254, y: 145}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5191680622404163711
