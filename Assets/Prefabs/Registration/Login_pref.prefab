@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 2592787618835435094}
   - component: {fileID: 2592787618835435096}
   - component: {fileID: 2592787618835435095}
+  - component: {fileID: 6697559843943347062}
   m_Layer: 5
   m_Name: Login_back
   m_TagString: Untagged
@@ -294,6 +295,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6697559843943347062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2592787618835435093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5957fb43471696f43b0b4660f0596b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  submit: {fileID: 2592787618927501248}
 --- !u!1 &2592787618849975248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1648,7 +1662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -2426,6 +2440,10 @@ PrefabInstance:
       propertyPath: password
       value: 
       objectReference: {fileID: 2592787619731006489}
+    - target: {fileID: 1609047945476196766, guid: 8cda82f175fa68242baeaf7e1c577b91, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5756102492178393207, guid: 8cda82f175fa68242baeaf7e1c577b91, type: 3}
       propertyPath: m_Name
       value: ShowPassword_Button
