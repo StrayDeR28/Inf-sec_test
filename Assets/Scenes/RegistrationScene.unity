@@ -1986,7 +1986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 730615300787891666, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: OnSignup
+      value: OnSignupSet
       objectReference: {fileID: 0}
     - target: {fileID: 730615300787891666, guid: cd4c6a1f7e9b9cb4a9e54097aaba5f83, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
