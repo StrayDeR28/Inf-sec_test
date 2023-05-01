@@ -23,7 +23,7 @@ public class Stopwatch : MonoBehaviour
             currentTime += Time.deltaTime;
             TimeSpan time = TimeSpan.FromSeconds(currentTime);
             currentTimeText.text = time.ToString(@"mm\:ss");
-            if (useOnceflag == true && currentTime >= 10.0 )//время, через которое свинка начинает подгонять игрока
+            if (useOnceflag == true && currentTime >= 120.0 )//время, через которое свинка начинает подгонять игрока
             {
                 pepasanObject.GetComponent<PeposanAnimation>().ShowPepasan("stopwatch");
                 useOnceflag = false;

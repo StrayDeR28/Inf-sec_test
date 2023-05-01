@@ -122,15 +122,14 @@ public class BottomBarController : MonoBehaviour
     private void PlaySentence(bool isAnimated = true)
     {
         speedFactor = 1f;
-        if (currentScene.sentences[sentenceIndex].text.EndsWith("&name"))//++ Проверка для ввода имени пользователя/пройденых провинций.
+        string substring = "&name";
+        int indexOfSubstring = currentScene.sentences[sentenceIndex].text.IndexOf(substring);
+        if (indexOfSubstring != -1)//Проверка для ввода имени пользователя/пройденых провинций.
         {
-
             string tmpText = currentScene.sentences[sentenceIndex].text;
-            tmpText = tmpText.Substring(0, tmpText.Length - 5);
-            tmpText = tmpText + " " + playerName + " Джун-сан";
-
+            tmpText = tmpText.Replace(substring, " " + playerName + " Джун-сан");
             currentScene.sentences.Insert(sentenceIndex, new StoryScene.Sentence(tmpText, currentScene.sentences[sentenceIndex].speaker, currentScene.sentences[sentenceIndex].actions,
-                                          currentScene.sentences[sentenceIndex].music, currentScene.sentences[sentenceIndex].sound));
+                                            currentScene.sentences[sentenceIndex].music, currentScene.sentences[sentenceIndex].sound));
             currentScene.sentences.RemoveAt(sentenceIndex + 1);
         }
         typingCoroutine = StartCoroutine(TypeText(currentScene.sentences[sentenceIndex].text));

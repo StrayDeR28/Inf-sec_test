@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -5,8 +8,11 @@ using TMPro;
 public class CameraControl3 : MonoBehaviour
 {
     public Camera MainCamera;
+    public GameObject MapButton;
     public GameObject Names;
     public GameObject Name;
+    public GameObject Icons;
+    [SerializeField] private List<Sprite> sprites;
     public float CamMoveSpeed = 2;
     public float CamSize = 540;
     float size;
@@ -55,32 +61,37 @@ public class CameraControl3 : MonoBehaviour
         }
         canMove = true;
         Names.SetActive(false);
+        MapButton.SetActive(true);
         Name.SetActive(true);
         switch(obj)
         {
             case "Province 1":
-                Name.GetComponent<TMP_Text>().text = "Зерокотто\n"+"<sprite=3><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Зерокотто\n";
+                Icons.GetComponent<Image>().sprite = sprites[0];
                 break;
             case "Province 2":
-                Name.GetComponent<TMP_Text>().text = "Питамба\n"+"<sprite=8><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Андройдзидзю\n";
+                Icons.GetComponent<Image>().sprite = sprites[1];
                 break;
             case "Province 3":
-                Name.GetComponent<TMP_Text>().text = "Андройдзидзю\n"+"<sprite=1><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Напитонэ\n";
+                Icons.GetComponent<Image>().sprite = sprites[2];
                 break;
             case "Province 4":
                 Name.GetComponent<TMP_Text>().text = "Реляохоки\n";
+                Icons.GetComponent<Image>().sprite = sprites[3];
                 break;
             case "Province 5":
-                Name.GetComponent<TMP_Text>().text = "Чатаботто\n"+"<sprite=6><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Чатаботто\n";
+                Icons.GetComponent<Image>().sprite = sprites[4];
                 break;
             case "Province 6":
-                Name.GetComponent<TMP_Text>().text = "Играхаги\n"+"<sprite=2><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Играхаги\n";
+                Icons.GetComponent<Image>().sprite = sprites[5];
                 break;
             case "Province 7":
-                Name.GetComponent<TMP_Text>().text = "Джаваскрипту\n"+"<sprite=0><sprite=5>";
-                break;
-            case "Province 8":
-                Name.GetComponent<TMP_Text>().text = "Напитонэ\n"+"<sprite=7><sprite=5>";
+                Name.GetComponent<TMP_Text>().text = "Джаваскрипту\n";
+                Icons.GetComponent<Image>().sprite = sprites[6];
                 break;
         }
         Target = GameObject.Find(obj);        
@@ -98,6 +109,7 @@ public class CameraControl3 : MonoBehaviour
             Target.GetComponent<Image>().enabled = true;
         }
         Names.SetActive(true);
+        MapButton.SetActive(false);
         Name.SetActive(false);
         canMove = true;
         CamSize = 540;
