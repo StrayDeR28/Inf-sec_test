@@ -9,9 +9,9 @@ public class WebManager : MonoBehaviour
     //string www = "http://localhost/pudge/signup.php";
     string www = "https://it.dpo.tsu.ru/itgame/manager.php";
 
-    public UnityEvent OnError;
+    public UnityEvent OnError, OnSignup;
 
-    enum ActionType {Login, Sugnup, Update}
+    enum ActionType { Login, Sugnup, Update }
 
     public static PlayerData player = new PlayerData();
 
@@ -59,7 +59,7 @@ public class WebManager : MonoBehaviour
 
             //while(!request.isDone) yield return null;
 
-            if(request.result != UnityWebRequest.Result.Success) //зокментировать до else
+            if (request.result != UnityWebRequest.Result.Success) //зокментировать до else
             {
                 Debug.Log(request.error);
             }
@@ -67,20 +67,26 @@ public class WebManager : MonoBehaviour
             {
                 Debug.Log(request.downloadHandler.text);
 
-                if(type != ActionType.Update)
+                if (type != ActionType.Update)
                     player = JsonUtility.FromJson<PlayerData>(request.downloadHandler.text); // закоментировать
-                    
-                    if(player.error == ErrorCode.none)
-                    {   
-                        if(type == ActionType.Login)
-                            if(!player.novel1) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene1");
-                            else if (player.novel2) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene2");
-                            else gameObject.GetComponent<SceneLoader>().StringToEnum("Map");
+
+                if (player.error == ErrorCode.none)
+                {
+                    if (type == ActionType.Login)
+                    {
+                        if (!player.novel1) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene1");
+                        else if (player.novel2) gameObject.GetComponent<SceneLoader>().StringToEnum("NovellScene2");
+                        else gameObject.GetComponent<SceneLoader>().StringToEnum("Map");
                     }
                     else
                     {
-                        OnError.Invoke();
+                        OnSignup.Invoke();
                     }
+                }
+                else
+                {
+                    OnError.Invoke();
+                }
             }
         }
     }
