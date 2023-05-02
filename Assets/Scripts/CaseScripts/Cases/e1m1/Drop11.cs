@@ -15,6 +15,7 @@ public class Drop11 : MonoBehaviour, IDropHandler
         {
             GetComponent<Image>().sprite = eventData.pointerDrag.GetComponent<Image>().sprite;
             Destroy(eventData.pointerDrag);
+            gameObject.GetComponent<Image>().raycastTarget = false;
             Destroy(this);
             counter.GetComponent<WinCaseE1M1>().SetCount();
         }

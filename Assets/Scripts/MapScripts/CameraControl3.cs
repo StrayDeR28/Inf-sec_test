@@ -78,7 +78,7 @@ public class CameraControl3 : MonoBehaviour
                 Icons.GetComponent<Image>().sprite = sprites[2];
                 break;
             case "Province 4":
-                Name.GetComponent<TMP_Text>().text = "Реляохоки\n";
+                Name.GetComponent<TMP_Text>().text = "Реляхоки\n";
                 Icons.GetComponent<Image>().sprite = sprites[3];
                 break;
             case "Province 5":
