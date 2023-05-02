@@ -2334,7 +2334,7 @@ MonoBehaviour:
     minutes
     = n % <color=#983D3D>60</color>
 
-    <color=#23579E>print</color>(hours +", "+
+    <color=#23579E>print</color>(hours, ", ",
     minutes)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2822e54e20c9f1346a6447d460aa2408, type: 2}

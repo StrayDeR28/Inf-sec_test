@@ -72,8 +72,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 277.5, y: -13}
-  m_SizeDelta: {x: -903, y: -26}
+  m_AnchoredPosition: {x: 277.5, y: -3}
+  m_SizeDelta: {x: -903, y: -46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3449833943765340666
 CanvasRenderer:
@@ -2270,8 +2270,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -256.5, y: -13}
-  m_SizeDelta: {x: -903, y: -26}
+  m_AnchoredPosition: {x: -256.5, y: -3}
+  m_SizeDelta: {x: -903, y: -46}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3599955943455103661
 CanvasRenderer:
@@ -2431,9 +2431,9 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 5924309927767718776}
   m_HandleRect: {fileID: 7881740308200681890}
-  m_Direction: 3
-  m_Value: 0.9999991
-  m_Size: 0.78343934
+  m_Direction: 2
+  m_Value: 0.9999992
+  m_Size: 0.7592591
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2473,8 +2473,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -67.999954}
-  m_SizeDelta: {x: 0, y: 136.00009}
+  m_AnchoredPosition: {x: 0, y: -77.999954}
+  m_SizeDelta: {x: 0, y: 156.00009}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8912146557669560977
 GameObject:
