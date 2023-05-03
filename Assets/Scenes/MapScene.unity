@@ -379,6 +379,10 @@ PrefabInstance:
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5756684052358389190, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5756684052358389190, guid: ebff29d1e29ba1d499f43e2f71f4d215, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -8840,6 +8844,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnError:
+    m_PersistentCalls:
+      m_Calls: []
+  OnSignup:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1137745591
