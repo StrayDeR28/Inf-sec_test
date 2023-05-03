@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class E1M4Drop : MonoBehaviour, IDropHandler
 {
-    [SerializeField] private bool rightElement;
     public void OnDrop(PointerEventData eventData)
     {
         if (transform.childCount > 0)
