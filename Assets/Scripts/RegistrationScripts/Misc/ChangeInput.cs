@@ -22,18 +22,24 @@ public class ChangeInput : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftShift))
             {
-                Selectable previous = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
-                if (previous != null)
+                if (system.currentSelectedGameObject != null)
                 {
-                    previous.Select();
+                    Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
+                    if (next != null)
+                    {
+                        next.Select();
+                    }
                 }
             }
             else
             {
-                Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
-                if (next != null)
+                if (system.currentSelectedGameObject != null)
                 {
-                    next.Select();
+                    Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
+                    if (next != null)
+                    {
+                        next.Select();
+                    }
                 }
             }
         }
