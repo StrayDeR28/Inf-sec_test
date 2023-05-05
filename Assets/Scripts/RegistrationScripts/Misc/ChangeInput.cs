@@ -24,10 +24,10 @@ public class ChangeInput : MonoBehaviour
             {
                 if (system.currentSelectedGameObject != null)
                 {
-                    Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
-                    if (next != null)
+                    Selectable previous = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
+                    if (previous != null)
                     {
-                        next.Select();
+                        previous.Select();
                     }
                 }
             }
