@@ -7,6 +7,7 @@ public class WinCaseE1M3 : MonoBehaviour
     [SerializeField] private GameObject content;
     [SerializeField] private List<GameObject> contentPosition1;
     [SerializeField] private List<GameObject> contentPosition2;
+    [SerializeField] GameObject WrongAnswerText;
     public void CheckСontentPosition()
     {
         var contentTransform = content.GetComponent<Transform>();
@@ -64,5 +65,18 @@ public class WinCaseE1M3 : MonoBehaviour
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
+        else
+        {
+            SetTrueWrongAnswer();
+            Invoke("SetFalseWrongAnswer",5f);
+        }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }

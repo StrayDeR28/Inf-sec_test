@@ -8,7 +8,7 @@ public class WinCaseE2M3 : MonoBehaviour
     [SerializeField] int index;
     [SerializeField] GameObject currentStage;
     [SerializeField] GameObject nextStage;
-
+    [SerializeField] GameObject WrongAnswerText;
 
     public void SetCount()
     {
@@ -27,6 +27,11 @@ public class WinCaseE2M3 : MonoBehaviour
                     Destroy(currentStage);
                     nextStage.SetActive(true);
                 }
+                else
+                {
+                    SetTrueWrongAnswer();
+                    Invoke("SetFalseWrongAnswer",5f);
+                }
                 break;
             case 2:
                 if(count == 15)
@@ -35,6 +40,11 @@ public class WinCaseE2M3 : MonoBehaviour
                     Destroy(currentStage);
                     nextStage.SetActive(true);
                 }
+                else
+                {
+                    SetTrueWrongAnswer();
+                    Invoke("SetFalseWrongAnswer",5f);
+                }
                 break;
             case 3:
                 if(count == 10)
@@ -42,7 +52,20 @@ public class WinCaseE2M3 : MonoBehaviour
                     print("еге");
                     gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
                 }
+                else
+                {
+                    SetTrueWrongAnswer();
+                    Invoke("SetFalseWrongAnswer",5f);
+                }
                 break;
         }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }
