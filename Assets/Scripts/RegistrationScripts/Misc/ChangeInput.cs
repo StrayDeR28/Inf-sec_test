@@ -6,17 +6,54 @@ using UnityEngine.EventSystems;
 
 public class ChangeInput : MonoBehaviour
 {
+    EventSystem system;
+
     public Button submit;
     public Toggle privacy;
 
-    public bool isSugnip;
+    public void Awake()
+    {
+        system = EventSystem.current;
+    }
 
     public void Update()
     {
-        if (!isSugnip)
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
-            if (Input.GetKeyDown(KeyCode.Return)) submit.onClick.Invoke();
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                Selectable previous = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnUp();
+                if (previous != null)
+                {
+                    previous.Select();
+                }
+            }
+            else
+            {
+                Selectable next = system.currentSelectedGameObject.GetComponent<Selectable>().FindSelectableOnDown();
+                if (next != null)
+                {
+                    next.Select();
+                }
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Return) && privacy.isOn) submit.onClick.Invoke();
+        else if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (privacy.IsActive())
+            {
+                print("signup");
+                if (privacy.isOn) submit.onClick.Invoke();
+            }
+            else
+            {
+                print("login");
+                submit.onClick.Invoke();
+            }
+        }
+    }
+
+    public void SetSubmit(Button button)
+    {
+        submit = button;
     }
 }
