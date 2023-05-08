@@ -9,6 +9,7 @@ public class WinCaseE1M2 : MonoBehaviour
     Image[] frames;
     [SerializeField] List<Color32> usedColors;
     [SerializeField] int paintedCount;
+    [SerializeField] GameObject WrongAnswerText;
 
     public void SetCount()
     {
@@ -49,5 +50,23 @@ public class WinCaseE1M2 : MonoBehaviour
                     print("крутой");
                     gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
                 }
+                else
+                {
+                    SetTrueWrongAnswer();
+                    Invoke("SetFalseWrongAnswer",5f);
+                }
+        else
+        {
+            SetTrueWrongAnswer();
+            Invoke("SetFalseWrongAnswer",5f);
+        }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }

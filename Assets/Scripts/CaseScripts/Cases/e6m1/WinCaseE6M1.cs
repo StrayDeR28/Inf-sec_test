@@ -5,6 +5,7 @@ using UnityEngine;
 public class WinCaseE6M1 : MonoBehaviour
 {
     [SerializeField] private int pieceCounter=0;
+    [SerializeField] GameObject WrongAnswerText;
     public void SetPieceCounter()
     {
         pieceCounter++;
@@ -16,5 +17,18 @@ public class WinCaseE6M1 : MonoBehaviour
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
+        else
+        {
+            SetTrueWrongAnswer();
+            Invoke("SetFalseWrongAnswer",5f);
+        }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }

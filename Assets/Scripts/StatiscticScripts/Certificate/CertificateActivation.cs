@@ -12,7 +12,7 @@ public class CertificateActivation : MonoBehaviour
         int bits = WebManager.player.bits;
         if (bits >= 40)
         {
-            text = "Получить титул";
+            text = "Получить сертификат";
             gameObject.GetComponent<TMP_Text>().text = text;
             gameObject.GetComponent<Button>().interactable = true;
         }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class WinCaseE6M3 : MonoBehaviour
 {
     [SerializeField] private List<GameObject> objectsToScale;
+    [SerializeField] GameObject WrongAnswerText;
     public void CheckParts()
     {
         bool checkCondition = false;
@@ -20,5 +21,18 @@ public class WinCaseE6M3 : MonoBehaviour
         {
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
+        else
+        {
+            SetTrueWrongAnswer();
+            Invoke("SetFalseWrongAnswer",5f);
+        }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }

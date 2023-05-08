@@ -9,11 +9,9 @@ public class E1M4Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
     [SerializeField] private Canvas canvas;
     private RectTransform rectTransform;
     Transform parentAfterDrag;
-    private Transform rootTransfrom;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        rootTransfrom = transform.root;
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -37,7 +35,7 @@ public class E1M4Drag : MonoBehaviour, IPointerDownHandler, IDragHandler, IBegin
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        if (transform.parent == rootTransfrom)
+        if (transform.parent == transform.root)
         {
             transform.SetParent(parentAfterDrag);
         }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WinCaseE1M1 : MonoBehaviour
 {
     [SerializeField] int count;
-
+    [SerializeField] GameObject WrongAnswerText;
     public void SetCount()
     {
         count++;
@@ -19,5 +19,18 @@ public class WinCaseE1M1 : MonoBehaviour
             print("прошел");
             gameObject.GetComponent<WinCase>().WinCasePlayerPrefs();
         }
+        else
+        {
+            SetTrueWrongAnswer();
+            Invoke("SetFalseWrongAnswer",5f);
+        }
+    }
+    void SetTrueWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(true); 
+    }
+    void SetFalseWrongAnswer() 
+    {
+        WrongAnswerText.SetActive(false); 
     }
 }
