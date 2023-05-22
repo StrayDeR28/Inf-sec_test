@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   answerInputField: {fileID: 3027909239658364859}
-  WrongAnswerText: {fileID: 3027909239234486711}
+  WrongAnswerText: {fileID: 4814644066337088752}
 --- !u!1 &3027909239658364805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2088,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  WrongAnswerText: {fileID: 0}
 --- !u!1 &3027909240841801761
 GameObject:
   m_ObjectHideFlags: 0
